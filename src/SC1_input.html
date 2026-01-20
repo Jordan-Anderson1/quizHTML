@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0A2240] flex justify-center py-10">
+<div id="app" class="rounded-2xl w-1/2 p-6"></div>
+
+<!-- Your quiz data -->
+<script src="./data.ts"></script>
+
+<script>
+
+    function getParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            topic: params.get("topic"),
+            level: params.get("level"),
+        };
+    }
+
+    function shuffleArray(array) {
+        const arr = [...array];
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+
+    function getLanguage(level) {
+        switch (level) {
+            case "SC1":
+            case "SC2":
+                return "Scratch";
+            case "SB1":
+            case "SB2":
+                return "Small Basic";
+            case "PY1":
+            case "PY2":
+                return "Python";
+            case "JS1":
+            case "JS2":
+                return "JavaScript";
+            case "C1":
+            case "C2":
+                return "C++";
+            case "J1":
+            case "J2":
+                return "Java";
+            default:
+                return "";
+        }
+    }
+
+    /* -------------------------
+       State
+    --------------------------*/
+
+    const app = document.getElementById("app");
+    const { topic, level } = getParams();
+
+    const data = updatedQuizQuestions.find(
+        (set) => set.level === level && set.topic === topic
+    );
+
+    let submitted = false;
+    let score = 0;
+    let answers = [];
+    let shuffledOptions = [];
+    let language = getLanguage(level);
+
+
+    function render() {
+        if (!data) {
+            app.innerHTML = `
+            <h1 class="text-4xl text-white font-bold">
+              No quiz available, check search parameters
+            </h1>
+          `;
+            return;
+        }
+
+        app.innerHTML = `
+          <h1 class="mb-8 text-center text-white text-3xl font-bold">
+            Test yourself on ${topic} in ${language}!
+          </h1>
+
+          ${data.questions
+            .map((q, index) => renderQuestion(q, index))
+            .join("")}
+
+          ${
+            submitted
+                ? `<button
+                  class="px-8 w-full bg-[#939598] py-4 rounded-xl text-white"
+                  onclick="resetQuiz()"
+                >
+                  Reset
+                </button>`
+                : `<button
+                  class="px-8 w-full py-4 bg-[#FF5100] rounded-xl text-white"
+                  onclick="submitQuiz()"
+                >
+                  Submit
+                </button>`
+        }
+
+          ${
+            submitted
+                ? `<div id="score" class="mt-8">
+                  <p class="text-4xl text-center text-white my-4">
+                    You scored ${score} out of ${data.questions.length}!
+                  </p>
+                  <p class="text-2xl text-center text-white">
+                    Click reset to try again.
+                  </p>
+                </div>`
+                : ""
+        }
+        `;
+    }
+
+    function renderQuestion(q, index) {
+        const options = shuffledOptions[index];
+
+        return `
+          <div class="space-y-8 bg-white rounded-xl p-6 mb-4">
+            <p class="font-bold text-xl">
+              ${index + 1}. ${q.question}
+            </p>
+
+            ${
+            q.codeSnippet
+                ? `<pre class="bg-[#282c34] text-white rounded-lg p-4 overflow-x-auto">
+<code>${q.codeSnippet.code.join("\n")}</code>
+</pre>`
+                : ""
+        }
+
+            ${q.image ? `<img src="${q.image}" />` : ""}
+
+            <div class="gap-4 grid grid-cols-2">
+              ${options
+            .map((option) =>
+                renderOption(option, q.correctAnswer, index)
+            )
+            .join("")}
+            </div>
+          </div>
+        `;
+    }
+
+    function renderOption(option, correctAnswer, index) {
+        let classes =
+            "border-[1px] border-[#939598] rounded-lg p-4";
+
+        if (!submitted) {
+            classes += " hover:bg-[#0A2240]/20 cursor-pointer";
+        }
+
+        if (answers[index] === option) {
+            classes += " bg-[#0A2240]/40";
+        }
+
+        if (submitted && answers[index] === option) {
+            if (option === correctAnswer) {
+                classes += " bg-green-500";
+            } else {
+                classes += " bg-red-500";
+            }
+        }
+
+        return `
+          <div
+            class="${classes}"
+            onclick="selectAnswer(${index}, '${option.replace(/'/g, "\\'")}')"
+          >
+            <p>${option}</p>
+          </div>
+        `;
+    }
+
+    function selectAnswer(index, option) {
+        if (submitted) return;
+        answers[index] = option;
+        render();
+    }
+
+    function submitQuiz() {
+        submitted = true;
+        score = 0;
+
+        data.questions.forEach((q, i) => {
+            if (answers[i] === q.correctAnswer) score++;
+        });
+
+        render();
+
+        document
+            .getElementById("score")
+            ?.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function resetQuiz() {
+        submitted = false;
+        score = 0;
+        answers = data.questions.map(() => "");
+        render();
+    }
+
+    /* -------------------------
+       Init
+    --------------------------*/
+
+    if (data) {
+        shuffledOptions = data.questions.map((q) =>
+            shuffleArray(q.options)
+        );
+        answers = data.questions.map(() => "");
+    }
+
+    render();
+</script>
+</body>
+</html>

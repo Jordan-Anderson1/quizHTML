@@ -1,0 +1,14317 @@
+import type { quiz } from "./types.ts";
+
+export const updatedQuizQuestions: quiz[] = [
+  {
+    level: "SB1",
+    topic: "input",
+    questions: [
+      {
+        question: "Which is an example of input?",
+        options: [
+          "The program prints something to the screen",
+          "The user types something into the program",
+          "The program makes a sound",
+          "The program ends",
+        ],
+        correctAnswer: "The user types something into the program",
+      },
+      {
+        question: "Why is input used in programming?",
+        options: [
+          "To make the program faster",
+          "To make the program colourful",
+          "So the program can get information from the user",
+          "So the program doesn’t crash",
+        ],
+        correctAnswer: "So the program can get information from the user",
+      },
+      {
+        question: "What will be printed to the screen?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Please enter your name: ")',
+            "name = TextWindow.Read()",
+            'TextWindow.WriteLine("hello " + name)',
+          ],
+        },
+        options: [
+          "It doesn’t print anything",
+          "It prints your name only",
+          "It prints ‘hello’ only",
+          "It asks for your name, then says “hello” and your name",
+        ],
+        correctAnswer: "It asks for your name, then says “hello” and your name",
+      },
+      {
+        question:
+          "Which input device does the program receive information from?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Please enter your name: ")',
+            "name = TextWindow.Read()",
+            'TextWindow.WriteLine("hello " + name)',
+          ],
+        },
+        options: ["keyboard", "mouse", "microphone", "button"],
+        correctAnswer: "keyboard",
+      },
+      {
+        question:
+          "Which input device does the program receive information from?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "GraphicsWindow.MouseUp = onClick",
+            "",
+            "Sub onClick",
+            '  TextWindow.WriteLine("Clicked")',
+            "EndSub",
+          ],
+        },
+        options: ["keyboard", "mouse", "microphone", "button"],
+        correctAnswer: "mouse",
+      },
+      {
+        question:
+          "What will print when you run this code and enter ‘10’ when asked?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Pick a number")',
+            "num = TextWindow.Read()",
+            "TextWindow.WriteLine(num * 2)",
+          ],
+        },
+        options: ["2", "5", "10", "20"],
+        correctAnswer: "20",
+      },
+      {
+        question:
+          "What will print when you run this code and enter ‘5’ when asked?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Pick a number")',
+            "num = TextWindow.Read()",
+            "TextWindow.WriteLine(num * 2)",
+          ],
+        },
+        options: ["2", "5", "10", "12"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What is the issue in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("What is your favourite animal?")',
+            "TextWindow.Read()",
+            'TextWindow.WriteLine("Your favourite animal is " + favAnimal)',
+          ],
+        },
+        options: [
+          "Nothing - it will work perfectly",
+          "We didn’t store the input in a variable",
+          "The program is too short",
+          "I don’t have a favourite animal",
+        ],
+        correctAnswer: "We didn’t store the input in a variable",
+      },
+      {
+        question:
+          'True or false, the input is stored in a variable called "number"?',
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("enter a number: ")',
+            "number = TextWindow.Read()",
+          ],
+        },
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "What is the issue in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("What is your age?")',
+            "age = TextWindow.Read()",
+            'TextWindow.WriteLine("you are " + age)',
+          ],
+        },
+        options: [
+          "Nothing - it will work perfectly",
+          "We didn’t store the input in a variable",
+          "The program is too short",
+          "The program is too long",
+        ],
+        correctAnswer: "Nothing - it will work perfectly",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "loops",
+    questions: [
+      {
+        question: "When do we use a for loop?",
+        options: [
+          "To do something many times",
+          "To print to the console",
+          "To fix errors in the code",
+          "To make the code faster",
+        ],
+        correctAnswer: "To do something many times",
+      },
+      {
+        question: "How many times can we run a loop?",
+        options: ["100", "25", "As many as we like", "Only once"],
+        correctAnswer: "As many as we like",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 5",
+            '   TextWindow.WriteLine("Hello World")',
+            "EndFor",
+          ],
+        },
+        options: ["infinite", "0", "5", "10"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For n = 2 To 20 Step 2",
+            "   TextWindow.WriteLine(n)",
+            "EndFor",
+          ],
+        },
+        options: [
+          "Even numbers from 2 to 20",
+          "Odd numbers from 1-12",
+          "Even numbers from 2-200",
+          "Odd numbers from 1-100",
+        ],
+        correctAnswer: "Even numbers from 2 to 20",
+      },
+      {
+        question: "What numbers will you see on the screen",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["For n = 1 To 5", "   TextWindow.WriteLine(n)", "EndFor"],
+        },
+        options: [
+          "5, 4, 3, 2, 1",
+          "10, 9, 8 ,7, 6, 5, 4, 3, 2, 1",
+          "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+          "1, 2, 3, 4, 5",
+        ],
+        correctAnswer: "1, 2, 3, 4, 5",
+      },
+      {
+        question: "How many stars will you see on the screen",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["For n = 1 To 3", '   TextWindow.WriteLine("***")', "EndFor"],
+        },
+        options: ["3", "6", "9", "12"],
+        correctAnswer: "9",
+      },
+      {
+        question: "What is the error in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["For n = 1 To 10", '  TextWindow.WriteLine("Hello")'],
+        },
+        options: [
+          "n should be i instead",
+          "There is no ‘End For’ to close the loop",
+          "It should say “Hello World instead”",
+          "It doesnt repeat enough times",
+        ],
+        correctAnswer: "There is no ‘End For’ to close the loop",
+      },
+      {
+        question: "What is the error in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For n = 1 To",
+            '  TextWindow.WriteLine("Happy Birthday")',
+            "EndFor",
+          ],
+        },
+        options: [
+          "It’s not my birthday",
+          "we should not use ‘n’",
+          "The loop runs too many times",
+          "We didn’t tell the loop how many times to run",
+        ],
+        correctAnswer: "We didn’t tell the loop how many times to run",
+      },
+      {
+        question: "What will be printed to the screen?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 5 To 1 Step -1",
+            "  TextWindow.WriteLine(i)",
+            "EndFor",
+          ],
+        },
+        options: [
+          "1, 2, 3, 4, 5",
+          "2, 4, 6, 8, 10",
+          "10, 9, 8, 7, 6",
+          "5, 4, 3, 2, 1",
+        ],
+        correctAnswer: "5, 4, 3, 2, 1",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["For i = 1 To 0", '  TextWindow.WriteLine("Oops")', "EndFor"],
+        },
+        options: ["1", "0 - it doesn’t run at all", "10", "Infinite"],
+        correctAnswer: "0 - it doesn’t run at all",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What is the purpose of a decision statement?",
+        options: [
+          "To repeat code",
+          "To store data",
+          "To choose between actions",
+          "To end a program",
+        ],
+        correctAnswer: "To store data",
+      },
+      {
+        question: "Which keyword is used for an alternative condition?",
+        options: ["If", "EndIf", "Then", "Else"],
+        correctAnswer: "Else",
+      },
+      {
+        question: 'When is "High" displayed?',
+        codeSnippet: {
+          language: "vbnet",
+          code: ["If x > 5 Then", '  TextWindow.WriteLine("High")', "EndIf"],
+        },
+        options: [
+          "When x equals 5",
+          "When x is less than 5",
+          "When x is greater than 5",
+          "Always",
+        ],
+        correctAnswer: "When x is greater than 5",
+      },
+      {
+        question: "What prints if x is 7?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x = 10 Then",
+            '  TextWindow.WriteLine("Ten")',
+            "Else",
+            '  TextWindow.WriteLine("Not Ten")',
+            "EndIf",
+          ],
+        },
+        options: ["Not Ten", "Ten", "Nothing", "Error"],
+        correctAnswer: "Not Ten",
+      },
+      {
+        question: "What happens if x is 5?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x < 0 Then",
+            '  TextWindow.WriteLine("Negative")',
+            "EndIf",
+          ],
+        },
+        options: ["Negative prints", "Error", "0 prints", "Nothing prints"],
+        correctAnswer: "Nothing prints",
+      },
+      {
+        question: 'Which condition prints "A wins"?',
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If a >= b Then",
+            '  TextWindow.WriteLine("A wins")',
+            "Else",
+            '  TextWindow.WriteLine("B wins")',
+            "EndIf",
+          ],
+        },
+        options: ["a < b", "a > b", "a = b", "Both B and C"],
+        correctAnswer: "Both B and C",
+      },
+      {
+        question: "What does <> mean?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x <> 3 Then",
+            '  TextWindow.WriteLine("Not Three")',
+            "EndIf",
+          ],
+        },
+        options: ["Not equal to", "Less than", "Greater than", "Equal to"],
+        correctAnswer: "Not equal to",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x = 1 Then",
+            '  TextWindow.WriteLine("One")',
+            "ElseIf x = 2 Then",
+            '  TextWindow.WriteLine("Two")',
+            "Else",
+            '  TextWindow.WriteLine("Other")',
+            "EndIf",
+          ],
+        },
+        options: ["One", "Two", "Other", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: 'When does "Single Digit" print?',
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x > 0 Then",
+            "  If x < 10 Then",
+            '    TextWindow.WriteLine("Single Digit")',
+            "  EndIf",
+            "EndIf",
+          ],
+        },
+        options: ["x > 10", "x = 0", "1 ≤ x ≤ 9", "x < 0"],
+        correctAnswer: "1 ≤ x ≤ 9",
+      },
+      {
+        question: "What happens?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["If True Then", '  TextWindow.WriteLine("Yes")', "EndIf"],
+        },
+        options: ["Nothing", "Error", "Yes prints", "Program stops"],
+        correctAnswer: "Yes prints",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What is the purpose of using randomness in Small Basic?",
+        options: [
+          "To repeat the same result",
+          "To create unpredictable behavior",
+          "To store text",
+          "To define a variable",
+        ],
+        correctAnswer: "To create unpredictable behavior",
+      },
+      {
+        question: "Which function generates a random integer in Small Basic?",
+        options: [
+          "Math.GetRandomNumber()",
+          "Math.Random()",
+          "NextInt()",
+          "GenerateRandom()",
+        ],
+        correctAnswer: "Math.GetRandomNumber()",
+      },
+      {
+        question: "What range of numbers can Math.GetRandomNumber(10) produce?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = Math.GetRandomNumber(10)", "TextWindow.WriteLine(x)"],
+        },
+        options: ["1 to 10", "0 to 10", "0 to 9", "1 to 9"],
+        correctAnswer: "1 to 10",
+      },
+      {
+        question: "What prints if x = 7?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(10)",
+            "If x > 5 Then",
+            '  TextWindow.WriteLine("High")',
+            "Else",
+            '  TextWindow.WriteLine("Low")',
+            "EndIf",
+          ],
+        },
+        options: ["High", "Low", "Nothing", "Error"],
+        correctAnswer: "High",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(5)",
+            "If x = 5 Then",
+            '  TextWindow.WriteLine("Max")',
+            "Else",
+            '  TextWindow.WriteLine("Not Max")',
+            "EndIf",
+          ],
+        },
+        options: ["Max", "Not Max", "Nothing", "Error"],
+        correctAnswer: "Not Max",
+      },
+      {
+        question: "What prints if x is always 1?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = Math.GetRandomNumber(1)", "TextWindow.WriteLine(x)"],
+        },
+        options: ["1", "0", "Nothing", "Error"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(3)",
+            "If x = 1 Then",
+            '  TextWindow.WriteLine("One")',
+            "ElseIf x = 2 Then",
+            '  TextWindow.WriteLine("Two")',
+            "Else",
+            '  TextWindow.WriteLine("Three")',
+            "EndIf",
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: "What prints if x is generated multiple times?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 3",
+            "  x = Math.GetRandomNumber(2)",
+            "  TextWindow.WriteLine(x)",
+            "EndFor",
+          ],
+        },
+        options: ["Three numbers, each 1–2", "Always 1", "Always 2", "Error"],
+        correctAnswer: "Three numbers, each 1–2",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(5)",
+            "If x < 3 Then",
+            '  TextWindow.WriteLine("Small")',
+            "Else",
+            '  TextWindow.WriteLine("Large")',
+            "EndIf",
+          ],
+        },
+        options: ["Small", "Large", "Nothing", "Error"],
+        correctAnswer: "Large",
+      },
+      {
+        question: "What prints if we roll a “dice”?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "dice = Math.GetRandomNumber(6)",
+            "TextWindow.WriteLine(dice)",
+          ],
+        },
+        options: ["1 to 6", "0 to 5", "1 to 5", "0 to 6"],
+        correctAnswer: "1 to 6",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "list",
+    questions: [
+      {
+        question: "What is a list in Small Basic?",
+        options: [
+          "A single number",
+          "A group of items stored together",
+          "A program that runs by itself",
+          "A type of variable",
+        ],
+        correctAnswer: "A group of items stored together",
+      },
+      {
+        question: "What can a list store?",
+        options: [
+          "Only numbers",
+          "Only text",
+          "Numbers, text, or both",
+          "Nothing",
+        ],
+        correctAnswer: "Numbers, text, or both",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Apple"',
+            'myList[2] = "Banana"',
+            "TextWindow.WriteLine(myList[1])",
+          ],
+        },
+        options: ["Apple", "Banana", "myList[1]", "Error"],
+        correctAnswer: "Apple",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Red"',
+            'myList[2] = "Blue"',
+            "TextWindow.WriteLine(myList[2])",
+          ],
+        },
+        options: ["Red", "Blue", "Error", "Nothing"],
+        correctAnswer: "Blue",
+      },
+      {
+        question: "What prints after changing an item?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Cat"',
+            'myList[1] = "Dog"',
+            "TextWindow.WriteLine(myList[1])",
+          ],
+        },
+        options: ["Cat", "Dog", "Error", "Nothing"],
+        correctAnswer: "Dog",
+      },
+      {
+        question: "What prints if we have numbers in a list?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "myList[1] = 5",
+            "myList[2] = 10",
+            "TextWindow.WriteLine(myList[2])",
+          ],
+        },
+        options: ["5", "10", "Error", "Nothing"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints if we loop through a list?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "A"',
+            'myList[2] = "B"',
+            "For i = 1 To 2",
+            '  TextWindow.Write(myList[i] + " ")',
+            "EndFor",
+          ],
+        },
+        options: ["A B", "B A", "A A", "Error"],
+        correctAnswer: "A B",
+      },
+      {
+        question: "What prints if a list item is empty?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['myList[1] = "Hello"', "TextWindow.WriteLine(myList[2])"],
+        },
+        options: ["Nothing", "Hello", "Error", "0"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints if we count list items?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "One"',
+            'myList[2] = "Two"',
+            "TextWindow.WriteLine(Array.GetItemCount(myList))",
+          ],
+        },
+        options: ["2", "1", "0", "Error"],
+        correctAnswer: "2",
+      },
+      {
+        question: "What prints after removing a list item?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Sun"',
+            'myList[2] = "Moon"',
+            'myList[1] = ""',
+            "TextWindow.WriteLine(myList[1])",
+          ],
+        },
+        options: ["Moon", "Sun", "Error", "Nothing"],
+        correctAnswer: "Nothing",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What is the Cartesian plane used for?",
+        options: [
+          "Drawing points using X and Y coordinates",
+          "Counting numbers",
+          "Writing words",
+          "Printing text",
+        ],
+        correctAnswer: "Drawing points using X and Y coordinates",
+      },
+      {
+        question: "Which coordinate comes first?",
+        options: ["Y", "X", "Both at the same time", "None"],
+        correctAnswer: "X",
+      },
+      {
+        question: "What point does this code draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawEllipse(50, 100, 2, 2)"],
+        },
+        options: [
+          "A small point at (50, 100)",
+          "A point at (100, 50)",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A small point at (50, 100)",
+      },
+      {
+        question: "What points are drawn here?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "GraphicsWindow.DrawEllipse(10, 20, 2, 2)",
+            "GraphicsWindow.DrawEllipse(30, 40, 2, 2)",
+          ],
+        },
+        options: [
+          "(10, 20) and (30, 40)",
+          "Only (10, 20)",
+          "Only (30, 40)",
+          "None",
+        ],
+        correctAnswer: "(10, 20) and (30, 40)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawLine(10, 10, 50, 50)"],
+        },
+        options: [
+          "A line from (10,10) to (50,50)",
+          "A point at (10,10)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (10,10) to (50,50)",
+      },
+      {
+        question: "What happens to the second point?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = 20",
+            "y = 30",
+            "GraphicsWindow.DrawEllipse(x, y, 2, 2)",
+            "x = x + 10",
+            "y = y + 5",
+            "GraphicsWindow.DrawEllipse(x, y, 2, 2)",
+          ],
+        },
+        options: [
+          "A point appears at (30, 35)",
+          "First point disappears",
+          "Error",
+          "Nothing",
+        ],
+        correctAnswer: "A point appears at (30, 35)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawRectangle(10, 20, 50, 30)"],
+        },
+        options: [
+          "A rectangle starting at (10,20)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (10,20)",
+      },
+      {
+        question: "How many points does this draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 3",
+            "  GraphicsWindow.DrawEllipse(i*10, i*20, 2, 2)",
+            "EndFor",
+          ],
+        },
+        options: ["3 points", "1 point", "2 points", "None"],
+        correctAnswer: "3 points",
+      },
+      {
+        question: "What does this code draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawEllipse(40, 50, 20, 20)"],
+        },
+        options: ["A circle at (40,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (40,50)",
+      },
+      {
+        question: "Where is the point drawn here?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = 5",
+            "y = 5",
+            "x = x + 15",
+            "y = y + 25",
+            "GraphicsWindow.DrawEllipse(x, y, 2, 2)",
+          ],
+        },
+        options: ["At (20, 30)", "At (5, 5)", "At (0, 0)", "Error"],
+        correctAnswer: "At (20, 30)",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "variables",
+    questions: [
+      {
+        question: "What is a variable?",
+        options: [
+          "A box that stores a value",
+          "A computer screen",
+          "A game",
+          "A button",
+        ],
+        correctAnswer: "A box that stores a value",
+      },
+      {
+        question: "Which line puts the number 5 into a variable named x?",
+        options: ["x = 5", "5 = x", "x == 5", "Print x = 5"],
+        correctAnswer: "x = 5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 3", "TextWindow.WriteLine(x)"],
+        },
+        options: ["3", "x", "0", "Error"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 4", "x = 7", "TextWindow.WriteLine(x)"],
+        },
+        options: ["4", "7", "x", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 2", "y = 3", "TextWindow.WriteLine(x + y)"],
+        },
+        options: ["5", "23", "x + y", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What does this variable store?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['name = "Tom"'],
+        },
+        options: ["A word", "A number", "True or false", "Nothing"],
+        correctAnswer: "A word",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['name = "Tom"', "TextWindow.WriteLine(name)"],
+        },
+        options: ["Tom", "name", '"name"', "Error"],
+        correctAnswer: "Tom",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "apples = 5",
+            "apples = apples + 2",
+            "TextWindow.WriteLine(apples)",
+          ],
+        },
+        options: ["5", "7", "52", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What does this variable store?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['isHappy = "True"'],
+        },
+        options: ["True or false", "A number", "A picture", "A color"],
+        correctAnswer: "True or false",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 10", "x = x - 3", "TextWindow.WriteLine(x)"],
+        },
+        options: ["7", "13", "3", "Error"],
+        correctAnswer: "7",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a “block” in Small Basic?",
+        options: [
+          "A set of commands that do something",
+          "A type of variable",
+          "A picture",
+          "A number",
+        ],
+        correctAnswer: "A set of commands that do something",
+      },
+      {
+        question: "Why do we use blocks in Small Basic?",
+        options: [
+          "To make programming easier and fun",
+          "To stop the computer",
+          "To play music only",
+          "To print numbers automatically",
+        ],
+        correctAnswer: "To make programming easier and fun",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawRectangle(50, 50, 100, 100)"],
+        },
+        options: [
+          "Draws a rectangle",
+          "Draws a circle",
+          "Prints 100",
+          "Changes the background color",
+        ],
+        correctAnswer: "Draws a rectangle",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['TextWindow.WriteLine("Hello")'],
+        },
+        options: [
+          "Shows the word Hello in a text window",
+          "Draws a rectangle",
+          "Draws a circle",
+          "Makes a sound",
+        ],
+        correctAnswer: "Shows the word Hello in a text window",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["Shapes.DrawEllipse(100, 50)"],
+        },
+        options: [
+          "Draws an ellipse",
+          "Draws a rectangle",
+          "Prints a number",
+          "Prints text",
+        ],
+        correctAnswer: "Draws an ellipse",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['GraphicsWindow.DrawText(50, 50, "Hi!")'],
+        },
+        options: [
+          "Prints Hi! on the graphics window",
+          "Draws a rectangle",
+          "Draws a circle",
+          "Makes a sound",
+        ],
+        correctAnswer: "Prints Hi! on the graphics window",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["Turtle.Move(100)"],
+        },
+        options: [
+          "Moves the turtle forward",
+          "Draws a rectangle",
+          "Prints text",
+          "Makes a sound",
+        ],
+        correctAnswer: "Moves the turtle forward",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawLine(10, 10, 100, 100)"],
+        },
+        options: [
+          "Draws a line from (10,10) to (100,100)",
+          "Draws a rectangle",
+          "Prints a number",
+          "Prints text",
+        ],
+        correctAnswer: "Draws a line from (10,10) to (100,100)",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["TextWindow.WriteLine(123)"],
+        },
+        options: [
+          "Prints the number 123",
+          "Draws a circle",
+          "Draws a rectangle",
+          "Prints text “123” only",
+        ],
+        correctAnswer: "Prints the number 123",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["Shapes.Move(1, 100, 200)"],
+        },
+        options: [
+          "Moves shape number 1 to (100,200)",
+          "Draws a rectangle",
+          "Draws a line",
+          "Prints text",
+        ],
+        correctAnswer: "Moves shape number 1 to (100,200)",
+      },
+    ],
+  },
+  {
+    level: "SB1",
+    topic: "debug",
+    questions: [
+      {
+        question: "What does debugging mean?",
+        options: [
+          "Finding and fixing mistakes in your program",
+          "Drawing shapes",
+          "Playing music",
+          "Printing numbers",
+        ],
+        correctAnswer: "Finding and fixing mistakes in your program",
+      },
+      {
+        question: "Why is debugging important?",
+        options: [
+          "To make sure the program works correctly",
+          "To add colors",
+          "To move shapes",
+          "To stop the computer",
+        ],
+        correctAnswer: "To make sure the program works correctly",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['TextWindow.WriteLine("Hello)'],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "Wrong command name",
+          "TextWindow cannot print",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawRectagle(50, 50, 100, 100)"],
+        },
+        options: [
+          "Misspelled DrawRectangle",
+          "Numbers are too big",
+          "Rectangle cannot be drawn",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Misspelled DrawRectangle",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 5", "TextWindow.WriteLine(x + y)"],
+        },
+        options: [
+          "Variable y is not defined",
+          "Variable x is wrong",
+          "TextWindow cannot print numbers",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Variable y is not defined",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["Turtle.Move(100"],
+        },
+        options: [
+          "Missing closing parenthesis",
+          "Move cannot use numbers",
+          "Turtle cannot move",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing closing parenthesis",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['TextWindow.WriteLine("Hi!)'],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "Wrong command",
+          "Cannot print text",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawLine(50, 50, 100)"],
+        },
+        options: [
+          "Missing fourth number for y2",
+          "DrawLine cannot use numbers",
+          "Line cannot be drawn",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing fourth number for y2",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["Shapes.AddRectanlge(50, 50)"],
+        },
+        options: [
+          "Misspelled AddRectangle",
+          "Shapes cannot create rectangles",
+          "Numbers are too small",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Misspelled AddRectangle",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['x = "5', "TextWindow.WriteLine(x)"],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "Variable cannot be printed",
+          "TextWindow cannot print strings",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "input",
+    questions: [
+      {
+        question: "Which is not an input device?",
+        options: ["Mouse", "Microphone", "Keyboard", "Headphones"],
+        correctAnswer: "Headphones",
+      },
+      {
+        question: "Which device is capable of both input and output?",
+        options: [
+          "A mouse",
+          "A keyboard",
+          "Headphones with a built-in microphone",
+          "Speakers",
+        ],
+        correctAnswer: "Headphones with a built-in microphone",
+      },
+      {
+        question: "What will be printed to the screen?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Please enter your favourite food: ")',
+            "food = TextWindow.Read()",
+            'TextWindow.WriteLine("Your favourite food is " + food)',
+          ],
+        },
+        options: [
+          "It doesn’t print anything",
+          "It prints your name",
+          "It prints ‘hello’",
+          "It asks for your name, then says “your favourite food is” and your favourite food",
+        ],
+        correctAnswer:
+          "It asks for your name, then says “your favourite food is” and your favourite food",
+      },
+      {
+        question:
+          "Which input device does the program receive information from?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Which school do you go to: ")',
+            "school = TextWindow.Read()",
+            'TextWindow.WriteLine("you go to " + school)',
+          ],
+        },
+        options: ["keyboard", "mouse", "microphone", "button"],
+        correctAnswer: "keyboard",
+      },
+      {
+        question:
+          "Which input device does the program receive information from?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "GraphicsWindow.MouseUp = onClick",
+            "",
+            "Sub onClick",
+            '  TextWindow.WriteLine("Input received")',
+            "EndSub",
+          ],
+        },
+        options: ["keyboard", "mouse", "microphone", "button"],
+        correctAnswer: "mouse",
+      },
+      {
+        question: "What will print when you enter ‘2’?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Pick a number")',
+            "num = TextWindow.Read()",
+            "TextWindow.WriteLine(num + 2)",
+          ],
+        },
+        options: ["2", "4", "8", "20"],
+        correctAnswer: "20",
+      },
+      {
+        question: "What will print when you enter ‘100’?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("Pick a number")',
+            "num = TextWindow.Read()",
+            "TextWindow.WriteLine(num + 2)",
+          ],
+        },
+        options: ["20", "50", "100", "120"],
+        correctAnswer: "120",
+      },
+      {
+        question: "What is the issue in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("What is your favourite sport?")',
+            "TextWindow.Read()",
+            'TextWindow.WriteLine("Your favourite sport is " + favSport)',
+          ],
+        },
+        options: [
+          "Nothing - it will work perfectly",
+          "We didn’t store the input in a variable",
+          "The program is too short",
+          "I don’t have a favourite animal",
+        ],
+        correctAnswer: "We didn’t store the input in a variable",
+      },
+      {
+        question:
+          "True or false, the input is stored in a variable called favSport?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("What is your favourite sport?")',
+            "favSport = TextWindow.Read()",
+            'TextWindow.WriteLine("Your favourite sport is " + favSport)',
+          ],
+        },
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "What is the issue in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.WriteLine("What is your favourite colour?")',
+            "favColour = TextWindow.Read()",
+            'TextWindow.WriteLine("your favourite colour is " + favColour)',
+          ],
+        },
+        options: [
+          "Nothing - it will work perfectly",
+          "We didn’t store the input in a variable",
+          "The program is too short",
+          "The program is too long",
+        ],
+        correctAnswer: "Nothing - it will work perfectly",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "loops",
+    questions: [
+      {
+        question:
+          "What should you use if you want your code to repeat 10 times?",
+        options: ["A folder", "A character", "A battery", "A loop"],
+        correctAnswer: "A loop",
+      },
+      {
+        question: "What does “repeat forever” mean?",
+        options: [
+          "Repeat until bed time",
+          "Repeat until the computer restarts",
+          "Repeat without stopping",
+          "Repeat twice",
+        ],
+        correctAnswer: "Repeat without stopping",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 0",
+            '  TextWindow.WriteLine("HAPPY BIRTHDAY")',
+            "EndFor",
+          ],
+        },
+        options: ["infinite", "0", "5", "10"],
+        correctAnswer: "0",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For n = 0 To 20 Step 5",
+            "  TextWindow.WriteLine(n)",
+            "EndFor",
+          ],
+        },
+        options: [
+          "Even numbers from 2 to 20",
+          "Odd numbers from 1 to 20",
+          "0, 5, 10, 15, 20",
+          "20, 15, 10, 5, 0",
+        ],
+        correctAnswer: "0, 5, 10, 15, 20",
+      },
+      {
+        question: "What will appear on the screen?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["For i = 1 To 5", '  TextWindow.Write("Hi ")', "EndFor"],
+        },
+        options: ["“Hi” once", "“Hi” five times", "“HiHiHi”", "Nothing prints"],
+        correctAnswer: "“Hi” five times",
+      },
+      {
+        question: "What shape does the turtle draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 4",
+            "  Turtle.TurnRight()",
+            "  Turtle.Move(50)",
+            "EndFor",
+          ],
+        },
+        options: ["Triangle", "Square", "Circle", "Straight Line"],
+        correctAnswer: "Square",
+      },
+      {
+        question: "What does this loop do?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 10 To 1 Step -1",
+            "  TextWindow.WriteLine(i)",
+            "EndFor",
+          ],
+        },
+        options: [
+          "Counts up",
+          "Counts down",
+          "Prints 10 forever",
+          "Stops immediately",
+        ],
+        correctAnswer: "Counts down",
+      },
+      {
+        question: "What happens to the turtle?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["For i = 1 To 6", "  Turtle.Move(30)", "EndFor"],
+        },
+        options: [
+          "Moves 30 steps once",
+          "Moves 30 steps six times",
+          "Turns but doesn't move",
+          "Stops moving",
+        ],
+        correctAnswer: "Moves 30 steps six times",
+      },
+      {
+        question: "True or false, this code uses a loop:",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 500",
+            '  TextWindow.WriteLine("Looping!")',
+            "EndFor",
+          ],
+        },
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "True or false, this code uses a loop:",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'TextWindow.Write("Enter your name")',
+            "name = TextWindow.Read()",
+            "TextWindow.WriteLine(name)",
+            "TextWindow.WriteLine(name)",
+            "TextWindow.WriteLine(name)",
+          ],
+        },
+        options: ["True", "False"],
+        correctAnswer: "False",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What does an If statement evaluate?",
+        options: ["A variable", "A loop", "A condition", "An output"],
+        correctAnswer: "A condition",
+      },
+      {
+        question: "Which keyword ends an If block?",
+        options: ["Stop", "End", "EndIf", "Finish"],
+        correctAnswer: "EndIf",
+      },
+      {
+        question: 'When does "Pass" print?',
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If score >= 50 Then",
+            '  TextWindow.WriteLine("Pass")',
+            "EndIf",
+          ],
+        },
+        options: ["score < 50", "score = 50", "score > 50", "score ≥ 50"],
+        correctAnswer: "score ≥ 50",
+      },
+      {
+        question: "What prints if x = 5?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x = 0 Then",
+            '  TextWindow.WriteLine("Zero")',
+            "Else",
+            '  TextWindow.WriteLine("Non-Zero")',
+            "EndIf",
+          ],
+        },
+        options: ["Zero", "Non-Zero", "Error", "Nothing"],
+        correctAnswer: "Non-Zero",
+      },
+      {
+        question: 'Which value prints "Low"?',
+        codeSnippet: {
+          language: "vbnet",
+          code: ["If x <= 10 Then", '  TextWindow.WriteLine("Low")', "EndIf"],
+        },
+        options: ["11", "15", "10", "20"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints if a = b?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If a > b Then",
+            '  TextWindow.WriteLine("A")',
+            "ElseIf b > a Then",
+            '  TextWindow.WriteLine("B")',
+            "EndIf",
+          ],
+        },
+        options: ["A", "B", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints if x = 0?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x <> 0 Then",
+            '  TextWindow.WriteLine("Non-Zero")',
+            "EndIf",
+          ],
+        },
+        options: ["Non-Zero", "Zero", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints if x = 5?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x > 5 Then",
+            '  TextWindow.WriteLine("Big")',
+            "Else",
+            '  TextWindow.WriteLine("Small")',
+            "EndIf",
+          ],
+        },
+        options: ["Big", "Small", "Error", "Nothing"],
+        correctAnswer: "Small",
+      },
+      {
+        question: "What prints if x = 0?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "If x > 0 Then",
+            '  TextWindow.WriteLine("Positive")',
+            "ElseIf x < 0 Then",
+            '  TextWindow.WriteLine("Negative")',
+            "EndIf",
+          ],
+        },
+        options: ["Positive", "Negative", "Zero", "Nothing"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What happens when this code runs?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["If False Then", '  TextWindow.WriteLine("Hello")', "EndIf"],
+        },
+        options: ["Hello prints", "Error", "Nothing prints", "Program stops"],
+        correctAnswer: "Nothing prints",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What does a “random number” do?",
+        options: [
+          "Always gives the same number",
+          "Gives a number we can’t guess before it comes up",
+          "Adds numbers together",
+          "Makes text appear",
+        ],
+        correctAnswer: "Gives a number we can’t guess before it comes up",
+      },
+      {
+        question: "What happens if we ask for a random number two times?",
+        options: [
+          "We get the same number both times",
+          "We get two numbers that can be different",
+          "The number disappears",
+          "The computer crashes",
+        ],
+        correctAnswer: "We get two numbers that can be different",
+      },
+      {
+        question: "What prints if x = 1?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(2)",
+            "If x = 1 Then",
+            '  TextWindow.WriteLine("Heads")',
+            "Else",
+            '  TextWindow.WriteLine("Tails")',
+            "EndIf",
+          ],
+        },
+        options: ["Heads", "Tails", "Error", "Nothing"],
+        correctAnswer: "Heads",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(5)",
+            "If x > 3 Then",
+            '  TextWindow.WriteLine("High")',
+            "Else",
+            '  TextWindow.WriteLine("Low")',
+            "EndIf",
+          ],
+        },
+        options: ["High", "Low", "Nothing", "Error"],
+        correctAnswer: "Low",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(3)",
+            "If x = 1 Then",
+            '  TextWindow.WriteLine("One")',
+            "ElseIf x = 2 Then",
+            '  TextWindow.WriteLine("Two")',
+            "Else",
+            '  TextWindow.WriteLine("Three")',
+            "EndIf",
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: "What prints if x is always 5?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = Math.GetRandomNumber(5)", "TextWindow.WriteLine(x)"],
+        },
+        options: ["1", "5", "0", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints if x is used in a loop?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 4",
+            "  x = Math.GetRandomNumber(2)",
+            '  TextWindow.Write(x + " ")',
+            "EndFor",
+          ],
+        },
+        options: ["Four numbers, each 1–2", "Always 1", "Always 2", "Error"],
+        correctAnswer: "Four numbers, each 1–2",
+      },
+      {
+        question: "What prints if x = 1?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(3)",
+            "If x <> 2 Then",
+            '  TextWindow.WriteLine("Not Two")',
+            "EndIf",
+          ],
+        },
+        options: ["Not Two", "Two", "Nothing", "Error"],
+        correctAnswer: "Not Two",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(6)",
+            "If x >= 4 Then",
+            '  TextWindow.WriteLine("Big")',
+            "Else",
+            '  TextWindow.WriteLine("Small")',
+            "EndIf",
+          ],
+        },
+        options: ["Big", "Small", "Nothing", "Error"],
+        correctAnswer: "Big",
+      },
+      {
+        question: "What prints if x = 6?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = Math.GetRandomNumber(6)",
+            'TextWindow.WriteLine("Roll: " + x)',
+          ],
+        },
+        options: ["Roll: 6", "Roll: 0–5", "Roll: 1–5", "Roll: 0–6"],
+        correctAnswer: "Roll: 6",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "list",
+    questions: [
+      {
+        question: "What can you do with a list?",
+        options: [
+          "Store a group of items",
+          "Store only one number",
+          "Make the computer talk",
+          "Draw pictures",
+        ],
+        correctAnswer: "Store a group of items",
+      },
+      {
+        question: "How do you add an item to a list?",
+        options: [
+          "Assign a value to a new index",
+          "Use TextWindow.WriteLine",
+          "Use For loop",
+          "Nothing",
+        ],
+        correctAnswer: "Assign a value to a new index",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Dog"',
+            'myList[2] = "Cat"',
+            "TextWindow.WriteLine(myList[2])",
+          ],
+        },
+        options: ["Dog", "Cat", "myList[2]", "Error"],
+        correctAnswer: "Cat",
+      },
+      {
+        question: "What prints if we change an item?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Red"',
+            'myList[1] = "Blue"',
+            "TextWindow.WriteLine(myList[1])",
+          ],
+        },
+        options: ["Red", "Blue", "Error", "Nothing"],
+        correctAnswer: "Blue",
+      },
+      {
+        question: "What prints if we loop through a list of numbers?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "myList[1] = 1",
+            "myList[2] = 2",
+            "myList[3] = 3",
+            "For i = 1 To 3",
+            '  TextWindow.Write(myList[i] + " ")',
+            "EndFor",
+          ],
+        },
+        options: ["1 2 3", "3 2 1", "1 1 1", "Error"],
+        correctAnswer: "1 2 3",
+      },
+      {
+        question: "What prints if a list item is missing?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['myList[1] = "Hello"', "TextWindow.WriteLine(myList[3])"],
+        },
+        options: ["Nothing", "Hello", "Error", "0"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints after assigning a number as text?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "myList[1] = 10",
+            'myList[2] = "20"',
+            "TextWindow.WriteLine(myList[2])",
+          ],
+        },
+        options: ["10", "20", "myList[2]", "Error"],
+        correctAnswer: "20",
+      },
+      {
+        question: "What prints if we overwrite a list item?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Apple"',
+            'myList[1] = "Orange"',
+            "TextWindow.WriteLine(myList[1])",
+          ],
+        },
+        options: ["Apple", "Orange", "Error", "Nothing"],
+        correctAnswer: "Orange",
+      },
+      {
+        question: "What prints if we count list items?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "One"',
+            'myList[2] = "Two"',
+            'myList[3] = "Three"',
+            "TextWindow.WriteLine(Array.GetItemCount(myList))",
+          ],
+        },
+        options: ["3", "2", "1", "0"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints if we “remove” a list item by clearing it?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'myList[1] = "Sun"',
+            'myList[2] = "Moon"',
+            'myList[1] = ""',
+            "TextWindow.WriteLine(myList[1])",
+          ],
+        },
+        options: ["Nothing", "Sun", "Moon", "Error"],
+        correctAnswer: "Nothing",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What is the X-axis?",
+        options: [
+          "The horizontal line on the plane",
+          "The vertical line on the plane",
+          "A line that goes diagonally",
+          "A point",
+        ],
+        correctAnswer: "The horizontal line on the plane",
+      },
+      {
+        question: "What is the Y-axis?",
+        options: [
+          "The vertical line on the plane",
+          "The horizontal line on the plane",
+          "A diagonal line",
+          "Nothing",
+        ],
+        correctAnswer: "The vertical line on the plane",
+      },
+      {
+        question: "What point does this code draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawEllipse(60, 40, 2, 2)"],
+        },
+        options: ["(60, 40)", "(40, 60)", "A line", "Nothing"],
+        correctAnswer: "(60, 40)",
+      },
+      {
+        question: "What points are drawn here?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "GraphicsWindow.DrawEllipse(15, 25, 2, 2)",
+            "GraphicsWindow.DrawEllipse(45, 35, 2, 2)",
+          ],
+        },
+        options: [
+          "(15, 25) and (45, 35)",
+          "Only (15, 25)",
+          "Only (45, 35)",
+          "None",
+        ],
+        correctAnswer: "(15, 25) and (45, 35)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawLine(0, 0, 30, 60)"],
+        },
+        options: [
+          "A line from (0,0) to (30,60)",
+          "A point at (0,0)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (0,0) to (30,60)",
+      },
+      {
+        question: "What happens to the second point?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = 10",
+            "y = 10",
+            "GraphicsWindow.DrawEllipse(x, y, 2, 2)",
+            "x = x + 20",
+            "y = y + 15",
+            "GraphicsWindow.DrawEllipse(x, y, 2, 2)",
+          ],
+        },
+        options: [
+          "A point appears at (30, 25)",
+          "First point disappears",
+          "Error",
+          "Nothing",
+        ],
+        correctAnswer: "A point appears at (30, 25)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawRectangle(20, 30, 40, 20)"],
+        },
+        options: [
+          "A rectangle starting at (20,30)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (20,30)",
+      },
+      {
+        question: "How many points does this draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "For i = 1 To 4",
+            "  GraphicsWindow.DrawEllipse(i*5, i*10, 2, 2)",
+            "EndFor",
+          ],
+        },
+        options: ["4 points", "1 point", "3 points", "None"],
+        correctAnswer: "4 points",
+      },
+      {
+        question: "What does this code draw?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawEllipse(70, 50, 10, 10)"],
+        },
+        options: ["A circle at (70,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (70,50)",
+      },
+      {
+        question: "Where is the point drawn here?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "x = 0",
+            "y = 0",
+            "x = x + 25",
+            "y = y + 30",
+            "GraphicsWindow.DrawEllipse(x, y, 2, 2)",
+          ],
+        },
+        options: ["At (25, 30)", "At (0, 0)", "At (30, 25)", "Error"],
+        correctAnswer: "At (25, 30)",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "variables",
+    questions: [
+      {
+        question: "What is a variable used for?",
+        options: [
+          "To store a value",
+          "To draw pictures",
+          "To turn off the computer",
+          "To play music",
+        ],
+        correctAnswer: "To store a value",
+      },
+      {
+        question: "Which symbol is used to put a value into a variable?",
+        options: ["=", "+", "==", ":"],
+        correctAnswer: "=",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 5", "TextWindow.WriteLine(x)"],
+        },
+        options: ["5", "x", "0", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 2", "y = 4", "TextWindow.WriteLine(y)"],
+        },
+        options: ["2", "4", "x", "Error"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 3", "x = x + 2", "TextWindow.WriteLine(x)"],
+        },
+        options: ["3", "5", "32", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["a = 1", "b = 2", "TextWindow.WriteLine(a + b)"],
+        },
+        options: ["3", "12", "a + b", "Error"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['name = "Alex"', "TextWindow.WriteLine(name)"],
+        },
+        options: ["Alex", "name", '"name"', "Error"],
+        correctAnswer: "Alex",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 10", "x = x - 4", "TextWindow.WriteLine(x)"],
+        },
+        options: ["6", "14", "4", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 3", "y = x", "x = 8", "TextWindow.WriteLine(y)"],
+        },
+        options: ["3", "8", "x", "Error"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "apples = 2",
+            "apples = apples + apples",
+            "TextWindow.WriteLine(apples)",
+          ],
+        },
+        options: ["2", "4", "22", "Error"],
+        correctAnswer: "4",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a Sub in Small Basic?",
+        options: [
+          "A group of commands you can run together",
+          "A type of variable",
+          "A shape",
+          "A number",
+        ],
+        correctAnswer: "A group of commands you can run together",
+      },
+      {
+        question: "Why do we use Sub in Small Basic?",
+        options: [
+          "To organize code and avoid repeating commands",
+          "To print text only",
+          "To draw shapes only",
+          "To stop the computer",
+        ],
+        correctAnswer: "To organize code and avoid repeating commands",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'Sub SayHello","  TextWindow.WriteLine("Hello!")","EndSub", "","SayHello()',
+          ],
+        },
+        options: ["Hello!", "SayHello", "TextWindow", "Error"],
+        correctAnswer: "Hello!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "Sub AddNumbers",
+            "  x = 3",
+            "  y = 4",
+            "  TextWindow.WriteLine(x + y)",
+            "EndSub",
+            "",
+            "AddNumbers()",
+          ],
+        },
+        options: ["7", "34", "x + y", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What happens when we run this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "Sub DrawSquare",
+            "  GraphicsWindow.DrawRectangle(50, 50, 100, 100)",
+            "EndSub",
+            "",
+            "DrawSquare()",
+          ],
+        },
+        options: [
+          "A square is drawn",
+          "A circle is drawn",
+          "Text is printed",
+          "Nothing happens",
+        ],
+        correctAnswer: "A square is drawn",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "Sub MoveTurtle",
+            "  Turtle.Move(100)",
+            "EndSub",
+            "",
+            "MoveTurtle()",
+          ],
+        },
+        options: [
+          "The turtle moves forward",
+          "The turtle turns",
+          "A rectangle is drawn",
+          "Error",
+        ],
+        correctAnswer: "The turtle moves forward",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'Sub Greet`,`  TextWindow.WriteLine("Hi!")`,`EndSub`,"","Greet()",`Greet()',
+          ],
+        },
+        options: ["Hi!\n\nHi!", "Hi!", "TextWindow", "Error"],
+        correctAnswer: "Hi!\n\nHi!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "Sub DrawLine",
+            "  GraphicsWindow.DrawLine(10, 10, 100, 100)",
+            "EndSub",
+            "",
+            "DrawLine()",
+          ],
+        },
+        options: [
+          "A line is drawn",
+          "A rectangle is drawn",
+          "A circle is drawn",
+          "Prints numbers",
+        ],
+        correctAnswer: "A line is drawn",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            "Sub AddFive",
+            "  x = 5",
+            "  x = x + 5",
+            "  TextWindow.WriteLine(x)",
+            "EndSub",
+            "",
+            "AddFive()",
+          ],
+        },
+        options: ["10", "5", "55", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "vbnet",
+          code: [
+            'Sub ShowMessage","  TextWindow.WriteLine("Welcome!")","EndSub","","ShowMessage()","ShowMessage()","ShowMessage()',
+          ],
+        },
+        options: [
+          "Welcome!\n\nWelcome!\n\nWelcome!",
+          "Welcome!",
+          "TextWindow",
+          "Error",
+        ],
+        correctAnswer: "Welcome!\n\nWelcome!\n\nWelcome!",
+      },
+    ],
+  },
+  {
+    level: "SB2",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is a syntax error?",
+        options: [
+          "A mistake in how you write the code",
+          "A mistake in the colors",
+          "A mistake in the turtle moves",
+          "A number mistake",
+        ],
+        correctAnswer: "A mistake in how you write the code",
+      },
+      {
+        question: "What is a runtime error?",
+        options: [
+          "A mistake that happens when the program is running",
+          "A spelling mistake",
+          "A drawing mistake",
+          "A music mistake",
+        ],
+        correctAnswer: "A mistake that happens when the program is running",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawRectangle(50 50, 100, 100)"],
+        },
+        options: [
+          "Missing comma between first two numbers",
+          "Numbers are too big",
+          "DrawRectangle cannot use numbers",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing comma between first two numbers",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['TextWindow.Writeline("Hello")'],
+        },
+        options: [
+          "Writeline is misspelled (should be WriteLine)",
+          "TextWindow cannot print",
+          "Quotation marks are wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Writeline is misspelled (should be WriteLine)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["x = 10", "y = 0", "TextWindow.WriteLine(x / y)"],
+        },
+        options: [
+          "Division by zero",
+          "Variable x is wrong",
+          "TextWindow cannot print numbers",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Division by zero",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["Turtle.Move(50", "Turtle.Turn(90)"],
+        },
+        options: [
+          "Missing closing parenthesis for Move",
+          "Turn cannot use numbers",
+          "Turtle cannot move",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing closing parenthesis for Move",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["Shapes.AddCircle(50)", "Shapes.Move(1 100, 100)"],
+        },
+        options: [
+          "Missing comma in Shapes.Move",
+          "Circle cannot be added",
+          "Move cannot use numbers",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing comma in Shapes.Move",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["TextWindow.WriteLine(Hello)"],
+        },
+        options: [
+          "Hello should be in quotes",
+          "TextWindow cannot print numbers",
+          "Hello is a variable only",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Hello should be in quotes",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ["GraphicsWindow.DrawLine(10, 10, 100)"],
+        },
+        options: [
+          "Missing fourth number for y2",
+          "DrawLine cannot use numbers",
+          "Line cannot be drawn",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing fourth number for y2",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "vbnet",
+          code: ['x = "5","TextWindow.WriteLine(x)'],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "Variable cannot be printed",
+          "TextWindow cannot print strings",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "input",
+    questions: [
+      {
+        question:
+          "Which of the following is an example of input in a video game?",
+        options: [
+          "The score shown on the screen",
+          "Moving the character with the controller",
+          "Music playing in the background",
+          "The character’s health shown on the screen",
+        ],
+        correctAnswer: "Moving the character with the controller",
+      },
+      {
+        question: "What is the main purpose of input in a program?",
+        options: [
+          "To receive information",
+          "To display information",
+          "To save information",
+          "To delete information",
+        ],
+        correctAnswer: "To receive information",
+      },
+      {
+        question: "What will this program do?",
+        codeSnippet: {
+          language: "python",
+          code: ['username = input("Enter username: ")', 'print("Welcome")'],
+        },
+        options: [
+          "It prints the username",
+          "It prints “Welcome” after asking for input",
+          "It prints nothing",
+          "It causes an error",
+        ],
+        correctAnswer: "It prints “Welcome” after asking for input",
+      },
+      {
+        question: "Which input device is mainly used here?",
+        codeSnippet: {
+          language: "python",
+          code: ['colour = input("What is your favourite colour? ")'],
+        },
+        options: ["Mouse", "Keyboard", "Microphone", "Screen"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: "What will be printed if the user types Alex?",
+        codeSnippet: {
+          language: "python",
+          code: ['name = input("Enter name: ")', 'print("Hi " + name)'],
+        },
+        options: ["Hi", "Alex", "Hi Alex", "Enter name"],
+        correctAnswer: "Hi Alex",
+      },
+      {
+        question: "What is missing in this program?",
+        codeSnippet: {
+          language: "python",
+          code: ['input("What is your age?")', "print(age)"],
+        },
+        options: [
+          "A loop",
+          "A print statement",
+          "Saving the input into a variable",
+          "A number",
+        ],
+        correctAnswer: "Saving the input into a variable",
+      },
+      {
+        question:
+          "True or false: input() always waits for the user to type something.",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "What type of information does input() return?",
+        options: ["A number", "Text (string)", "A boolean", "A list"],
+        correctAnswer: "Text (string)",
+      },
+      {
+        question: "What will happen when this code runs?",
+        codeSnippet: {
+          language: "python",
+          code: ["food = input()", "print(food)"],
+        },
+        options: [
+          "The program prints nothing",
+          "The program prints whatever the user types",
+          "The program crashes",
+          "The program prints input",
+        ],
+        correctAnswer: "The program prints whatever the user types",
+      },
+      {
+        question:
+          "Which line is responsible for receiving input from the user?",
+        codeSnippet: {
+          language: "python",
+          code: ['city = input("Enter city: ")', "print(city)"],
+        },
+        options: [
+          "print(city)",
+          'city = input("Enter city: ")',
+          'input("Enter city: ")',
+          "None of the above",
+        ],
+        correctAnswer: 'city = input("Enter city: ")',
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "loops",
+    questions: [
+      {
+        question: "What is the main purpose of a loop?",
+        options: [
+          "To repeat code",
+          "To store input",
+          "To display images",
+          "To stop a program",
+        ],
+        correctAnswer: "To repeat code",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(4):", '    print("Python")'],
+        },
+        options: ["3", "4", "5", "Infinite"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(1, 4):", "    print(i)"],
+        },
+        options: ["0, 1, 2", "1, 2, 3", "1, 2, 3, 4", "Nothing"],
+        correctAnswer: "1, 2, 3",
+      },
+      {
+        question: "Which value does i start at in this loop?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(5):", "    print(i)"],
+        },
+        options: ["0", "1", "5", "10"],
+        correctAnswer: "0",
+      },
+      {
+        question: "What does this loop do?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(3):", '    print("Hi")'],
+        },
+        options: [
+          "Prints “Hi” once",
+          "Prints “Hi” three times",
+          "Prints numbers",
+          "Causes an error",
+        ],
+        correctAnswer: "Prints “Hi” three times",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(1, 1):", '    print("Hello")'],
+        },
+        options: ["0", "1", "10", "Infinite"],
+        correctAnswer: "0",
+      },
+      {
+        question: "What is wrong with this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(5)", '    print("Loop")'],
+        },
+        options: [
+          "Missing brackets",
+          "Missing colon :",
+          "Incorrect indentation",
+          "range cannot be used",
+        ],
+        correctAnswer: "Missing colon :",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(2, 10, 2):", "    print(i)"],
+        },
+        options: [
+          "Odd numbers",
+          "Even numbers",
+          "Numbers from 1 to 10",
+          "Nothing",
+        ],
+        correctAnswer: "Even numbers",
+      },
+      {
+        question: "What happens when this loop runs?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(0):", '    print("Test")'],
+        },
+        options: [
+          "It runs once",
+          "It runs forever",
+          "It does not run",
+          "It causes an error",
+        ],
+        correctAnswer: "It does not run",
+      },
+      {
+        question:
+          "True or false: A loop can repeat code without writing it multiple times.",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What keyword starts a decision statement in Python?",
+        options: ["if", "when", "decide", "select"],
+        correctAnswer: "if",
+      },
+      {
+        question: "Which keyword handles the false case?",
+        options: ["else", "elseif", "otherwise", "endif"],
+        correctAnswer: "else",
+      },
+      {
+        question: 'When does "High" print?',
+        codeSnippet: {
+          language: "python",
+          code: ["if x > 10:", '    print("High")'],
+        },
+        options: ["x = 10", "x < 10", "x > 10", "Always"],
+        correctAnswer: "x > 10",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "if x == 5:",
+            '    print("Five")',
+            "else:",
+            '    print("Not Five")',
+          ],
+        },
+        options: ["Five", "Not Five", "Nothing", "Error"],
+        correctAnswer: "Not Five",
+      },
+      {
+        question: "What prints if x = 1?",
+        codeSnippet: {
+          language: "python",
+          code: ["if x <= 0:", '    print("Non-positive")'],
+        },
+        options: ["Non-positive", "Positive", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: 'When does "A" print?',
+        codeSnippet: {
+          language: "python",
+          code: ["if a >= b:", '    print("A")', "else:", '    print("B")'],
+        },
+        options: ["a < b", "a > b", "a = b", "a ≥ b"],
+        correctAnswer: "a ≥ b",
+      },
+      {
+        question: "What does != mean?",
+        codeSnippet: {
+          language: "python",
+          code: ["if x != 0:", '    print("Non-zero")'],
+        },
+        options: ["Equal", "Not equal", "Less than", "Greater than"],
+        correctAnswer: "Not equal",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "if x == 1:",
+            '    print("One")',
+            "elif x == 2:",
+            '    print("Two")',
+            "else:",
+            '    print("Other")',
+          ],
+        },
+        options: ["One", "Two", "Other", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: 'When does "Small Positive" print?',
+        codeSnippet: {
+          language: "python",
+          code: [
+            "if x > 0:",
+            "    if x < 10:",
+            '        print("Small Positive")',
+          ],
+        },
+        options: ["x ≥ 10", "x ≤ 0", "1–9", "Always"],
+        correctAnswer: "1–9",
+      },
+      {
+        question: "What happens when this code runs?",
+        codeSnippet: {
+          language: "python",
+          code: ["if True:", '    print("Yes")'],
+        },
+        options: ["Nothing", "Error", "Yes prints", "Program stops"],
+        correctAnswer: "Yes prints",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What does a random number do?",
+        options: [
+          "Always gives the same number",
+          "Gives a number we can’t guess before it comes up",
+          "Adds numbers together",
+          "Prints text",
+        ],
+        correctAnswer: "Gives a number we can’t guess before it comes up",
+      },
+      {
+        question: "Which Python module is used to create random numbers?",
+        options: ["math", "random", "time", "sys"],
+        correctAnswer: "random",
+      },
+      {
+        question:
+          "What is the range of numbers produced by random.randint(1, 6)?",
+        codeSnippet: {
+          language: "python",
+          code: ["import random", "x = random.randint(1,6)", "print(x)"],
+        },
+        options: ["1 to 6", "0 to 5", "1 to 5", "0 to 6"],
+        correctAnswer: "1 to 6",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,10)",
+            "if x > 5:",
+            '    print("Big")',
+            "else:",
+            '    print("Small")',
+          ],
+        },
+        options: ["Big", "Small", "Nothing", "Error"],
+        correctAnswer: "Small",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,5)",
+            "if x == 5:",
+            '    print("Max")',
+            "else:",
+            '    print("Not Max")',
+          ],
+        },
+        options: ["Max", "Not Max", "Nothing", "Error"],
+        correctAnswer: "Not Max",
+      },
+      {
+        question: "What prints if x is always 1?",
+        codeSnippet: {
+          language: "python",
+          code: ["import random", "x = random.randint(1,1)", "print(x)"],
+        },
+        options: ["1", "0", "Nothing", "Error"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,3)",
+            "if x == 1:",
+            '    print("One")',
+            "elif x == 2:",
+            '    print("Two")',
+            "else:",
+            '    print("Three")',
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: "What prints if x is generated multiple times?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "for i in range(3):",
+            "    x = random.randint(1,2)",
+            '    print(x, end=" ")',
+          ],
+        },
+        options: ["Three numbers, each 1–2", "Always 1", "Always 2", "Error"],
+        correctAnswer: "Three numbers, each 1–2",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,5)",
+            "if x < 3:",
+            '    print("Small")',
+            "else:",
+            '    print("Large")',
+          ],
+        },
+        options: ["Small", "Large", "Nothing", "Error"],
+        correctAnswer: "Large",
+      },
+      {
+        question: "What prints if we roll a “dice”?",
+        codeSnippet: {
+          language: "python",
+          code: ["import random", "dice = random.randint(1,6)", "print(dice)"],
+        },
+        options: ["1 to 6", "0 to 5", "1 to 5", "0 to 6"],
+        correctAnswer: "1 to 6",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "list",
+    questions: [
+      {
+        question: "What is a list in Python?",
+        options: [
+          "A single number",
+          "A group of items stored together",
+          "A program that runs by itself",
+          "A type of function",
+        ],
+        correctAnswer: "A group of items stored together",
+      },
+      {
+        question: "What can a Python list store?",
+        options: [
+          "Only numbers",
+          "Only words",
+          "Numbers, words, or both",
+          "Nothing",
+        ],
+        correctAnswer: "Numbers, words, or both",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ['my_list = ["Apple","Banana"]', "print(my_list[0])"],
+        },
+        options: ["Apple", "Banana", "my_list[0]", "Error"],
+        correctAnswer: "Apple",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ['my_list = ["Red","Blue"]', "print(my_list[1])"],
+        },
+        options: ["Red", "Blue", "Error", "Nothing"],
+        correctAnswer: "Blue",
+      },
+      {
+        question: "What prints after changing an item?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            'my_list = ["Cat"]',
+            'my_list[0] = "Dog"',
+            "print(my_list[0])",
+          ],
+        },
+        options: ["Cat", "Dog", "Error", "Nothing"],
+        correctAnswer: "Dog",
+      },
+      {
+        question: "What prints if we have numbers in a list?",
+        codeSnippet: {
+          language: "python",
+          code: ["my_list = [5,10]", "print(my_list[1])"],
+        },
+        options: ["5", "10", "Error", "Nothing"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints if we loop through a list?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            'my_list = ["A","B"]',
+            "for item in my_list:",
+            '    print(item, end=" ")',
+          ],
+        },
+        options: ["A B", "B A", "A A", "Error"],
+        correctAnswer: "A B",
+      },
+      {
+        question: "What prints if a list item is empty?",
+        codeSnippet: {
+          language: "python",
+          code: ['my_list = ["Hello", None]', "print(my_list[1])"],
+        },
+        options: ["None", "Hello", "Error", "0"],
+        correctAnswer: "None",
+      },
+      {
+        question: "What prints if we count list items?",
+        codeSnippet: {
+          language: "python",
+          code: ['my_list = ["One","Two"]', "print(len(my_list))"],
+        },
+        options: ["2", "1", "0", "Error"],
+        correctAnswer: "2",
+      },
+      {
+        question: "What prints after removing a list item?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            'my_list = ["Sun","Moon"]',
+            "my_list.pop(0)",
+            "print(my_list[0])",
+          ],
+        },
+        options: ["Moon", "Sun", "Error", "Nothing"],
+        correctAnswer: "Moon",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What is the Cartesian plane used for?",
+        options: [
+          "Drawing points using X and Y numbers",
+          "Counting numbers",
+          "Writing words",
+          "Printing text",
+        ],
+        correctAnswer: "Drawing points using X and Y numbers",
+      },
+      {
+        question: "Which coordinate comes first in a point?",
+        options: ["Y", "X", "Both at the same time", "None"],
+        correctAnswer: "X",
+      },
+      {
+        question: "What point does this code draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(50,100)",
+            "turtle.dot()",
+          ],
+        },
+        options: ["(50, 100)", "(100, 50)", "(0, 0)", "Error"],
+        correctAnswer: "(50, 100)",
+      },
+      {
+        question: "What points are drawn here?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "coords = [(10,20), (30,40)]",
+            "for x, y in coords:",
+            "    turtle.penup()",
+            "    turtle.goto(x, y)",
+            "    turtle.dot()",
+          ],
+        },
+        options: [
+          "(10, 20) and (30, 40)",
+          "Only (10, 20)",
+          "Only (30, 40)",
+          "None",
+        ],
+        correctAnswer: "(10, 20) and (30, 40)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(10,10)",
+            "turtle.pendown()",
+            "turtle.goto(50,50)",
+          ],
+        },
+        options: [
+          "A line from (10,10) to (50,50)",
+          "A point at (10,10)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (10,10) to (50,50)",
+      },
+      {
+        question: "What happens to the second point?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "x, y = 20,30",
+            "turtle.penup()",
+            "turtle.goto(x, y)",
+            "turtle.dot()",
+            "x += 10",
+            "y += 5",
+            "turtle.goto(x, y)",
+            "turtle.dot()",
+          ],
+        },
+        options: [
+          "A point appears at (30, 35)",
+          "First point disappears",
+          "Error",
+          "Nothing",
+        ],
+        correctAnswer: "A point appears at (30, 35)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(10,20)",
+            "turtle.pendown()",
+            "turtle.setheading(0)",
+            "for _ in range(2):",
+            "    turtle.forward(50)",
+            "    turtle.left(90)",
+            "    turtle.forward(30)",
+            "    turtle.left(90)",
+          ],
+        },
+        options: [
+          "A rectangle starting at (10,20)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (10,20)",
+      },
+      {
+        question: "How many points does this draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "for i in range(1,4):",
+            "    turtle.penup()",
+            "    turtle.goto(i*10, i*20)",
+            "    turtle.dot()",
+          ],
+        },
+        options: ["3 points", "1 point", "2 points", "None"],
+        correctAnswer: "3 points",
+      },
+      {
+        question: "What does this code draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(40,50)",
+            "turtle.pendown()",
+            "turtle.circle(10)",
+          ],
+        },
+        options: ["A circle at (40,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (40,50)",
+      },
+      {
+        question: "Where is the point drawn here?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "x, y = 5,5",
+            "x += 15",
+            "y += 25",
+            "turtle.penup()",
+            "turtle.goto(x, y)",
+            "turtle.dot()",
+          ],
+        },
+        options: ["At (20, 30)", "At (5, 5)", "At (0, 0)", "Error"],
+        correctAnswer: "At (20, 30)",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "variables",
+    questions: [
+      {
+        question: "What is a variable used for?",
+        options: [
+          "To store a value",
+          "To draw pictures",
+          "To play music",
+          "To turn off the computer",
+        ],
+        correctAnswer: "To store a value",
+      },
+      {
+        question:
+          "Which symbol is used to put a value into a variable in Python?",
+        options: ["=", "+", "==", ":"],
+        correctAnswer: "=",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x = 5", "print(x)"],
+        },
+        options: ["5", "x", "0", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x = 3", "x = 6", "print(x)"],
+        },
+        options: ["3", "6", "x", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x = 2", "y = 4", "print(x + y)"],
+        },
+        options: ["6", "24", "x + y", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ['name = "Tom"', "print(name)"],
+        },
+        options: ["Tom", "name", '"name"', "Error"],
+        correctAnswer: "Tom",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x = 10", "x = x - 3", "print(x)"],
+        },
+        options: ["7", "13", "3", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["apples = 3", "apples = apples + apples", "print(apples)"],
+        },
+        options: ["6", "33", "3", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x = 4", "y = x", "x = 9", "print(y)"],
+        },
+        options: ["4", "9", "x", "Error"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "dogs = 2",
+            "dogs = dogs + 1",
+            "dogs = dogs + 1",
+            "print(dogs)",
+          ],
+        },
+        options: ["4", "3", "21", "Error"],
+        correctAnswer: "4",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a function in Python?",
+        options: [
+          "A group of instructions you can run together",
+          "A type of variable",
+          "A number",
+          "A shape",
+        ],
+        correctAnswer: "A group of instructions you can run together",
+      },
+      {
+        question: "Why do we use functions in Python?",
+        options: [
+          "To organize code and avoid repeating commands",
+          "To print text only",
+          "To draw shapes only",
+          "To stop the program",
+        ],
+        correctAnswer: "To organize code and avoid repeating commands",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["def say_hello():", '    print("Hello!")', "say_hello()"],
+        },
+        options: ["Hello!", "say_hello", "print", "Error"],
+        correctAnswer: "Hello!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def add_numbers():",
+            "    x = 3",
+            "    y = 4",
+            "    print(x + y)",
+            "add_numbers()",
+          ],
+        },
+        options: ["7", "34", "x + y", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What happens when we run this code?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def draw_square():",
+            '    print("Drawing a square")',
+            "draw_square()",
+          ],
+        },
+        options: [
+          'The program prints “Drawing a square"',
+          'The program prints “Drawing a circle"',
+          "The program draws a square",
+          "Nothing happens",
+        ],
+        correctAnswer: 'The program prints “Drawing a square"',
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["def greet():", '    print("Hi!")', "greet()", "greet()"],
+        },
+        options: ["Hi!\nHi!", "Hi!", "Error"],
+        correctAnswer: "Hi!\nHi!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def add_five():",
+            "    x = 5",
+            "    x = x + 5",
+            "    print(x)",
+            "add_five()",
+          ],
+        },
+        options: ["10", "5", "55", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def show_message():",
+            '    print("Welcome!")',
+            "show_message()",
+            "show_message()",
+            "show_message()",
+          ],
+        },
+        options: ["Welcome!\nWelcome!\nWelcome!", "Welcome!", "Error"],
+        correctAnswer: "Welcome!\nWelcome!\nWelcome!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def multiply():",
+            "    x = 3",
+            "    y = 4",
+            "    print(x * y)",
+            "multiply()",
+          ],
+        },
+        options: ["12", "7", "34", "Error"],
+        correctAnswer: "12",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def repeat_text():",
+            '    print("Fun!")',
+            "repeat_text()",
+            "repeat_text()",
+          ],
+        },
+        options: ["Fun!\nFun!", "Fun!", "Error"],
+        correctAnswer: "Fun!\nFun!",
+      },
+    ],
+  },
+  {
+    level: "PY1",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is debugging in Python?",
+        options: [
+          "Finding and fixing mistakes in your program",
+          "Drawing shapes",
+          "Playing music",
+          "Printing numbers",
+        ],
+        correctAnswer: "Finding and fixing mistakes in your program",
+      },
+      {
+        question: "Why is debugging important?",
+        options: [
+          "To make sure the program works correctly",
+          "To change colors",
+          "To move shapes",
+          "To stop the computer",
+        ],
+        correctAnswer: "To make sure the program works correctly",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ['print("Hello)'],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "print is misspelled",
+          "Nothing is wrong",
+          "Error",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["x = 5", "print(y)"],
+        },
+        options: [
+          "Variable y is not defined",
+          "x is wrong",
+          "print cannot use variables",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Variable y is not defined",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(5)", "print(i)"],
+        },
+        options: [
+          "Missing colon (:) after range(5)",
+          "range cannot be used",
+          "i is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing colon (:) after range(5)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["def say_hi()", '    print("Hi!")'],
+        },
+        options: [
+          "Missing colon(:) after parentheses",
+          "print cannot be used",
+          "def is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing colon(:) after parentheses",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ['x = "5', "print(x)"],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "Variable cannot be printed",
+          "print cannot use strings",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ['print("Hello" + 5)'],
+        },
+        options: [
+          "Cannot add string and number",
+          "print cannot use +",
+          "5 is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Cannot add string and number",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(3):", 'print("Hi")'],
+        },
+        options: [
+          "Indentation is missing",
+          "range cannot be used",
+          "print cannot be used in Decisions",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Indentation is missing",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["x = 10", "y = 0", "print(x / y)"],
+        },
+        options: [
+          "Division by zero",
+          "Variables are wrong",
+          "print cannot divide",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Division by zero",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "input",
+    questions: [
+      {
+        question:
+          "True or false, a smart watch that tracks your daily steps is an example of input?",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question:
+          "A program that tracks how fast you can type is using input from:",
+        options: ["The speakers", "The mouse", "The keyboard", "The Screen"],
+        correctAnswer: "The keyboard",
+      },
+      {
+        question: "What will this program ask the user for?",
+        codeSnippet: {
+          language: "python",
+          code: ['score = input("Enter your score: ")'],
+        },
+        options: ["A name", "A number", "A score", "Nothing"],
+        correctAnswer: "A score",
+      },
+      {
+        question: "What will be printed if the user types 7?",
+        codeSnippet: {
+          language: "python",
+          code: ['num = input("Pick a number: ")', "print(num + num)"],
+        },
+        options: ["14", "77", "7", "An error"],
+        correctAnswer: "77",
+      },
+      {
+        question: "Why is this code incorrect?",
+        codeSnippet: {
+          language: "python",
+          code: ['print("Favourite movie?")', "input()", "print(movie)"],
+        },
+        options: [
+          "Missing a loop",
+          "Input is not saved",
+          "print is incorrect",
+          "Variable name is wrong",
+        ],
+        correctAnswer: "Input is not saved",
+      },
+      {
+        question: "Which line stores the user’s input?",
+        codeSnippet: {
+          language: "python",
+          code: ['animal = input("Enter an animal: ")', "print(animal)"],
+        },
+        options: [
+          "print(animal)",
+          'input("Enter an animal")',
+          "animal = input(...)",
+          "None",
+        ],
+        correctAnswer: "animal = input(...)",
+      },
+      {
+        question: "What happens if the user does not type anything?",
+        codeSnippet: {
+          language: "python",
+          code: ['print("Hello, enter your name...")', "name = input()"],
+        },
+        options: [
+          "The program crashes",
+          "The program waits",
+          "The program skips the input",
+          "The program guesses",
+        ],
+        correctAnswer: "The program waits",
+      },
+      {
+        question: "What type of value does input() return by default?",
+        options: ["Integer", "String", "Float", "Boolean"],
+        correctAnswer: "String",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "python",
+          code: ["word = input()", 'print("You typed:", word)'],
+        },
+        options: [
+          "Only the word",
+          '"You typed:" only',
+          '"You typed:" and the word',
+          "Nothing",
+        ],
+        correctAnswer: '"You typed:" and the word',
+      },
+      {
+        question:
+          "True or false: Input allows the user to interact with a program.",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "loops",
+    questions: [
+      {
+        question: "Why do programmers use loops?",
+        options: [
+          "To repeat instructions",
+          "To draw pictures",
+          "To stop programs",
+          "To store input",
+        ],
+        correctAnswer: "To repeat instructions",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(1, 6):", '    print("A")'],
+        },
+        options: ["4", "5", "6", "Infinite"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(5, 0, -1):", "    print(i)"],
+        },
+        options: ["1, 2, 3, 4, 5", "5, 4, 3, 2, 1", "0, 1, 2, 3, 4", "Nothing"],
+        correctAnswer: "5, 4, 3, 2, 1",
+      },
+      {
+        question: "What does this loop do?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(10):", "    pass"],
+        },
+        options: [
+          "Prints numbers",
+          "Causes an error",
+          "Runs without output",
+          "Stops immediately",
+        ],
+        correctAnswer: "Runs without output",
+      },
+      {
+        question: "How many lines will print?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(3):", '    print("Hi")', "    print(i)"],
+        },
+        options: ["3", "6", "9", "1"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What is the purpose of range(10)?",
+        options: [
+          "Run the loop forever",
+          "Repeat 10 times",
+          "Start at 10",
+          "End at 1",
+        ],
+        correctAnswer: "Repeat 10 times",
+      },
+      {
+        question: "What is missing in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(3)", '    print("Oops")'],
+        },
+        options: ["Brackets", "Colon :", "print", "Indentation"],
+        correctAnswer: "Colon :",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(1, 10, 3):", "    print(i)"],
+        },
+        options: ["1, 4, 7", "1, 2, 3", "3, 6, 9", "0, 3, 6"],
+        correctAnswer: "1, 4, 7",
+      },
+      {
+        question: "When does a loop stop running?",
+        options: [
+          "When the computer turns off",
+          "When the condition is met",
+          "When the user clicks stop",
+          "Never",
+        ],
+        correctAnswer: "When the condition is met",
+      },
+      {
+        question:
+          "True or false: A loop can contain more than one line of code.",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What type of expression does if evaluate?",
+        options: ["Loop", "Condition", "Function", "Variable"],
+        correctAnswer: "Condition",
+      },
+      {
+        question: "Which keyword checks another condition?",
+        options: ["else", "elif", "then", "endif"],
+        correctAnswer: "elif",
+      },
+      {
+        question: "When does 'Pass' print?",
+        codeSnippet: {
+          language: "python",
+          code: ["if score >= 50:", '    print("Pass")'],
+        },
+        options: ["score < 50", "score = 50", "score > 50", "score ≥ 50"],
+        correctAnswer: "score ≥ 50",
+      },
+      {
+        question: "What prints if x = 0?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "if x ==0:",
+            '    print("Zero")',
+            "else:",
+            '    print("Non-zero")',
+          ],
+        },
+        options: ["Zero", "Non-zero", "Nothing", "Error"],
+        correctAnswer: "Zero",
+      },
+      {
+        question: "What prints if x = 10?",
+        codeSnippet: {
+          language: "python",
+          code: ["if x < 5:", 'print("Low")'],
+        },
+        options: ["Low", "High", "Nothing", "Error"],
+        correctAnswer: "Error",
+      },
+      {
+        question: "What prints if a = b?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "if a > b:",
+            '    print("A")',
+            "elif b > a:",
+            '    print("B")',
+          ],
+        },
+        options: ["A", "B", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "python",
+          code: ["if x != 3:", '    print("Not Three")'],
+        },
+        options: ["Not Three", "Three", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints if x = 18?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "if x >= 18:",
+            '    print("Adult")',
+            "else:",
+            '    print("Minor")',
+          ],
+        },
+        options: ["Adult", "Minor", "Error", "Nothing"],
+        correctAnswer: "Adult",
+      },
+      {
+        question: "What happens when this code runs?",
+        codeSnippet: {
+          language: "python",
+          code: ["if False:", '    print("Hello")'],
+        },
+        options: ["Hello prints", "Error", "Nothing prints", "Program stops"],
+        correctAnswer: "Nothing prints",
+      },
+      {
+        question: "What prints if x = -1?",
+        codeSnippet: {
+          language: "python",
+          code: ["if x > 0:", '    print("Positive")'],
+        },
+        options: ["Positive", "Negative", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "randomness",
+    questions: [
+      {
+        question: 'What is a "seed" in random numbers?',
+        options: [
+          "A number that starts the random number pattern",
+          "The biggest number possible",
+          "The total of all numbers",
+          "A number we can always guess",
+        ],
+        correctAnswer: "A number that starts the random number pattern",
+      },
+      {
+        question: "What happens if we ask for a random number two times?",
+        options: [
+          "We get the same number both times",
+          "We get two numbers that can be different",
+          "The number disappears",
+          "The computer crashes",
+        ],
+        correctAnswer: "We get two numbers that can be different",
+      },
+      {
+        question: "What prints if x = 1?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,2)",
+            "if x == 1:",
+            '    print("Heads")',
+            "else:",
+            '    print("Tails")',
+          ],
+        },
+        options: ["Heads", "Tails", "Error", "Nothing"],
+        correctAnswer: "Heads",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,5)",
+            "if x > 3:",
+            '    print("High")',
+            "else:",
+            '    print("Low")',
+          ],
+        },
+        options: ["High", "Low", "Nothing", "Error"],
+        correctAnswer: "Low",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,3)",
+            "if x == 1:",
+            '    print("One")',
+            "elif x == 2:",
+            '    print("Two")',
+            "else:",
+            '    print("Three")',
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: "What prints if x is always 5?",
+        codeSnippet: {
+          language: "python",
+          code: ["import random", "x = random.randint(1,5)", "print(x)"],
+        },
+        options: ["1", "5", "0", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints if x is used in a loop?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "for i inrange(4):",
+            "    x = random.randint(1,2)",
+            '    print(x, end=" ")',
+          ],
+        },
+        options: ["Four numbers, each 1–2", "Always 1", "Always 2", "Error"],
+        correctAnswer: "Four numbers, each 1–2",
+      },
+      {
+        question: "What prints if x = 1?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,3)",
+            "if x != 2:",
+            '    print("Not Two")',
+          ],
+        },
+        options: ["Not Two", "Two", "Nothing", "Error"],
+        correctAnswer: "Not Two",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,6)",
+            "if x >= 4:",
+            '    print("Big")',
+            "else:",
+            '    print("Small")',
+          ],
+        },
+        options: ["Big", "Small", "Nothing", "Error"],
+        correctAnswer: "Big",
+      },
+      {
+        question: "What prints if x = 6?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import random",
+            "x = random.randint(1,6)",
+            'print("Roll:", x)',
+          ],
+        },
+        options: ["Roll: 1–6", "Roll: 0–5", "Roll: 1–5", "Roll: 0–6"],
+        correctAnswer: "Roll: 1–6",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "list",
+    questions: [
+      {
+        question: "What can you do with a Python list?",
+        options: [
+          "Store only one number",
+          "Store a group of items together",
+          "Make the computer talk",
+          "Draw pictures",
+        ],
+        correctAnswer: "Store a group of items together",
+      },
+      {
+        question: "How do you add an item to a list?",
+        options: [
+          "Assign it to a new index",
+          "Use print()",
+          "Use for loop",
+          "You cannot add items",
+        ],
+        correctAnswer: "Assign it to a new index",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ['my_list = ["Dog","Cat"]', "print(my_list[1])"],
+        },
+        options: ["Dog", "Cat", "my_list[1]", "Error"],
+        correctAnswer: "Cat",
+      },
+      {
+        question: "What prints if we change an item?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            'my_list = ["Red"]',
+            'my_list[0] = "Green"',
+            "print(my_list[0])",
+          ],
+        },
+        options: ["Red", "Green", "Error", "Nothing"],
+        correctAnswer: "Green",
+      },
+      {
+        question: "What prints if we loop through a list of numbers?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "my_list = [1,2,3]",
+            "for num in my_list:",
+            '    print(num, end=" ")',
+          ],
+        },
+        options: ["1 2 3", "3 2 1", "1 1 1", "Error"],
+        correctAnswer: "1 2 3",
+      },
+      {
+        question: "What prints if a list item is missing?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            'my_list = ["Hello"]',
+            'print(my_list[2] if len(my_list) > 2 else "Empty")',
+          ],
+        },
+        options: ["Empty", "Hello", "Error", "0"],
+        correctAnswer: "Empty",
+      },
+      {
+        question: "What prints after assigning a number as text?",
+        codeSnippet: {
+          language: "python",
+          code: ['my_list = [10,"20"]', "print(my_list[1])"],
+        },
+        options: ["10", "20", "my_list[1]", "Error"],
+        correctAnswer: "20",
+      },
+      {
+        question: "What prints if we overwrite a list item?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            'my_list = ["Apple"]',
+            'my_list[0] = "Banana"',
+            "print(my_list[0])",
+          ],
+        },
+        options: ["Apple", "Banana", "Error", "Nothing"],
+        correctAnswer: "Banana",
+      },
+      {
+        question: "What prints if we count list items?",
+        codeSnippet: {
+          language: "python",
+          code: ['my_list = ["One","Two","Three"]', "print(len(my_list))"],
+        },
+        options: ["3", "2", "1", "0"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints if we remove a list item?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            'my_list = ["Lion","Tiger"]',
+            "my_list.pop(0)",
+            "print(my_list[0])",
+          ],
+        },
+        options: ["Tiger", "Lion", "Error", "Nothing"],
+        correctAnswer: "Tiger",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What is the X-axis?",
+        options: [
+          "The horizontal line on the plane",
+          "The vertical line on the plane",
+          "A diagonal line",
+          "A point",
+        ],
+        correctAnswer: "The horizontal line on the plane",
+      },
+      {
+        question: "What is the Y-axis?",
+        options: [
+          "The vertical line on the plane",
+          "The horizontal line on the plane",
+          "A diagonal line",
+          "Nothing",
+        ],
+        correctAnswer: "The vertical line on the plane",
+      },
+      {
+        question: "What point does this code draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(60,40)",
+            "turtle.dot()",
+          ],
+        },
+        options: ["(60, 40)", "(40, 60)", "A line", "Nothing"],
+        correctAnswer: "(60, 40)",
+      },
+      {
+        question: "What points are drawn here?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "coords = [(15,25), (45,35)]",
+            "for x, yin coords:",
+            "    turtle.penup()",
+            "    turtle.goto(x, y)",
+            "    turtle.dot()",
+          ],
+        },
+        options: [
+          "(15, 25) and (45, 35)",
+          "Only (15, 25)",
+          "Only (45, 35)",
+          "None",
+        ],
+        correctAnswer: "(15, 25) and (45, 35)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(0,0)",
+            "turtle.pendown()",
+            "turtle.goto(30,60)",
+          ],
+        },
+        options: [
+          "A line from (0,0) to (30,60)",
+          "A point at (0,0)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (0,0) to (30,60)",
+      },
+      {
+        question: "What happens to the second point?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "x, y =10,10",
+            "turtle.penup()",
+            "turtle.goto(x, y)",
+            "turtle.dot()",
+            "x +=20",
+            "y +=15",
+            "turtle.goto(x, y)",
+            "turtle.dot()",
+          ],
+        },
+        options: [
+          "A point appears at (30, 25)",
+          "First point disappears",
+          "Error",
+          "Nothing",
+        ],
+        correctAnswer: "A point appears at (30, 25)",
+      },
+      {
+        question: "What does this draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(20,30)",
+            "turtle.pendown()",
+            "turtle.setheading(0)",
+            "for _ in range(2):",
+            "    turtle.forward(40)",
+            "    turtle.left(90)",
+            "    turtle.forward(20)",
+            "    turtle.left(90)",
+          ],
+        },
+        options: [
+          "A rectangle starting at (20,30)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (20,30)",
+      },
+      {
+        question: "How many points does this draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "for i in range(1,5):",
+            "    turtle.penup()",
+            "    turtle.goto(i*5, i*10)",
+            "    turtle.dot()",
+          ],
+        },
+        options: ["4 points", "1 point", "3 points", "None"],
+        correctAnswer: "4 points",
+      },
+      {
+        question: "What does this code draw?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "turtle.penup()",
+            "turtle.goto(70,50)",
+            "turtle.pendown()",
+            "turtle.circle(10)",
+          ],
+        },
+        options: ["A circle at (70,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (70,50)",
+      },
+      {
+        question: "Where is the point drawn here?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "import turtle",
+            "x, y =0,0",
+            "x +=25",
+            "y +=30",
+            "turtle.penup()",
+            "turtle.goto(x, y)",
+            "turtle.dot()",
+          ],
+        },
+        options: ["At (25, 30)", "At (0, 0)", "At (30, 25)", "Error"],
+        correctAnswer: "At (25, 30)",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "variables",
+    questions: [
+      {
+        question: "What can a variable store in Python?",
+        options: [
+          "A number or a word",
+          "Only pictures",
+          "Only sounds",
+          "Nothing",
+        ],
+        correctAnswer: "A number or a word",
+      },
+      {
+        question: "Which variable name is OK to use in Python?",
+        options: ["score", "1score", "my score", "@score"],
+        correctAnswer: "score",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x =1", "print(x)"],
+        },
+        options: ["1", "x", "0", "Error"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x =5", "x = x +1", "print(x)"],
+        },
+        options: ["5", "6", "51", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["a =3", "b =2", "print(a + b)"],
+        },
+        options: ["5", "32", "a + b", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ['name ="Lily"', "print(name)"],
+        },
+        options: ["Lily", "name", '"name"', "Error"],
+        correctAnswer: "Lily",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x =8", "x = x -3", "print(x)"],
+        },
+        options: ["5", "11", "3", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["coins =4", "coins = coins + coins", "print(coins)"],
+        },
+        options: ["8", "44", "4", "Error"],
+        correctAnswer: "8",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["x =6", "y = x", "x =2", "print(y)"],
+        },
+        options: ["6", "2", "x", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["cats =1", "cats = cats +1", "cats = cats +1", "print(cats)"],
+        },
+        options: ["3", "2", "11", "Error"],
+        correctAnswer: "3",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a parameter in a Python function?",
+        options: [
+          "A value you give to a function to use inside it",
+          "A type of shape",
+          "A type of variable",
+          "A number only",
+        ],
+        correctAnswer: "A value you give to a function to use inside it",
+      },
+      {
+        question: "Why do we use parameters in functions?",
+        options: [
+          "To make functions reusable with different values",
+          "To draw rectangles",
+          "To play music",
+          "To stop the program",
+        ],
+        correctAnswer: "To make functions reusable with different values",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def greet(name):",
+            '    print("Hello " + name)',
+            "",
+            'greet("Anna")',
+          ],
+        },
+        options: ["Hello Anna", "Hello name", "name", "Error"],
+        correctAnswer: "Hello Anna",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["def add(x, y):", "    print(x + y)", "", "add(3,4)"],
+        },
+        options: ["7", "34", "x + y", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def multiply(a, b):",
+            "    print(a * b)",
+            "",
+            "multiply(5,2)",
+          ],
+        },
+        options: ["10", "7", "52", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def repeat_text(text, times):",
+            "    for i in range(times):",
+            "        print(text)",
+            "",
+            'repeat_text("Hi",3)',
+          ],
+        },
+        options: ["Hi\nHi\nHi", "Hi", "Error", "3"],
+        correctAnswer: "Hi\nHi\nHi",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def add_five(number):",
+            "    print(number + 5)",
+            "",
+            "add_five(10)",
+          ],
+        },
+        options: ["15", "10", "55", "Error"],
+        correctAnswer: "15",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def say_message(msg):",
+            '    print("Message: " + msg)',
+            "",
+            'say_message("Hello!")',
+          ],
+        },
+        options: ["Message: Hello!", "Message: msg", "Hello!", "Error"],
+        correctAnswer: "Message: Hello!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: [
+            "def subtract(a, b):",
+            "    print(a - b)",
+            "",
+            "subtract(10,3)",
+          ],
+        },
+        options: ["7", "13", "103", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "python",
+          code: ["def square(num):", "    print(num * num)", "", "square(4)"],
+        },
+        options: ["16", "8", "44", "Error"],
+        correctAnswer: "16",
+      },
+    ],
+  },
+  {
+    level: "PY2",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is a syntax error?",
+        options: [
+          "A mistake in how the code is written",
+          "A mistake in the numbers",
+          "A mistake in drawing shapes",
+          "A mistake in playing sounds",
+        ],
+        correctAnswer: "A mistake in how the code is written",
+      },
+      {
+        question: "What is a runtime error?",
+        options: [
+          "A mistake that happens while the program is running",
+          "A spelling mistake",
+          "A drawing mistake",
+          "A music mistake",
+        ],
+        correctAnswer: "A mistake that happens while the program is running",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ['print("Hello" + )'],
+        },
+        options: [
+          "Extra + without a value",
+          "print is misspelled",
+          "Nothing is wrong",
+          "Error",
+        ],
+        correctAnswer: "Extra + without a value",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["x =10", 'y ="5"', "print(x + y)"],
+        },
+        options: [
+          "Cannot add number and string",
+          "x is wrong",
+          "y is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Cannot add number and string",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(3)", "    print(i)"],
+        },
+        options: [
+          "Missing colon(:) after range(3)",
+          "range cannot be used",
+          "i is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing colon(:) after range(3)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["def greet(name)", '    print("Hello " + name)'],
+        },
+        options: [
+          "Missing colon(:) after parentheses",
+          "print cannot use +",
+          "name is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing colon(:) after parentheses",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ['x = "10', "print(x)"],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "Variable cannot be printed",
+          "print cannot use strings",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["for i in range(3):", 'print("Hi")'],
+        },
+        options: [
+          "Missing indentation for print",
+          "range cannot be used",
+          "print cannot be used in Decisions",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing indentation for print",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["x =5", "y =0", "print(x / y)"],
+        },
+        options: [
+          "Division by zero",
+          "Variables are wrong",
+          "// cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Division by zero",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "python",
+          code: ["if x =5:", 'print("Yes")'],
+        },
+        options: [
+          "Should use == for comparison",
+          "= is fine",
+          "print cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Should use == for comparison",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "input",
+    questions: [
+      {
+        question: "Which is NOT example of input?",
+        options: ["a mouse", "a keyboard", "a speaker", "a microphone"],
+        correctAnswer: "a speaker",
+      },
+      {
+        question: "Why is input used in programming?",
+        options: [
+          "To make the program faster",
+          "To make the program colourful",
+          "So the program can get information from the user",
+          "So the program doesn’t crash",
+        ],
+        correctAnswer: "So the program can get information from the user",
+      },
+      {
+        question: "What will be printed to the screen?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let greeting = prompt("Enter greeting:")',
+            "console.log(greeting)",
+          ],
+        },
+        options: [
+          "It doesn’t print anything",
+          "It prints your name only",
+          "It prints ‘hello’ only",
+          "It asks for you to enter a greeting and then prints it",
+        ],
+        correctAnswer: "It asks for you to enter a greeting and then prints it",
+      },
+      {
+        question:
+          "Which input device does the program receive information from?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let schoolName = prompt("Please enter your school name: ")',
+            'console.log("you go to " + schoolName)',
+          ],
+        },
+        options: ["keyboard", "mouse", "microphone", "button"],
+        correctAnswer: "keyboard",
+      },
+      {
+        question:
+          "Which input device does the program receive information from?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            '<input type="button" onClick="doSomething()" />',
+            "",
+            "<script>",
+            "const doSomething = () => {",
+            '    console.log("Do something")',
+            "}",
+            "</script>",
+          ],
+        },
+        options: ["keyboard", "mouse", "microphone", "button"],
+        correctAnswer: "button",
+      },
+      {
+        question:
+          "What will print when you run this code and enter ‘10’ when asked?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let num = prompt("Pick a number")', "console.log(num + 2)"],
+        },
+        options: ["4", "8", "12", "20"],
+        correctAnswer: "20",
+      },
+      {
+        question:
+          "What will print when you run this code and enter ‘5’ when asked?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let num = prompt("Pick a number")', "console.log(num + 2)"],
+        },
+        options: ["2", "5", "7", "9"],
+        correctAnswer: "9",
+      },
+      {
+        question: "What is the issue in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'prompt("What is your favourite food?")',
+            'console.log("Your favourite food is " + favFood)',
+          ],
+        },
+        options: [
+          "Nothing - it will work perfectly",
+          "We didn’t store the input in a variable",
+          "The program is too short",
+          "I don’t have a favourite animal",
+        ],
+        correctAnswer: "We didn’t store the input in a variable",
+      },
+      {
+        question:
+          "True or false, the input is stored in a variable called “word”?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let number = prompt("enter a word: ")'],
+        },
+        options: ["True", "False"],
+        correctAnswer: "False",
+      },
+      {
+        question: "What is the issue in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'name = prompt("What is your name?")',
+            'console.log("you are " + name)',
+          ],
+        },
+        options: [
+          "Nothing - it will work perfectly",
+          "We didn’t store the input in a variable",
+          "The program is too short",
+          "The program is too long",
+        ],
+        correctAnswer: "Nothing - it will work perfectly",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "loops",
+    questions: [
+      {
+        question: "When do we use a loop?",
+        options: [
+          "To repeat code several times",
+          "To print something to the console",
+          "To fix errors in the code",
+          "To make the code faster",
+        ],
+        correctAnswer: "To repeat code several times",
+      },
+      {
+        question: "How many times can we run a loop?",
+        options: ["100", "25", "As many as we like", "only once"],
+        correctAnswer: "As many as we like",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "for(let i = 0; i < 10; i++){",
+            '    console.log("Hello, World")',
+            "}",
+          ],
+        },
+        options: ["infinite", "0", "5", "10"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "for(let i = 2; i <= 200; i += 2){",
+            "    console.log(i)",
+            "}",
+          ],
+        },
+        options: [
+          "Even numbers from 2 to 10",
+          "Odd numbers from 1-12",
+          "Even numbers from 2-200",
+          "Odd numbers from 1-100",
+        ],
+        correctAnswer: "Even numbers from 2-200",
+      },
+      {
+        question: "What numbers will you see on the screen?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 10; i > 0; i--){", "    console.log(i)", "}"],
+        },
+        options: [
+          "5, 4, 3, 2, 1",
+          "10, 9, 8 ,7, 6, 5, 4, 3, 2, 1",
+          "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+          "1, 2, 3, 4, 5",
+        ],
+        correctAnswer: "10, 9, 8 ,7, 6, 5, 4, 3, 2, 1",
+      },
+      {
+        question: "How many dashes (-) will you see on the screen?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 0; i < 4; i++){", "    console.log('---')", "}"],
+        },
+        options: ["3", "6", "9", "12"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What is the error in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i; i < 5; i++){", '    console.log("Hello")', "}"],
+        },
+        options: [
+          "n should be i instead",
+          "We did not give an initial value for i",
+          "It should say “Hello World” instead",
+          "It doesnt repeat enough times",
+        ],
+        correctAnswer: "We did not give an initial value for i",
+      },
+      {
+        question: "What is the error in this code",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "(let i = 0; i < 10; i++){",
+            '    console.log("Merry Christmas!")',
+            "}",
+          ],
+        },
+        options: [
+          "It’s not my Christmas",
+          "we should not use ’",
+          "The loop runs too many times",
+          'We forgot to write "for"',
+        ],
+        correctAnswer: 'We forgot to write "for"',
+      },
+      {
+        question: "What will be printed to the screen?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 10; i > 5; i--){", "    console.log(i);", "}"],
+        },
+        options: [
+          "1, 2, 3, 4, 5",
+          "2, 4, 6, 8, 10",
+          "10, 9, 8, 7, 6",
+          "5, 4, 3, 2, 1",
+        ],
+        correctAnswer: "10, 9, 8, 7, 6",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 0; i <=10; i++){", "    console.log(i)", "}"],
+        },
+        options: ["1", "0 - it doesn’t run at all", "10", "Infinite"],
+        correctAnswer: "10",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What is the purpose of an `if` statement in JavaScript?",
+        options: [
+          "To repeat code",
+          "To choose between actions",
+          "To store values",
+          "To stop a program",
+        ],
+        correctAnswer: "To choose between actions",
+      },
+      {
+        question:
+          "Which operator is used to combine conditions where BOTH must be true?",
+        options: ["||", "!", "&&", "=="],
+        correctAnswer: "&&",
+      },
+      {
+        question: 'When does `"High"` print?',
+        codeSnippet: {
+          language: "javascript",
+          code: ["if (x > 10) {", '    console.log("High");', "}"],
+        },
+        options: ["x = 10", "x < 10", "x > 10", "Always"],
+        correctAnswer: "x > 10",
+      },
+      {
+        question: "What prints if x is 3?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x == 5) {",
+            '    console.log("Five");',
+            "}else {",
+            '    console.log("Not Five");',
+            "}",
+          ],
+        },
+        options: ["Five", "Not Five", "Nothing", "Error"],
+        correctAnswer: "Not Five",
+      },
+      {
+        question: "What happens if x is 1?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["if (x <= 0) {", '    console.log("Non-positive");', "}"],
+        },
+        options: [
+          "Non-positive prints",
+          "Positive prints",
+          "Nothing prints",
+          "Error",
+        ],
+        correctAnswer: "Nothing prints",
+      },
+      {
+        question: 'When does `"A"` print?',
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (a >= b) {",
+            '    console.log("A");',
+            "}else {",
+            '    console.log("B");',
+            "}",
+          ],
+        },
+        options: ["a < b", "a > b", "a = b", "a ≥ b"],
+        correctAnswer: "a ≥ b",
+      },
+      {
+        question: "What does `!=` mean in JavaScript?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["if (x != 0) {", '    console.log("Non-zero");', "}"],
+        },
+        options: ["Equal to", "Not equal to", "Greater than", "Less than"],
+        correctAnswer: "Not equal to",
+      },
+      {
+        question: "What prints if x is 2?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x == 1) {",
+            '    console.log("One");',
+            "}elseif (x == 2) {",
+            '    console.log("Two");',
+            "}else {",
+            '    console.log("Other");',
+            "}",
+          ],
+        },
+        options: ["One", "Two", "Other", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: 'When does `"Small Positive"` print?',
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x >0) {",
+            "    if (x <10) {",
+            '        console.log("Small Positive");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["x ≥ 10", "x ≤ 0", "1–9", "Always"],
+        correctAnswer: "1–9",
+      },
+      {
+        question: "What prints if `isAdmin = false`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (isAdmin) {",
+            '    console.log("Admin Access");',
+            "}else {",
+            '    console.log("User Access");',
+            "}",
+          ],
+        },
+        options: ["Admin Access", "User Access", "Nothing", "Error"],
+        correctAnswer: "User Access",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What does `Math.random()` do in JavaScript?",
+        options: [
+          "Always gives the same number",
+          "Gives a number we can’t predict exactly",
+          "Adds numbers together",
+          "Prints text",
+        ],
+        correctAnswer: "Gives a number we can’t predict exactly",
+      },
+      {
+        question: "Which expression gives a random whole number from 1 to 10?",
+        options: [
+          "Math.floor(Math.random() * 10)",
+          "Math.floor(Math.random() * 10) + 1",
+          "Math.random(10)",
+          "RandomNumber(1,10)",
+        ],
+        correctAnswer: "Math.floor(Math.random() * 10) + 1",
+      },
+      {
+        question: "What prints if x = 7?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() *10) +1;",
+            "if(x > 5){",
+            '    console.log("Big");',
+            "}else{",
+            '    console.log("Small");',
+            "}",
+          ],
+        },
+        options: ["Big", "Small", "Nothing", "Error"],
+        correctAnswer: "Big",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() * 5) +1;",
+            "if(x == 5){",
+            '    console.log("Max");',
+            "}else{",
+            '    console.log("Not Max");',
+            "}",
+          ],
+        },
+        options: ["Max", "Not Max", "Nothing", "Error"],
+        correctAnswer: "Not Max",
+      },
+      {
+        question: "What prints if x is always 1?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x =Math.floor(Math.random() *1) +1;", "console.log(x);"],
+        },
+        options: ["1", "0", "Nothing", "Error"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() *3) +1;",
+            "if(x == 1){",
+            '    console.log("One");',
+            "}else if(x == 2){",
+            '    console.log("Two");',
+            "}else{",
+            '    console.log("Three");',
+            "}",
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: "What prints if x is generated multiple times?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "for(let i = 0; i < 3; i++){",
+            "    let x = Math.floor(Math.random() *2) +1;",
+            "    console.log(x);",
+            "}",
+          ],
+        },
+        options: ["Three numbers, each 1–2", "Always 1", "Always 2", "Error"],
+        correctAnswer: "Three numbers, each 1–2",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x =Math.floor(Math.random() *5) +1;",
+            "if(x < 3){",
+            '    console.log("Small");',
+            "}else{",
+            '    console.log("Large");',
+            "}",
+          ],
+        },
+        options: ["Small", "Large", "Nothing", "Error"],
+        correctAnswer: "Large",
+      },
+      {
+        question: "What prints if x = 5?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() *6) +1;",
+            'console.log("Roll: " + x);',
+          ],
+        },
+        options: ["Roll: 1", "Roll: 3", "Roll: 5", "Roll: 6"],
+        correctAnswer: "Roll: 5",
+      },
+      {
+        question: "What prints if x is even?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() *10) +1;",
+            "if(x % 2 == 0){",
+            '    console.log("Even");',
+            "}else{",
+            '    console.log("Odd");',
+            "}",
+          ],
+        },
+        options: ["Even", "Odd", "Either Even or Odd", "Error"],
+        correctAnswer: "Either Even or Odd",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "list",
+    questions: [
+      {
+        question: "What is a list (array) in JavaScript?",
+        options: [
+          "A single number",
+          "A group of items stored together",
+          "A program that runs by itself",
+          "A type of function",
+        ],
+        correctAnswer: "A group of items stored together",
+      },
+      {
+        question: "What can an array store?",
+        options: [
+          "Only numbers",
+          "Only words",
+          "Numbers, words, or both",
+          "Nothing",
+        ],
+        correctAnswer: "Numbers, words, or both",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let myList = ["Apple","Banana"];', "console.log(myList[0]);"],
+        },
+        options: ["Apple", "Banana", "myList[0]", "Error"],
+        correctAnswer: "Apple",
+      },
+      {
+        question: "What prints if we change an item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let myList = ["Red"];',
+            'myList[0] ="Blue";',
+            "console.log(myList[0]);",
+          ],
+        },
+        options: ["Red", "Blue", "Error", "Nothing"],
+        correctAnswer: "Blue",
+      },
+      {
+        question: "What prints if we loop through a list?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let myList = ["A","B"];',
+            "for (let i = 0; i < myList.length; i++) {",
+            "    console.log(myList[i]);",
+            "}",
+          ],
+        },
+        options: ["A B", "B A", "A A", "Error"],
+        correctAnswer: "A B",
+      },
+      {
+        question: "What prints if a list item is missing?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let myList = ["Hello"];',
+            'console.log(myList[2] || "Empty");',
+          ],
+        },
+        options: ["Empty", "Hello", "Error", "0"],
+        correctAnswer: "Empty",
+      },
+      {
+        question: "What prints after adding a new item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let myList = ["Cat"];',
+            'myList.push("Dog");',
+            "console.log(myList[1]);",
+          ],
+        },
+        options: ["Cat", "Dog", "myList[1]", "Error"],
+        correctAnswer: "Dog",
+      },
+      {
+        question: "What prints if we overwrite a list item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let myList = ["Apple"];',
+            'myList[0] ="Orange";',
+            "console.log(myList[0]);",
+          ],
+        },
+        options: ["Apple", "Orange", "Error", "Nothing"],
+        correctAnswer: "Orange",
+      },
+      {
+        question: "What prints if we count list items?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let myList = ["One","Two","Three"];',
+            "console.log(myList.length);",
+          ],
+        },
+        options: ["3", "2", "1", "0"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints if we remove a list item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let myList = ["Lion","Tiger"];',
+            "myList.shift();",
+            "console.log(myList[0]);",
+          ],
+        },
+        options: ["Tiger", "Lion", "Error", "Nothing"],
+        correctAnswer: "Tiger",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What is the Cartesian plane used for?",
+        options: [
+          "Drawing points using X and Y numbers",
+          "Counting numbers",
+          "Writing words",
+          "Printing text",
+        ],
+        correctAnswer: "Drawing points using X and Y numbers",
+      },
+      {
+        question: "Which coordinate comes first when showing a point?",
+        options: ["Y", "X", "Both at the same time", "None"],
+        correctAnswer: "X",
+      },
+      {
+        question: "What point does this code represent?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let point = {x:50, y:100};"],
+        },
+        options: ["(50, 100)", "(100, 50)", "(0, 0)", "Error"],
+        correctAnswer: "(50, 100)",
+      },
+      {
+        question: "What points are represented here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let points = [{x:10, y:20}, {x:30, y:40}];"],
+        },
+        options: [
+          "(10, 20) and (30, 40)",
+          "Only (10, 20)",
+          "Only (30, 40)",
+          "None",
+        ],
+        correctAnswer: "(10, 20) and (30, 40)",
+      },
+      {
+        question: "What line is described here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let line = {start: {x:10, y:10}, end: {x:50, y:50}};"],
+        },
+        options: [
+          "A line from (10,10) to (50,50)",
+          "A point at (10,10)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (10,10) to (50,50)",
+      },
+      {
+        question: "Where is the second point?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = 20, y = 30;",
+            "let point1 = {x: x, y: y};",
+            "x += 10;",
+            "y += 5;",
+            "let point2 = {x: x, y: y};",
+          ],
+        },
+        options: ["(30, 35)", "(20, 30)", "(10, 25)", "Error"],
+        correctAnswer: "(30, 35)",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let rectangle = {x:10, y:20, width:50, height:30};"],
+        },
+        options: [
+          "A rectangle starting at (10,20)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (10,20)",
+      },
+      {
+        question: "How many points are represented here?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let points = [];",
+            "for (let i = 1; i <= 3; i++) {",
+            "    points.push({x: i*10, y: i*20});",
+            "}",
+          ],
+        },
+        options: ["3 points", "1 point", "2 points", "None"],
+        correctAnswer: "3 points",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let circle = {x:40, y:50, radius:10};"],
+        },
+        options: ["A circle at (40,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (40,50)",
+      },
+      {
+        question: "Where is the point now?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = 5, y = 5;",
+            "x += 15;",
+            "y += 25;",
+            "let point = {x: x, y: y};",
+          ],
+        },
+        options: ["(20, 30)", "(5, 5)", "(0, 0)", "Error"],
+        correctAnswer: "(20, 30)",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "variables",
+    questions: [
+      {
+        question: "What is a variable used for?",
+        options: [
+          "To store a value",
+          "To draw pictures",
+          "To play music",
+          "To turn off the computer",
+        ],
+        correctAnswer: "To store a value",
+      },
+      {
+        question:
+          "Which keyword can be used to create a variable in JavaScript?",
+        options: ["let", "print", "show", "input"],
+        correctAnswer: "let",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 5;", "console.log(x);"],
+        },
+        options: ["5", "x", "0", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 3;", "x = 7;", "console.log(x);"],
+        },
+        options: ["3", "7", "x", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 2;", "let y = 4;", "console.log(x + y);"],
+        },
+        options: ["6", "24", "x + y", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let name = "Tom";', "console.log(name);"],
+        },
+        options: ["Tom", "name", '"name"', "Error"],
+        correctAnswer: "Tom",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 10;", "x = x - 3;", "console.log(x);"],
+        },
+        options: ["7", "13", "3", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let apples = 3;",
+            "apples = apples + apples;",
+            "console.log(apples);",
+          ],
+        },
+        options: ["6", "33", "3", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 4;", "let y = x;", "x = 9;", "console.log(y);"],
+        },
+        options: ["4", "9", "x", "Error"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let dogs = 2;",
+            "dogs = dogs + 1;",
+            "dogs = dogs + 1;",
+            "console.log(dogs);",
+          ],
+        },
+        options: ["4", "3", "21", "Error"],
+        correctAnswer: "4",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "variables",
+    questions: [
+      {
+        question: "What is a variable used for?",
+        options: [
+          "To store a value",
+          "To draw pictures",
+          "To play music",
+          "To turn off the computer",
+        ],
+        correctAnswer: "To store a value",
+      },
+      {
+        question:
+          "Which keyword can be used to create a variable in JavaScript?",
+        options: ["let", "print", "show", "input"],
+        correctAnswer: "let",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 5;", "console.log(x);"],
+        },
+        options: ["5", "x", "0", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 3;", "x = 7;", "console.log(x);"],
+        },
+        options: ["3", "7", "x", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 2;", "let y = 4;", "console.log(x + y);"],
+        },
+        options: ["6", "24", "x + y", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let name = "Tom";', "console.log(name);"],
+        },
+        options: ["Tom", "name", '"name"', "Error"],
+        correctAnswer: "Tom",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 10;", "x = x - 3;", "console.log(x);"],
+        },
+        options: ["7", "13", "3", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let apples = 3;",
+            "apples = apples + apples;",
+            "console.log(apples);",
+          ],
+        },
+        options: ["6", "33", "3", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 4;", "let y = x;", "x = 9;", "console.log(y);"],
+        },
+        options: ["4", "9", "x", "Error"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let dogs = 2;",
+            "dogs = dogs + 1;",
+            "dogs = dogs + 1;",
+            "console.log(dogs);",
+          ],
+        },
+        options: ["4", "3", "21", "Error"],
+        correctAnswer: "3",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a function in JavaScript?",
+        options: [
+          "A set of commands you can run together",
+          "A type of variable",
+          "A number",
+          "A shape",
+        ],
+        correctAnswer: "A set of commands you can run together",
+      },
+      {
+        question: "Why do we use functions in JavaScript?",
+        options: [
+          "To organize code and avoid repeating commands",
+          "To print text only",
+          "To draw shapes only",
+          "To stop the program",
+        ],
+        correctAnswer: "To organize code and avoid repeating commands",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function sayHello() {",
+            '    console.log("Hello!");',
+            "}",
+            "sayHello();",
+          ],
+        },
+        options: ["Hello!", "sayHello", "console.log", "Error"],
+        correctAnswer: "Hello!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function addNumbers() {",
+            "    let x = 3;",
+            "    let y = 4;",
+            "    console.log(x + y);",
+            "}",
+            "addNumbers();",
+          ],
+        },
+        options: ["7", "34", "x + y", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What happens when we run this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function drawSquare() {",
+            '    console.log("Drawing a square");',
+            "}",
+            "drawSquare();",
+          ],
+        },
+        options: [
+          "The program prints “Drawing a square”",
+          "The program prints “Drawing a circle”",
+          "The program draws a square",
+          "Nothing happens",
+        ],
+        correctAnswer: "The program prints “Drawing a square”",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function greet() {",
+            '    console.log("Hi!");',
+            "}",
+            "greet();",
+            "greet();",
+          ],
+        },
+        options: ["Hi!\nHi!", "Hi!", "Error"],
+        correctAnswer: "Hi!\nHi!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function addFive() {",
+            "    let x = 5;",
+            "    x = x + 5;",
+            "    console.log(x);",
+            "}",
+            "addFive();",
+          ],
+        },
+        options: ["10", "5", "55", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function showMessage() {",
+            '    console.log("Welcome!");',
+            "}",
+            "showMessage();",
+            "showMessage();",
+            "showMessage();",
+          ],
+        },
+        options: ["Welcome!\nWelcome!\nWelcome!", "Welcome!", "Error"],
+        correctAnswer: "Welcome!\nWelcome!\nWelcome!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function multiply() {",
+            "    let x = 3;",
+            "    let y = 4;",
+            "    console.log(x * y);",
+            "}",
+            "multiply();",
+          ],
+        },
+        options: ["12", "7", "34", "Error"],
+        correctAnswer: "12",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function repeatText() {",
+            '    console.log("Fun!");',
+            '    console.log("Fun!");',
+            "}",
+            "repeatText();",
+          ],
+        },
+        options: ["Fun!\nFun!", "Fun!", "Error"],
+        correctAnswer: "Fun!\nFun!",
+      },
+    ],
+  },
+  {
+    level: "JS1",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is a logic error?",
+        options: [
+          "A mistake where the code runs but does the wrong thing",
+          "A syntax mistake",
+          "A drawing mistake",
+          "A music mistake",
+        ],
+        correctAnswer: "A mistake where the code runs but does the wrong thing",
+      },
+      {
+        question: "What does an undefined variable cause?",
+        options: [
+          "An error when the program tries to use it",
+          "Colors to disappear",
+          "The program to draw shapes",
+          "Nothing happens",
+        ],
+        correctAnswer: "An error when the program tries to use it",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let num = 10", "console.log(num)"],
+        },
+        options: [
+          "Missing semicolons",
+          "Variables cannot be printed",
+          "num is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing semicolons",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function add() {",
+            "    let x = 5;",
+            "    let y = 2;",
+            "    console.log(x - y);",
+            "}",
+            "add();",
+          ],
+        },
+        options: [
+          "The function subtracts instead of adding (logic error)",
+          "Syntax error",
+          "Variables undefined",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "The function subtracts instead of adding (logic error)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const greet = () =>",
+            '    console.log("Hi there!");',
+            'console.log("Bye");',
+          ],
+        },
+        options: [
+          "Missing curly brackets for multiple-line arrow function",
+          "console.log cannot be used",
+          "greet cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer:
+          "Missing curly brackets for multiple-line arrow function",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let arr = [1,2,3];", "console.log(arr[3]);"],
+        },
+        options: [
+          "Index 3 does not exist (undefined)",
+          "Array cannot be printed",
+          "Numbers wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Index 3 does not exist (undefined)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 5;", "if x > 3 {", '    console.log("Yes");', "}"],
+        },
+        options: [
+          "Missing parentheses around condition",
+          "if cannot be used",
+          "console.log wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses around condition",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let text ="Hello";',
+            "text.toUpperCase",
+            "console.log(text);",
+          ],
+        },
+        options: [
+          "Missing parentheses for toUpperCase()",
+          "console.log cannot print strings",
+          "text cannot be printed",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses for toUpperCase()",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let i = 0;", "while(i <3)", '    console.log("Hi");'],
+        },
+        options: [
+          "Missing braces for loop (causes only one line to repeat)",
+          "while cannot be used",
+          "console.log cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer:
+          "Missing braces for loop (causes only one line to repeat)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let x ="10";', "let y = 5;", "console.log(x * y);"],
+        },
+        options: [
+          "Adding a string and a number causes unexpected result",
+          "Multiplication cannot be done",
+          "x and y are wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Adding a string and a number causes unexpected result",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "input",
+    questions: [
+      {
+        question:
+          "When a program says “Enter your age,” what is it asking for?",
+        options: ["Input", "Output", "A picture", "An equation"],
+        correctAnswer: "Input",
+      },
+      {
+        question:
+          "If the user doesn’t enter an input when asked, what usually happens?",
+        options: [
+          "The program guesses",
+          "The program waits",
+          "The program draws a picture",
+          "The program shuts down",
+        ],
+        correctAnswer: "The program waits",
+      },
+      {
+        question: "What will be printed to the screen?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let myName = prompt("Enter name:");', "console.log(name);"],
+        },
+        options: [
+          "It doesn’t print anything",
+          "It prints your name only",
+          "It prints ‘hello’ only",
+          "It asks for you to enter your name and then prints it",
+        ],
+        correctAnswer: "It doesn’t print anything",
+      },
+      {
+        question:
+          "Which input device does the program receive information from?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let favAnimal = prompt("Please enter your favourite animal: ");',
+            'console.log("I like " + favAnimal);',
+          ],
+        },
+        options: ["keyboard", "mouse", "microphone", "button"],
+        correctAnswer: "keyboard",
+      },
+      {
+        question: "What happens when the user clicks the button?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            '<input type="button" onClick="doSomething()" />',
+            "",
+            "const doSomething = () => {",
+            '    console.log("😊");',
+            "};",
+          ],
+        },
+        options: [
+          "An emoji is printed",
+          "Nothing",
+          "“Hello” is printed",
+          "“doSomething” is printed",
+        ],
+        correctAnswer: "An emoji is printed",
+      },
+      {
+        question:
+          "What will print when you run this code and enter ‘5’ when asked?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let num = prompt("Pick a number");', "console.log(num * 2);"],
+        },
+        options: ["4", "8", "10", "20"],
+        correctAnswer: "10",
+      },
+      {
+        question:
+          "What will print when you run this code and enter ‘3’ when asked?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let num = prompt("Pick a number");', "console.log(num * 2);"],
+        },
+        options: ["2", "5", "6", "9"],
+        correctAnswer: "6",
+      },
+      {
+        question: "Which input device does this code use?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            '<input type="button" onClick="doSomething()" />',
+            "",
+            "const doSomething = () => {",
+            '    let favFood = prompt("What is your favourite food?");',
+            "};",
+          ],
+        },
+        options: ["Keyboard", "Mouse", "Keyboard and mouse", "None"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question:
+          "True or false, the input is stored in a variable called “number”?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let word = prompt("enter a number: ");'],
+        },
+        options: ["True", "False"],
+        correctAnswer: "False",
+      },
+      {
+        question: "What is the issue in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'school = prompt("Which school do you go to?");',
+            'console.log("you go to " + school);',
+          ],
+        },
+        options: [
+          "Nothing - it will work perfectly",
+          "We didn’t store the input in a variable",
+          "The program is too short",
+          "The program is too long",
+        ],
+        correctAnswer: "We didn’t store the input in a variable",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "loops",
+    questions: [
+      {
+        question: "Why might a loop stop repeating?",
+        options: [
+          "The condition is met",
+          "The computer explodes",
+          "The sprite gets bored",
+          "The programmer gets bored",
+        ],
+        correctAnswer: "The condition is met",
+      },
+      {
+        question: "What is an infinite loop?",
+        options: [
+          "A loop that repeats a couple of times",
+          "A loop that repeats forever",
+          "A Decisions that repeats once",
+          "A loop that draws the infinity sign",
+        ],
+        correctAnswer: "A loop that repeats forever",
+      },
+      {
+        question: "How many times will this loop run?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 0; i < 5; i++){", "    console.log(i);", "}"],
+        },
+        options: ["1", "3", "5", "0"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "for(let i = 1; i <= 20; i += 2){",
+            "    console.log(i);",
+            "}",
+          ],
+        },
+        options: [
+          "Even numbers from 2 to 10",
+          "Odd numbers from 1-12",
+          "Even numbers from 2-200",
+          "Odd numbers from 1-20",
+        ],
+        correctAnswer: "Odd numbers from 1-20",
+      },
+      {
+        question: "What numbers will you see on the screen?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 15; i >= 10; i--){", "    console.log(i);", "}"],
+        },
+        options: [
+          "5, 4, 3, 2, 1",
+          "10, 11, 12, 13, 14, 15",
+          "15, 14, 13, 12, 11, 10",
+          "1, 2, 3, 4, 5",
+        ],
+        correctAnswer: "15, 14, 13, 12, 11, 10",
+      },
+      {
+        question: "What is the error in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 1; i < 5; i){", '    console.log("Hello");', "}"],
+        },
+        options: [
+          "n should be i instead",
+          "We did not give an initial value for i",
+          "It should say “Hello World” instead",
+          "We did not increment ‘i’",
+        ],
+        correctAnswer: "We did not increment ‘i’",
+      },
+      {
+        question: "How many total lines will print?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "for(let i = 1; i <=3; i++){",
+            '    console.log("Hello");',
+            "    console.log(i);",
+            "}",
+          ],
+        },
+        options: ["3", "6", "9", "1"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What will sum equal after the loop?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let sum = 0;",
+            "for(let i = 0; i < 3; i++){",
+            "    sum = sum + i;",
+            "}",
+          ],
+        },
+        options: ["1", "2", "3", "4"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What will this loop do?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["for(let i = 0; i < 10; i++){", "    // empty body", "}"],
+        },
+        options: [
+          "Print the numbers from 0 - 9",
+          "Prints the numbers from 9 - 0",
+          "Run once",
+          "It will do nothing but still run 10 times",
+        ],
+        correctAnswer: "It will do nothing but still run 10 times",
+      },
+      {
+        question: "True or false, this code uses Decisions:",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = 10;",
+            "let y = 5;",
+            "let sum = x + y;",
+            "for(let i = 0; i < 5; i++){",
+            "    x++;",
+            "    y++;",
+            "}",
+          ],
+        },
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "decisions",
+    questions: [
+      {
+        question:
+          "What happens if an `if` condition evaluates to `false` and there is no `else`?",
+        options: [
+          "The program stops",
+          "An error occurs",
+          "The code inside `if` is skipped",
+          "The condition becomes true",
+        ],
+        correctAnswer: "The code inside `if` is skipped",
+      },
+      {
+        question:
+          "Which operator is used to combine conditions where EITHER can be true?",
+        options: ["||", "!", "&&", "=="],
+        correctAnswer: "||",
+      },
+      {
+        question: "What prints if `x = 0`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x) {",
+            '    console.log("True");',
+            "} else {",
+            '    console.log("False");',
+            "}",
+          ],
+        },
+        options: ["True", "False", "Nothing", "Error"],
+        correctAnswer: "False",
+      },
+      {
+        question: "What prints if `x = 15`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x < 10) {",
+            '    console.log("Small");',
+            "}",
+            'console.log("Done");',
+          ],
+        },
+        options: ["Small", "Done", "Small then Done", "Nothing"],
+        correctAnswer: "Done",
+      },
+      {
+        question: "What prints if `x = 4`?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["if (x > 0 && x < 5) {", '    console.log("Low");', "}"],
+        },
+        options: ["Low", "High", "Nothing", "Error"],
+        correctAnswer: "Low",
+      },
+      {
+        question: "What prints if `x = 10`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x !== 10) {",
+            '    console.log("Not Ten");',
+            "} else {",
+            '    console.log("Ten");',
+            "}",
+          ],
+        },
+        options: ["Not Ten", "Ten", "Nothing", "Error"],
+        correctAnswer: "Ten",
+      },
+      {
+        question: "What prints if `x = -3`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x > 0) {",
+            '    console.log("Positive");',
+            "} else if (x == 0) {",
+            '    console.log("Zero");',
+            "} else {",
+            '    console.log("Negative");',
+            "}",
+          ],
+        },
+        options: ["Positive", "Zero", "Negative", "Nothing"],
+        correctAnswer: "Negative",
+      },
+      {
+        question: "What prints if `isLoggedIn = false`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (isLoggedIn && isAdmin) {",
+            '    console.log("Admin Panel");',
+            "} else {",
+            '    console.log("No Access");',
+            "}",
+          ],
+        },
+        options: ["Admin Panel", "No Access", "Nothing", "Error"],
+        correctAnswer: "No Access",
+      },
+      {
+        question: "What prints if `x = 2`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x == 1 || x == 2) {",
+            '    console.log("One or Two");',
+            "}",
+          ],
+        },
+        options: ["One or Two", "Two", "Nothing", "Error"],
+        correctAnswer: "One or Two",
+      },
+      {
+        question: "What prints if `x = 8`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "if (x > 10) {",
+            '    console.log("Large");',
+            "} else if (x > 5) {",
+            '    console.log("Medium");',
+            "} else {",
+            '    console.log("Small");',
+            "}",
+          ],
+        },
+        options: ["Large", "Medium", "Small", "Nothing"],
+        correctAnswer: "Medium",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What is “random” used for in games?",
+        options: [
+          "To repeat the same move",
+          "To make things happen in a surprising way",
+          "To sort items",
+          "To stop the game",
+        ],
+        correctAnswer: "To make things happen in a surprising way",
+      },
+      {
+        question: "Which function creates a random number between 0 and 1?",
+        options: [
+          "Math.randomInt()",
+          "Math.random()",
+          "Random()",
+          "getRandom()",
+        ],
+        correctAnswer: "Math.random()",
+      },
+      {
+        question: "What prints if `x = 2`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() * 3) + 1;",
+            "if(x != 2){",
+            '    console.log("Not Two");',
+            "}",
+          ],
+        },
+        options: ["Not Two", "Two", "Nothing", "Error"],
+        correctAnswer: "Not Two",
+      },
+      {
+        question: "What prints if `x = 4`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() * 5) + 1;",
+            "if(x >= 4){",
+            '    console.log("High");',
+            "} else {",
+            '    console.log("Low");',
+            "}",
+          ],
+        },
+        options: ["High", "Low", "Nothing", "Error"],
+        correctAnswer: "High",
+      },
+      {
+        question: "What prints if `x` is generated inside a loop?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "for(let i = 0; i < 4; i++){",
+            "    let x = Math.floor(Math.random() * 2) + 1;",
+            "    console.log(x);",
+            "}",
+          ],
+        },
+        options: ["Four numbers, each 1–2", "Always 1", "Always 2", "Error"],
+        correctAnswer: "Four numbers, each 1–2",
+      },
+      {
+        question: "What prints if we roll two dice?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let die1 = Math.floor(Math.random() * 6) + 1;",
+            "let die2 = Math.floor(Math.random() * 6) + 1;",
+            "console.log(die1 + die2);",
+          ],
+        },
+        options: ["A number 2–12", "0–11", "1–6", "2–6"],
+        correctAnswer: "A number 2–12",
+      },
+      {
+        question: "What prints if `x = 0`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() * 5);",
+            "if(x == 0){",
+            '    console.log("Zero");',
+            "}",
+          ],
+        },
+        options: ["Zero", "Not Zero", "Nothing", "Error"],
+        correctAnswer: "Zero",
+      },
+      {
+        question: "What prints if `x = 1`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() * 3) + 1;",
+            "if(x < 3){",
+            '    console.log("Less than 3");',
+            "}",
+          ],
+        },
+        options: ["Less than 3", "3", "Nothing", "Error"],
+        correctAnswer: "Less than 3",
+      },
+      {
+        question: "What is the maximum number of x?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = Math.floor(Math.random() * 10) + 1;"],
+        },
+        options: ["1", "10", "2", "8"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints if `x = 3`?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = Math.floor(Math.random() * 3) + 1;",
+            "if(x == 1){",
+            '    console.log("One");',
+            "} else if(x == 2){",
+            '    console.log("Two");',
+            "} else {",
+            '    console.log("Three");',
+            "}",
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "Three",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "list",
+    questions: [
+      {
+        question: "What is a list (array) in JavaScript?",
+        options: [
+          "A single number",
+          "A group of items stored together",
+          "A program that runs by itself",
+          "A type of function",
+        ],
+        correctAnswer: "A group of items stored together",
+      },
+      {
+        question: "What can an array store?",
+        options: [
+          "Only numbers",
+          "Only words",
+          "Numbers, words, or both",
+          "Nothing",
+        ],
+        correctAnswer: "Numbers, words, or both",
+      },
+      {
+        question: "Which of these is the last item in the list?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let toys = ["Car","Doll","Ball"];',
+            "console.log(toys[toys.length - 1]);",
+          ],
+        },
+        options: ["Car", "Doll", "Ball", "Error"],
+        correctAnswer: "Ball",
+      },
+      {
+        question: "How do you add an item to the start of a list?",
+        options: [
+          'myList.unshift("item")',
+          'myList.push("item")',
+          'myList[0] = "item"',
+          'console.log("item")',
+        ],
+        correctAnswer: 'myList.unshift("item")',
+      },
+      {
+        question: "What prints if we remove the last item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let fruits = ["Apple","Banana","Cherry"];',
+            "fruits.pop();",
+            "console.log(fruits);",
+          ],
+        },
+        options: [
+          '["Apple", "Banana", "Cherry"]',
+          '["Apple", "Banana"]',
+          '["Banana", "Cherry"]',
+          "Error",
+        ],
+        correctAnswer: '["Apple", "Banana"]',
+      },
+      {
+        question: "What prints if we check the first item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let colors = ["Red","Green","Blue"];',
+            "console.log(colors[0]);",
+          ],
+        },
+        options: ["Red", "Green", "Blue", "Error"],
+        correctAnswer: "Red",
+      },
+      {
+        question: "What prints after changing the second item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let animals = ["Lion","Tiger","Bear"];',
+            'animals[1] = "Elephant";',
+            "console.log(animals[1]);",
+          ],
+        },
+        options: ["Tiger", "Elephant", "Lion", "Error"],
+        correctAnswer: "Elephant",
+      },
+      {
+        question: "What prints if we check the length of an empty list?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let emptyList = [];", "console.log(emptyList.length);"],
+        },
+        options: ["0", "1", "undefined", "Error"],
+        correctAnswer: "0",
+      },
+      {
+        question: "What prints if we loop through a list in reverse?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let letters = ["A","B","C"];',
+            "for (let i = letters.length - 1; i >= 0; i--) {",
+            "    console.log(letters[i]);",
+            "}",
+          ],
+        },
+        options: ["A B C", "C B A", "B A C", "Error"],
+        correctAnswer: "C B A",
+      },
+      {
+        question: "What prints if we replace the last item?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let veggies = ["Carrot","Tomato","Pepper"];',
+            'veggies[veggies.length -1] = "Cucumber";',
+            "console.log(veggies[veggies.length -1]);",
+          ],
+        },
+        options: ["Pepper", "Cucumber", "Tomato", "Error"],
+        correctAnswer: "Cucumber",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What does the X-axis do?",
+        options: [
+          "Goes left to right (horizontal)",
+          "Goes up and down (vertical)",
+          "Goes diagonally",
+          "Is a point",
+        ],
+        correctAnswer: "Goes left to right (horizontal)",
+      },
+      {
+        question: "What does the Y-axis do?",
+        options: [
+          "Goes up and down (vertical)",
+          "Goes left to right (horizontal)",
+          "Goes diagonally",
+          "Is a point",
+        ],
+        correctAnswer: "Goes up and down (vertical)",
+      },
+      {
+        question: "What point does this code represent?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let point = {x:60, y:40};"],
+        },
+        options: ["(60, 40)", "(40, 60)", "(0, 0)", "Error"],
+        correctAnswer: "(60, 40)",
+      },
+      {
+        question: "What points are represented here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let points = [{x:15,y:25}, {x:45,y:35}];"],
+        },
+        options: [
+          "(15, 25) and (45, 35)",
+          "Only (15, 25)",
+          "Only (45, 35)",
+          "None",
+        ],
+        correctAnswer: "(15, 25) and (45, 35)",
+      },
+      {
+        question: "What line is described here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let line = {start: {x:0,y:0}, end: {x:30,y:60}};"],
+        },
+        options: [
+          "A line from (0,0) to (30,60)",
+          "A point at (0,0)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (0,0) to (30,60)",
+      },
+      {
+        question: "Where is the second point?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = 10, y = 10;",
+            "let point1 = {x: x, y: y};",
+            "x += 20;",
+            "y += 15;",
+            "let point2 = {x: x, y: y};",
+          ],
+        },
+        options: ["(30, 25)", "(10, 10)", "(20, 15)", "Error"],
+        correctAnswer: "(30, 25)",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let rectangle = {x:20, y:30, width:40, height:20};"],
+        },
+        options: [
+          "A rectangle starting at (20,30)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (20,30)",
+      },
+      {
+        question: "How many points are represented here?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let points = [];",
+            "for (let i = 1; i <= 4; i++) {",
+            "    points.push({x: i*5, y: i*10});",
+            "}",
+          ],
+        },
+        options: ["4 points", "1 point", "3 points", "None"],
+        correctAnswer: "4 points",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let circle = {x:70, y:50, radius:10};"],
+        },
+        options: ["A circle at (70,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (70,50)",
+      },
+      {
+        question: "Where is the point now?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x = 0, y = 0;",
+            "x += 25;",
+            "y += 30;",
+            "let point = {x: x, y: y};",
+          ],
+        },
+        options: ["(25, 30)", "(0, 0)", "(30, 25)", "Error"],
+        correctAnswer: "(25, 30)",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "variables",
+    questions: [
+      {
+        question: "What does `let` do in JavaScript?",
+        options: [
+          "Creates a new variable",
+          "Prints something on the screen",
+          "Runs a program",
+          "Adds two numbers",
+        ],
+        correctAnswer: "Creates a new variable",
+      },
+      {
+        question: "Which of these is a valid variable name?",
+        options: ["playerScore", "123score", "my score", "@level"],
+        correctAnswer: "playerScore",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 10;", "let y = 5;", "console.log(x - y);"],
+        },
+        options: ["5", "15", "105", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let a = 7;", "a = a * 2;", "console.log(a);"],
+        },
+        options: ["14", "9", "72", "Error"],
+        correctAnswer: "14",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let name = "Anna";', 'console.log("Hello " + name);'],
+        },
+        options: ["Hello Anna", "Hello name", "Anna", "Error"],
+        correctAnswer: "Hello Anna",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 3;", "let y = x;", "y = y + 4;", "console.log(x);"],
+        },
+        options: ["3", "7", "4", "Error"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let apples = 2;",
+            "let oranges = 5;",
+            "let total = apples + oranges;",
+            "console.log(total);",
+          ],
+        },
+        options: ["7", "25", "apples + oranges", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let text = "Hi";',
+            'text = text + " there";',
+            "console.log(text);",
+          ],
+        },
+        options: ["Hi there", "Hi", "there", "Error"],
+        correctAnswer: "Hi there",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let score = 0;",
+            "score = score + 1;",
+            "score = score + 1;",
+            "console.log(score);",
+          ],
+        },
+        options: ["2", "1", "0", "Error"],
+        correctAnswer: "2",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 5;", "x = x / 5;", "console.log(x);"],
+        },
+        options: ["1", "0", "5", "Error"],
+        correctAnswer: "1",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a parameter in a JavaScript function?",
+        options: [
+          "A value we give to a function to use inside it",
+          "A type of shape",
+          "A number only",
+          "A variable that disappears",
+        ],
+        correctAnswer: "A value we give to a function to use inside it",
+      },
+      {
+        question: "Why do we use parameters in functions?",
+        options: [
+          "To make functions reusable with different values",
+          "To draw rectangles",
+          "To play music",
+          "To stop the program",
+        ],
+        correctAnswer: "To make functions reusable with different values",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const greet = (name) => {",
+            '    console.log("Hello " + name);',
+            "}",
+            'greet("Anna");',
+          ],
+        },
+        options: ["Hello Anna", "Hello name", "name", "Error"],
+        correctAnswer: "Hello Anna",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const add = (x, y) => {",
+            "    console.log(x + y);",
+            "}",
+            "add(3, 4);",
+          ],
+        },
+        options: ["7", "34", "x + y", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const multiply = (a, b) => {",
+            "    console.log(a * b);",
+            "}",
+            "multiply(5, 2);",
+          ],
+        },
+        options: ["10", "7", "52", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const repeatText = (text, times) => {",
+            "    for (let i = 0; i < times; i++) {",
+            "        console.log(text);",
+            "    }",
+            "}",
+            'repeatText("Hi", 3);',
+          ],
+        },
+        options: ["Hi\nHi\nHi", "Hi", "Error", "Nothing"],
+        correctAnswer: "Hi\nHi\nHi",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const addFive = (number) => {",
+            "    console.log(number + 5);",
+            "}",
+            "addFive(10);",
+          ],
+        },
+        options: ["15", "10", "55", "Error"],
+        correctAnswer: "15",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const sayMessage = (msg) => {",
+            '    console.log("Message: " + msg);',
+            "}",
+            'sayMessage("Hello!");',
+          ],
+        },
+        options: ["Message: Hello!", "Message: msg", "Hello!", "Error"],
+        correctAnswer: "Message: Hello!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const subtract = (a, b) => {",
+            "    console.log(a - b);",
+            "}",
+            "subtract(10, 3);",
+          ],
+        },
+        options: ["7", "13", "103", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "const square = (num) => {",
+            "    console.log(num * num);",
+            "}",
+            "square(4);",
+          ],
+        },
+        options: ["16", "8", "44", "Error"],
+        correctAnswer: "16",
+      },
+    ],
+  },
+  {
+    level: "JS2",
+    topic: "debug",
+    questions: [
+      {
+        question: "What happens if a function is never called?",
+        options: [
+          "The code inside the function will not run",
+          "The function runs automatically",
+          "The program crashes",
+          "It prints random numbers",
+        ],
+        correctAnswer: "The code inside the function will not run",
+      },
+      {
+        question: "What is an unexpected output?",
+        options: [
+          "When the program runs but shows the wrong result",
+          "When the program prints correctly",
+          "A syntax error",
+          "A color change",
+        ],
+        correctAnswer: "When the program runs but shows the wrong result",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ['let name ="Alice";', "console.log(NaMe);"],
+        },
+        options: [
+          "Variable name is case-sensitive (NaMe is undefined)",
+          "console.log cannot print strings",
+          "Nothing is wrong",
+          "Name cannot be used",
+        ],
+        correctAnswer: "Variable name is case-sensitive (NaMe is undefined)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "function sayHello {",
+            '    console.log("Hello!");',
+            "}",
+            "sayHello();",
+          ],
+        },
+        options: [
+          "Missing parentheses after function name",
+          "console.log cannot be used",
+          "Function cannot print text",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses after function name",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let colors = ["red","green","blue"];',
+            "console.log(colors(1));",
+          ],
+        },
+        options: [
+          "Arrays use square brackets, not parentheses",
+          "colors cannot be printed",
+          "Index 1 is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Arrays use square brackets, not parentheses",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let score = 10",
+            "if(score => 5) {",
+            '    console.log("High");',
+            "}",
+          ],
+        },
+        options: [
+          "Should use >= instead of =>",
+          "console.log cannot be used",
+          "score cannot be compared",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Should use >= instead of =>",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            "let x =0;",
+            "while x <3 {",
+            "    console.log(x);",
+            "    x++;",
+            "}",
+          ],
+        },
+        options: [
+          "Missing parentheses around the while condition",
+          "console.log cannot be used",
+          "x cannot be compared",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses around the while condition",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: [
+            'let text ="hello";',
+            "text.lowerCase();",
+            "console.log(text);",
+          ],
+        },
+        options: [
+          "The correct method is toLowerCase()",
+          "console.log cannot print strings",
+          "Strings cannot be changed",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "The correct method is toLowerCase()",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let a = 5;", "let b = 3;", "consolelog(a * b);"],
+        },
+        options: [
+          "The correct function call is console.log(a * b)",
+          "Multiplication cannot be done",
+          "a and b are wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "The correct function call is console.log(a * b)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "javascript",
+          code: ["let x = 10;", "let y = 2;", "console.log(x - y);"],
+        },
+        options: [
+          "Mixing string and number incorrectly (logic error)",
+          "Subtraction cannot be done",
+          "Variables are wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Nothing is wrong",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "input",
+    questions: [
+      {
+        question: "What is an example of input from a touchscreen?",
+        options: [
+          "Music playing",
+          "Tapping the screen",
+          "A video playing",
+          "Text printed on the screen",
+        ],
+        correctAnswer: "Tapping the screen",
+      },
+      {
+        question: "Which of the following is input from a microphone?",
+        options: [
+          "A picture",
+          "A spoken sentence",
+          "A printed page",
+          "A mouse click",
+        ],
+        correctAnswer: "A spoken sentence",
+      },
+      {
+        question:
+          "Which function is commonly used to get input from the user in C?",
+        options: ["print()", "scanf()", "input()", "cout"],
+        correctAnswer: "scanf()",
+      },
+      {
+        question: "What does this code do?",
+        codeSnippet: {
+          language: "c",
+          code: ["int age;", 'scanf("%d", age);'],
+        },
+        options: [
+          "Prints the value of age",
+          "Stores a number entered by the user",
+          "Displays a message",
+          "Causes an error",
+        ],
+        correctAnswer: "Stores a number entered by the user",
+      },
+      {
+        question: "Which input device is used in this program?",
+        codeSnippet: {
+          language: "c",
+          code: ["char name[20];", 'scanf("%s", name);'],
+        },
+        options: ["Mouse", "Keyboard", "Microphone", "Monitor"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: "What symbol is used before a variable in scanf()?",
+        options: ["*", "%", "&", "#"],
+        correctAnswer: "&",
+      },
+      {
+        question: "What is missing in this code?",
+        codeSnippet: {
+          language: "c",
+          code: ["int score;", 'scanf("%d", score);'],
+        },
+        options: [
+          "A loop",
+          "An ampersand (&)",
+          "A print statement",
+          "A data type",
+        ],
+        correctAnswer: "An ampersand (&)",
+      },
+      {
+        question: "True or false: scanf() can read input from the user.",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "Which format specifier is used to read an integer?",
+        options: ["%s", "%f", "%d", "%c"],
+        correctAnswer: "%d",
+      },
+      {
+        question:
+          "What will happen if the user types text instead of a number for %d?",
+        options: [
+          "The program fixes it",
+          "The program may behave incorrectly",
+          "The program prints the text",
+          "Nothing happens",
+        ],
+        correctAnswer: "The program may behave incorrectly",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "loops",
+    questions: [
+      {
+        question: "Why might an infinite loop be a problem?",
+        options: [
+          "It can make the program never finish",
+          "It makes loud noises",
+          "It deletes files",
+          "It makes character disappear",
+        ],
+        correctAnswer: "It can make the program never finish",
+      },
+      {
+        question: "How can loops help animations?",
+        options: [
+          "They freeze characters",
+          "They repeat movements",
+          "They change colours",
+          "They stop sound effects",
+        ],
+        correctAnswer: "They repeat movements",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "for(int i = 1; i <= 3; i++){",
+            '    printf("%d\\n", i);',
+            "}",
+          ],
+        },
+        options: ["0 1 2", "1 2 3", "3 2 1", "Nothing"],
+        correctAnswer: "1 2 3",
+      },
+      {
+        question: "What is missing in this loop?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 0; i < 5; i++)", '    printf("Looping");'],
+        },
+        options: ["Brackets {}", "A semicolon", "A data type", "Nothing"],
+        correctAnswer: "Brackets {}",
+      },
+      {
+        question: "What happens in this loop?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 0; i < 0; i++){", '    printf("Test");', "}"],
+        },
+        options: [
+          "Runs once",
+          "Runs forever",
+          "Does not run",
+          "Causes an error",
+        ],
+        correctAnswer: "Does not run",
+      },
+      {
+        question: "What does i++ do?",
+        options: [
+          "Decreases i",
+          "Increases i by 1",
+          "Sets i to zero",
+          "Stops the loop",
+        ],
+        correctAnswer: "Increases i by 1",
+      },
+      {
+        question: "What will this loop print?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "for(int i = 2; i <= 10; i += 2){",
+            '    printf("%d ", i);',
+            "}",
+          ],
+        },
+        options: [
+          "Odd numbers",
+          "Even numbers",
+          "Numbers from 1–10",
+          "Nothing",
+        ],
+        correctAnswer: "Even numbers",
+      },
+      {
+        question: "True or false: A loop can contain more than one statement.",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "Which part of the loop controls when it stops?",
+        options: ["Initialization", "Condition", "Increment", "printf"],
+        correctAnswer: "Condition",
+      },
+      {
+        question: "What will this loop print?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "for(int i = 2; i <= 8; i += 2){",
+            '    printf("%d ", i);',
+            "}",
+          ],
+        },
+        options: ["Odd numbers", "Even numbers", "Numbers 1–8", "Nothing"],
+        correctAnswer: "Even numbers",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What is a common use of an if statement in C?",
+        options: [
+          "To repeat code",
+          "To choose between different paths",
+          "To declare variables",
+          "To include libraries",
+        ],
+        correctAnswer: "To choose between different paths",
+      },
+      {
+        question: "Which operator requires BOTH conditions to be true?",
+        options: ["||", "!", "&&", "=="],
+        correctAnswer: "&&",
+      },
+      {
+        question: "What prints if x = 7?",
+        codeSnippet: {
+          language: "c",
+          code: ["if (x > 5 && x < 10) {", '    printf("In Range");', "}"],
+        },
+        options: ["In Range", "Out of Range", "Nothing", "Error"],
+        correctAnswer: "In Range",
+      },
+      {
+        question: "What prints if x = 3?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x > 5 || x < 2) {",
+            '    printf("Condition Met");',
+            "} else {",
+            '    printf("Condition Not Met");',
+            "}",
+          ],
+        },
+        options: ["Condition Met", "Condition Not Met", "Nothing", "Error"],
+        correctAnswer: "Condition Not Met",
+      },
+      {
+        question: "What prints if loggedIn = 1?",
+        codeSnippet: {
+          language: "c",
+          code: ["if (loggedIn) {", '    printf("Welcome");', "}"],
+        },
+        options: ["Welcome", "Access Denied", "Nothing", "Error"],
+        correctAnswer: "Welcome",
+      },
+      {
+        question: "What prints if x = 10?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x == 10) {",
+            '    printf("Ten");',
+            "} elseif (x > 10) {",
+            '    printf("Large");',
+            "} else {",
+            '    printf("Small");',
+            "}",
+          ],
+        },
+        options: ["Ten", "Large", "Small", "Nothing"],
+        correctAnswer: "Ten",
+      },
+      {
+        question: "What prints if x = -1?",
+        codeSnippet: {
+          language: "c",
+          code: ["if (x >= 0) {", '    printf("Non-negative");', "}"],
+        },
+        options: ["Non-negative", "Negative", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints if x = 5?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x > 0) {",
+            "    if (x % 2 == 0) {",
+            '        printf("Even");',
+            "    } else {",
+            '        printf("Odd");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Even", "Odd", "Nothing", "Error"],
+        correctAnswer: "Odd",
+      },
+      {
+        question: "What prints if score = 49?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (score >= 90) {",
+            '    printf("A");',
+            "} else if (score >= 50) {",
+            '    printf("Pass");',
+            "} else {",
+            '    printf("Fail");',
+            "}",
+          ],
+        },
+        options: ["A", "Pass", "Fail", "Nothing"],
+        correctAnswer: "Fail",
+      },
+      {
+        question: "What prints if isAdmin = 0?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (isAdmin) {",
+            '    printf("Admin Access");',
+            "} else {",
+            '    printf("User Access");',
+            "}",
+          ],
+        },
+        options: ["Admin Access", "User Access", "Nothing", "Error"],
+        correctAnswer: "User Access",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What is a random number?",
+        options: [
+          "A number we can guess",
+          "A number we cannot guess",
+          "Always 0",
+          "Always 1",
+        ],
+        correctAnswer: "A number we cannot guess",
+      },
+      {
+        question: "Which C function can give a random number?",
+        options: ["printf()", "rand()", "scanf()", "main()"],
+        correctAnswer: "rand()",
+      },
+      {
+        question: "What is the smallest number this code can show?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + (rand() % 10);",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["1", "0", "5", "10"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What could this code simulate?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "#include<time.h>",
+            "int main() {",
+            "    srand(time(NULL));",
+            "    double x = rand() / (double)RAND_MAX;",
+            "    if(x < 0.5)",
+            '        printf("Heads\\n");',
+            "    else",
+            '        printf("Tails\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Flip a coin",
+          "Roll a dice",
+          "Count numbers",
+          "Print letters",
+        ],
+        correctAnswer: "Flip a coin",
+      },
+      {
+        question: "What prints if the random number is bigger than 3?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 10);",
+            "    if(x > 3)",
+            '        printf("Big\\n");',
+            "    else",
+            '        printf("Small\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Big", "Small", "Zero", "One"],
+        correctAnswer: "Big",
+      },
+      {
+        question: "What prints if the random number is less than 3?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 5);",
+            "    if(x < 3)",
+            '        printf("Small\\n");',
+            "    else",
+            '        printf("Big\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Small", "Big", "Zero", "One"],
+        correctAnswer: "Small",
+      },
+      {
+        question: "What could this code simulate?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "#include<time.h>",
+            "int main() {",
+            "    srand(time(NULL));",
+            "    double x = rand() / (double)RAND_MAX;",
+            '    printf("%f\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "A random number between 0 and 1",
+          "Always 0",
+          "Always 1",
+          "Counting numbers",
+        ],
+        correctAnswer: "A random number between 0 and 1",
+      },
+      {
+        question: "What prints if the random number is 1?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 3);",
+            "    if(x == 1)",
+            '        printf("One\\n");',
+            "    else if(x == 2)",
+            '        printf("Two\\n");',
+            "    else",
+            '        printf("Three\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["One", "Two", "Three", "Zero"],
+        correctAnswer: "One",
+      },
+      {
+        question: "What could this code simulate?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "#include<time.h>",
+            "int main() {",
+            "    srand(time(NULL));",
+            "    double x = rand() / (double)RAND_MAX;",
+            "    if(x < 0.25)",
+            '        printf("1\\n");',
+            "    else if(x < 0.5)",
+            '        printf("2\\n");',
+            "    else if(x < 0.75)",
+            '        printf("3\\n");',
+            "    else",
+            '        printf("4\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Roll a 4-sided dice",
+          "Flip a coin",
+          "Count 0–3",
+          "Print letters",
+        ],
+        correctAnswer: "Roll a 4-sided dice",
+      },
+      {
+        question: "What prints if the random number is bigger than 5?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 10);",
+            "    if(x > 5)",
+            '        printf("Big\\n");',
+            "    else",
+            '        printf("Small\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Big", "Small", "Nothing", "Error"],
+        correctAnswer: "Big",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "list",
+    questions: [
+      {
+        question: "What is a list (array) in C?",
+        options: [
+          "A single number",
+          "A group of items stored together",
+          "A program that runs by itself",
+          "A type of function",
+        ],
+        correctAnswer: "A group of items stored together",
+      },
+      {
+        question: "What can an array in C store?",
+        options: [
+          "Only numbers",
+          "Only letters",
+          "Numbers or letters",
+          "Nothing",
+        ],
+        correctAnswer: "Numbers or letters",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int myList[3] = {1, 2, 3};",
+            '    printf("%d", myList[0]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["1", "2", "3", "Error"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What prints if we change an item?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    char letters[3] = {'A', 'B', 'C'};",
+            "    letters[1] = 'D';",
+            '    printf("%c", letters[1]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["B", "D", "A", "Error"],
+        correctAnswer: "D",
+      },
+      {
+        question: "What prints if we loop through a list?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int numbers[3] = {5, 10, 15};",
+            "    for(int i=0; i<3; i++)",
+            '        printf("%d ", numbers[i]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["5 10 15", "15 10 5", "5 5 5", "Error"],
+        correctAnswer: "5 10 15",
+      },
+      {
+        question: "What prints if an array is empty?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int myList[3] = {0};",
+            '    printf("%d", myList[1]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["0", "1", "Error", "Nothing"],
+        correctAnswer: "0",
+      },
+      {
+        question: "What prints if we assign a new number?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int numbers[2] = {7, 8};",
+            "    numbers[0] = 9;",
+            '    printf("%d", numbers[0]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["7", "9", "8", "Error"],
+        correctAnswer: "9",
+      },
+      {
+        question: "What prints if we check the last item?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int numbers[3] = {1, 2, 3};",
+            '    printf("%d", numbers[2]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["1", "2", "3", "Error"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints if we use letters in a loop?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    char letters[2] = {'X', 'Y'};",
+            "    for(int i=0; i<2; i++)",
+            '        printf("%c ", letters[i]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["X Y", "Y X", "X X", "Error"],
+        correctAnswer: "X Y",
+      },
+      {
+        question: "What prints after changing the last number?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int numbers[3] = {2, 4, 6};",
+            "    numbers[2] = 8;",
+            '    printf("%d", numbers[2]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["6", "8", "4", "Error"],
+        correctAnswer: "8",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What is the Cartesian plane used for?",
+        options: [
+          "Drawing points using X and Y numbers",
+          "Counting numbers",
+          "Writing words",
+          "Printing text",
+        ],
+        correctAnswer: "Drawing points using X and Y numbers",
+      },
+      {
+        question: "Which coordinate comes first in a point?",
+        options: ["Y", "X", "Both at the same time", "None"],
+        correctAnswer: "X",
+      },
+      {
+        question: "What point does this code represent?",
+        codeSnippet: {
+          language: "c",
+          code: ["int x = 50;", "int y = 100;"],
+        },
+        options: ["(50, 100)", "(100, 50)", "(0, 0)", "Error"],
+        correctAnswer: "(50, 100)",
+      },
+      {
+        question: "What points are represented here?",
+        codeSnippet: {
+          language: "c",
+          code: ["int x1 = 10, y1 = 20;", "int x2 = 30, y2 = 40;"],
+        },
+        options: [
+          "(10, 20) and (30, 40)",
+          "Only (10, 20)",
+          "Only (30, 40)",
+          "None",
+        ],
+        correctAnswer: "(10, 20) and (30, 40)",
+      },
+      {
+        question: "What line is described here?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int x_start = 10, y_start = 10;",
+            "int x_end = 50, y_end = 50;",
+          ],
+        },
+        options: [
+          "A line from (10,10) to (50,50)",
+          "A point at (10,10)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (10,10) to (50,50)",
+      },
+      {
+        question: "Where is the second point?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int x1 = 20, y1 = 30;",
+            "int x2 = x1 + 10;",
+            "int y2 = y1 + 5;",
+          ],
+        },
+        options: ["(30, 35)", "(20, 30)", "(10, 25)", "Error"],
+        correctAnswer: "(30, 35)",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int rect_x = 10, rect_y = 20;",
+            "int rect_width = 50, rect_height = 30;",
+          ],
+        },
+        options: [
+          "A rectangle starting at (10,20)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (10,20)",
+      },
+      {
+        question: "How many points are represented here?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int xs[3], ys[3];",
+            "for(int i = 0; i < 3; i++) {",
+            "    xs[i] = (i+1)*10;",
+            "    ys[i] = (i+1)*20;",
+            "}",
+          ],
+        },
+        options: ["3 points", "1 point", "2 points", "None"],
+        correctAnswer: "3 points",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "c",
+          code: ["int circle_x = 40, circle_y = 50;", "int radius = 10;"],
+        },
+        options: ["A circle at (40,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (40,50)",
+      },
+      {
+        question: "Where is the point now?",
+        codeSnippet: {
+          language: "c",
+          code: ["int x = 5, y = 5;", "x += 15;", "y += 25;"],
+        },
+        options: ["(20, 30)", "(5, 5)", "(0, 0)", "Error"],
+        correctAnswer: "(20, 30)",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "variables",
+    questions: [
+      {
+        question: "What is a variable used for in C?",
+        options: [
+          "To store a value",
+          "To draw pictures",
+          "To play music",
+          "To stop the computer",
+        ],
+        correctAnswer: "To store a value",
+      },
+      {
+        question: "Which type stores whole numbers in C?",
+        options: ["int", "string", "float", "bool"],
+        correctAnswer: "int",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 5;",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["5", "x", "0", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 3;",
+            "    x = 7;",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["3", "7", "x", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 2;",
+            "    int y = 4;",
+            '    printf("%d\\n", x + y);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["6", "24", "x + y", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            '    char name[] = "Tom";',
+            '    printf("%s\\n", name);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Tom", "name", '"name"', "Error"],
+        correctAnswer: "Tom",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 10;",
+            "    x = x - 3;",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["7", "13", "3", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int apples = 3;",
+            "    apples = apples + apples;",
+            '    printf("%d\\n", apples);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["6", "33", "3", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 4;",
+            "    int y = x;",
+            "    x = 9;",
+            '    printf("%d\\n", y);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["4", "9", "x", "Error"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int dogs = 2;",
+            "    dogs = dogs + 1;",
+            "    dogs = dogs + 1;",
+            '    printf("%d\\n", dogs);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["4", "3", "21", "Error"],
+        correctAnswer: "4",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a function in C?",
+        options: [
+          "A group of instructions you can run together",
+          "A type of variable",
+          "A number",
+          "A shape",
+        ],
+        correctAnswer: "A group of instructions you can run together",
+      },
+      {
+        question: "Why do programmers use functions in C?",
+        options: [
+          "To organize code and avoid repeating commands",
+          "To print text only",
+          "To draw shapes only",
+          "To stop the program",
+        ],
+        correctAnswer: "To organize code and avoid repeating commands",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void sayHello() {",
+            '    printf("Hello!\\n");',
+            "}",
+            "int main() {",
+            "    sayHello();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Hello!", "sayHello", "printf", "Error"],
+        correctAnswer: "Hello!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void addNumbers() {",
+            "    int x = 3;",
+            "    int y = 4;",
+            '    printf("%d\\n", x + y);',
+            "}",
+            "int main() {",
+            "    addNumbers();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["7", "34", "x + y", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void drawSquare() {",
+            '    printf("Drawing a square\\n");',
+            "}",
+            "int main() {",
+            "    drawSquare();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Drawing a square",
+          "Drawing a circle",
+          "Printing numbers",
+          "Nothing happens",
+        ],
+        correctAnswer: "Drawing a square",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void greet() {",
+            '    printf("Hi!\\n");',
+            "}",
+            "int main() {",
+            "    greet();",
+            "    greet();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Hi!\nHi!", "Hi!", "Error"],
+        correctAnswer: "Hi!\nHi!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void addFive() {",
+            "    int x = 5;",
+            "    x = x + 5;",
+            '    printf("%d\\n", x);',
+            "}",
+            "int main() {",
+            "    addFive();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["10", "5", "55", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void showMessage() {",
+            '    printf("Welcome!\\n");',
+            "}",
+            "int main() {",
+            "    showMessage();",
+            "    showMessage();",
+            "    showMessage();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Welcome!\nWelcome!\nWelcome!", "Welcome!", "Error"],
+        correctAnswer: "Welcome!\nWelcome!\nWelcome!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void multiply() {",
+            "    int x = 3;",
+            "    int y = 4;",
+            '    printf("%d\\n", x * y);',
+            "}",
+            "int main() {",
+            "    multiply();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["12", "7", "34", "Error"],
+        correctAnswer: "12",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void repeatText() {",
+            '    printf("Fun!\\n");',
+            '    printf("Fun!\\n");',
+            "}",
+            "int main() {",
+            "    repeatText();",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Fun!\nFun!", "Fun!", "Error"],
+        correctAnswer: "Fun!\nFun!",
+      },
+    ],
+  },
+  {
+    level: "C1",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is a syntax error in C?",
+        options: [
+          "A mistake in how the code is written",
+          "A mistake in drawing shapes",
+          "A mistake in music",
+          "A number mistake",
+        ],
+        correctAnswer: "A mistake in how the code is written",
+      },
+      {
+        question: "What is a runtime error in C?",
+        options: [
+          "A mistake that happens while the program is running",
+          "A spelling mistake",
+          "A drawing mistake",
+          "A music mistake",
+        ],
+        correctAnswer: "A mistake that happens while the program is running",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            '    printf("Hello);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "printf cannot be used",
+          "main is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int x = 5;",
+            '    printf("%d\\n", y);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Variable y is not defined",
+          "Variable x is wrong",
+          "printf cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Variable y is not defined",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    for(int i =0 i <5; i++) {",
+            '        printf("%d\\n", i);',
+            "    }",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Missing semicolon between 0 and i < 5",
+          "i is wrong",
+          "printf cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing semicolon between 0 and i < 5",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int x = 10",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Missing semicolon after int x = 10",
+          "x cannot be printed",
+          "printf is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing semicolon after int x = 10",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    if x > 5 {",
+            '        printf("Yes\\n");',
+            "    }",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Missing parentheses around condition",
+          "printf cannot be used",
+          "x cannot be compared",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses around condition",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "intmain() {",
+            "    int arr[3] = {1,2,3};",
+            '    printf("%d\\n", arr[3]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Index 3 does not exist (undefined)",
+          "Array cannot be printed",
+          "Numbers are wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Index 3 does not exist (undefined)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int a = 5, b = 0;",
+            '    printf("%d\\n", a / b);',
+            "    return0;",
+            "}",
+          ],
+        },
+        options: [
+          "Division by zero",
+          "Variables a and b are wrong",
+          "printf cannot divide",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Division by zero",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int x = 5;",
+            "    int y = 3;",
+            '    printf("Sum: " + x + y);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Cannot use + to combine string and numbers in printf",
+          "Variables are wrong",
+          "printf cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Cannot use + to combine string and numbers in printf",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "input",
+    questions: [
+      {
+        question: "What type of action is choosing from a list of options?",
+        options: ["Output", "Input", "Animation", "Error"],
+        correctAnswer: "Input",
+      },
+      {
+        question: "True or false, a barcode scanner is an input device?",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "Which input device is used with scanf()?",
+        options: ["Mouse", "Keyboard", "Microphone", "Printer"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: "What does %s read?",
+        options: ["An integer", "A character", "A word or string", "A float"],
+        correctAnswer: "A word or string",
+      },
+      {
+        question: "What happens if input is not stored in a variable?",
+        options: [
+          "The program crashes",
+          "The input is lost",
+          "The input prints automatically",
+          "The program repeats",
+        ],
+        correctAnswer: "The input is lost",
+      },
+      {
+        question: "True or false: scanf() can read multiple values at once.",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "What is wrong with this code?",
+        codeSnippet: {
+          language: "c",
+          code: ["char name[10];", 'scanf("%s", &name);'],
+        },
+        options: [
+          "Nothing",
+          "Incorrect data type",
+          "Incorrect use of &",
+          "Missing format specifier",
+        ],
+        correctAnswer: "Incorrect use of &",
+      },
+      {
+        question: "Which format specifier should replace '?'",
+        codeSnippet: {
+          language: "c",
+          code: ["char letter;", 'scanf("?", &letter);'],
+        },
+        options: ["%s", "%c", "%d", "%f"],
+        correctAnswer: "%c",
+      },
+      {
+        question:
+          "What will happen if the user enters more characters than the array size?",
+        options: [
+          "It is ignored",
+          "It may cause an error",
+          "It automatically resizes",
+          "Nothing happens",
+        ],
+        correctAnswer: "It may cause an error",
+      },
+      {
+        question: "Which line prints output?",
+        options: ["scanf()", "printf()", "int", "return"],
+        correctAnswer: "printf()",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "loops",
+    questions: [
+      {
+        question: "Why might a game use Decisions?",
+        options: [
+          "To check things over and over (like score)",
+          "To play music louder",
+          "To make the screen brighter",
+          "To delete levels",
+        ],
+        correctAnswer: "To check things over and over (like score)",
+      },
+      {
+        question: "What do loops often check over and over?",
+        options: [
+          "The weather",
+          "Player input",
+          "Breakfast choices",
+          "Battery level",
+        ],
+        correctAnswer: "Player input",
+      },
+      {
+        question: "How many times does this loop run?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 1; i <= 4; i++){", '    printf("X");', "}"],
+        },
+        options: ["3", "4", "5", "Infinite"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 0; i < 5; i++){", '    printf("%d ", i);', "}"],
+        },
+        options: ["1 2 3 4", "0 1 2 3 4", "5 4 3 2 1", "Nothing"],
+        correctAnswer: "0 1 2 3 4",
+      },
+      {
+        question: "Why does this loop not execute?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 10; i < 5; i++){", '    printf("Test");', "}"],
+        },
+        options: [
+          "Condition is false",
+          "Syntax error",
+          "Infinite loop",
+          "Missing increment",
+        ],
+        correctAnswer: "Condition is false",
+      },
+      {
+        question: "What does i-- do here?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 5; i > 0; i--){", '    printf("%d ", i);', "}"],
+        },
+        options: [
+          "Increases i",
+          "Decreases i",
+          "Resets i",
+          "Stops immediately",
+        ],
+        correctAnswer: "Decreases i",
+      },
+      {
+        question: "What is missing in this code?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 0; i < 3; i++)", '    printf("Hi")'],
+        },
+        options: ["Semicolon", "Colon", "Brackets", "Variable"],
+        correctAnswer: "Semicolon",
+      },
+      {
+        question: "What will this loop print?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "for(int i = 1; i <= 9; i += 3){",
+            '    printf("%d ", i);',
+            "}",
+          ],
+        },
+        options: ["1 4 7", "3 6 9", "1–9", "Nothing"],
+        correctAnswer: "1 4 7",
+      },
+      {
+        question: "What does this loop do?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 0; i < 4; i++){}"],
+        },
+        options: [
+          "Prints numbers",
+          "Runs with no output",
+          "Runs once",
+          "Causes an error",
+        ],
+        correctAnswer: "Runs with no output",
+      },
+      {
+        question: "Which part of the loop decides when it stops?",
+        codeSnippet: {
+          language: "c",
+          code: ["for(int i = 0; i < 6; i++)"],
+        },
+        options: ["Initialization", "Condition", "Increment", "Print"],
+        correctAnswer: "Condition",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "decisions",
+    questions: [
+      {
+        question:
+          "What happens if an if condition is false and there is no else?",
+        options: [
+          "The program stops",
+          "An error occurs",
+          "The code block is skipped",
+          "The condition becomes true",
+        ],
+        correctAnswer: "The code block is skipped",
+      },
+      {
+        question: "Which operator checks for inequality in C?",
+        options: ["=", "==", "!=", "!"],
+        correctAnswer: "!=",
+      },
+      {
+        question: "What prints if x = 0?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x) {",
+            '    printf("True");',
+            "} else {",
+            '    printf("False");',
+            "}",
+          ],
+        },
+        options: ["True", "False", "Nothing", "Error"],
+        correctAnswer: "False",
+      },
+      {
+        question: "What prints if x = 15?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x < 10) {",
+            '    printf("Small");',
+            "}",
+            'printf("Done");',
+          ],
+        },
+        options: ["Small", "Done", "Small then Done", "Nothing"],
+        correctAnswer: "Done",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "c",
+          code: ["if (x > 0 && x < 5) {", '    printf("Low");', "}"],
+        },
+        options: ["Low", "High", "Nothing", "Error"],
+        correctAnswer: "Low",
+      },
+      {
+        question: "What prints if x = 10?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x != 10) {",
+            '    printf("Not Ten");',
+            "} else {",
+            '    printf("Ten");',
+            "}",
+          ],
+        },
+        options: ["Not Ten", "Ten", "Nothing", "Error"],
+        correctAnswer: "Ten",
+      },
+      {
+        question: "What prints if x = -3?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x > 0) {",
+            '    printf("Positive");',
+            "} else if (x == 0) {",
+            '    printf("Zero");',
+            "} else {",
+            '    printf("Negative");',
+            "}",
+          ],
+        },
+        options: ["Positive", "Zero", "Negative", "Nothing"],
+        correctAnswer: "Negative",
+      },
+      {
+        question: "What prints if isLoggedIn = 0 and isAdmin = 1?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (isLoggedIn && isAdmin) {",
+            '    printf("Admin Panel");',
+            "} else {",
+            '    printf("No Access");',
+            "}",
+          ],
+        },
+        options: ["Admin Panel", "No Access", "Nothing", "Error"],
+        correctAnswer: "No Access",
+      },
+      {
+        question: "What prints if x = 2?",
+        codeSnippet: {
+          language: "c",
+          code: ["if (x == 1 || x == 2) {", '    printf("One or Two");', "}"],
+        },
+        options: ["One or Two", "Two", "Nothing", "Error"],
+        correctAnswer: "One or Two",
+      },
+      {
+        question: "What prints if x = 8?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "if (x > 10) {",
+            '    printf("Large");',
+            "} else if (x > 5) {",
+            '    printf("Medium");',
+            "} else {",
+            '    printf("Small");',
+            "}",
+          ],
+        },
+        options: ["Large", "Medium", "Small", "Nothing"],
+        correctAnswer: "Small",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What is a random number good for in a game?",
+        options: [
+          "To always do the same thing",
+          "To make surprises happen",
+          "To stop the game",
+          "To print text",
+        ],
+        correctAnswer: "To make surprises happen",
+      },
+      {
+        question: "Which function can give a random number in C?",
+        options: ["printf()", "rand()", "scanf()", "main()"],
+        correctAnswer: "rand()",
+      },
+      {
+        question: "What prints if the random number is 1?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 2); // random 1–2",
+            "    if (x == 1)",
+            '        printf("One\\n");',
+            "    else",
+            '        printf("Two\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["One", "Two", "Three", "Zero"],
+        correctAnswer: "One",
+      },
+      {
+        question: "What prints if the random number is less than 4?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 6); // random 1–6",
+            "    if (x < 4)",
+            '        printf("Small\\n");',
+            "    else",
+            '        printf("Big\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Small", "Big", "Zero", "Error"],
+        correctAnswer: "Small",
+      },
+      {
+        question: "What prints if the random number is 5?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 10); // random 1–10",
+            "    if (x == 5)",
+            '        printf("Five\\n");',
+            "    else",
+            '        printf("Not Five\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Five", "Not Five", "Zero", "Error"],
+        correctAnswer: "Not Five",
+      },
+      {
+        question: "What prints if the random number is bigger than 7?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 10); // random 1–10",
+            "    if (x > 7)",
+            '        printf("Big\\n");',
+            "    else",
+            '        printf("Small\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Big", "Small", "Zero", "Error"],
+        correctAnswer: "Big",
+      },
+      {
+        question: "What prints if the random number is 3?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 3 + rand() / (RAND_MAX / 2); // random 3–4",
+            "    if (x == 3)",
+            '        printf("Three\\n");',
+            "    else",
+            '        printf("Four\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Three", "Four", "Five", "Zero"],
+        correctAnswer: "Three",
+      },
+      {
+        question: "What could this code simulate?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 6); // random 1–6",
+            '    printf("Dice roll: %d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Roll a dice",
+          "Flip a coin",
+          "Count numbers",
+          "Print letters",
+        ],
+        correctAnswer: "Roll a dice",
+      },
+      {
+        question: "What prints if the random number is less than 3?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 5); // random 1–5",
+            "    if (x < 3)",
+            '        printf("Small\\n");',
+            "    else",
+            '        printf("Big\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Small", "Big", "Zero", "Error"],
+        correctAnswer: "Small",
+      },
+      {
+        question: "What prints if the random number is 6?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "#include<stdlib.h>",
+            "int main() {",
+            "    int x = 1 + rand() / (RAND_MAX / 6); // random 1–6",
+            "    if (x == 6)",
+            '        printf("Six\\n");',
+            "    else",
+            '        printf("Not Six\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Six", "Not Six", "Zero", "Error"],
+        correctAnswer: "Six",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "list",
+    questions: [
+      {
+        question: "What can you do with a C array?",
+        options: [
+          "Store a group of items together",
+          "Store only one number",
+          "Make the computer talk",
+          "Draw pictures",
+        ],
+        correctAnswer: "Store a group of items together",
+      },
+      {
+        question: "How do you access the first item of an array?",
+        options: ["myArray[0]", "myArray[1]", "myArray[-1]", "myArray.first"],
+        correctAnswer: "myArray[0]",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int scores[4] = {10, 20, 30, 40};",
+            '    printf("%d", scores[3]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["10", "20", "30", "40"],
+        correctAnswer: "40",
+      },
+      {
+        question: "What prints if we change an item?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    char pets[2] = {'C', 'D'};",
+            "    pets[0] = 'B';",
+            '    printf("%c", pets[0]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["C", "B", "D", "Error"],
+        correctAnswer: "B",
+      },
+      {
+        question: "What prints if we loop through numbers?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int numbers[3] = {3, 6, 9};",
+            "    for(int i=0; i<3; i++)",
+            '        printf("%d ", numbers[i]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["3 6 9", "9 6 3", "3 3 3", "Error"],
+        correctAnswer: "3 6 9",
+      },
+      {
+        question: "What prints if an array has all zeros?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int list[3] = {0, 0, 0};",
+            '    printf("%d", list[2]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["0", "2", "3", "Error"],
+        correctAnswer: "0",
+      },
+      {
+        question: "What prints after assigning a new letter?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    char letters[3] = {'M', 'N', 'O'};",
+            "    letters[1] = 'P';",
+            '    printf("%c", letters[1]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["N", "P", "O", "Error"],
+        correctAnswer: "P",
+      },
+      {
+        question: "What prints if we check the first number?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int numbers[3] = {7, 8, 9};",
+            '    printf("%d", numbers[0]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["7", "8", "9", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints if we loop through letters?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    char letters[3] = {'X', 'Y', 'Z'};",
+            "    for(int i=0; i<3; i++)",
+            '        printf("%c ", letters[i]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["X Y Z", "Z Y X", "X X X", "Error"],
+        correctAnswer: "X Y Z",
+      },
+      {
+        question: "What prints after changing the first number?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int numbers[3] = {4, 5, 6};",
+            "    numbers[0] = 10;",
+            '    printf("%d", numbers[0]);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["4", "10", "5", "Error"],
+        correctAnswer: "10",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What does the X-axis do?",
+        options: [
+          "Goes left to right (horizontal)",
+          "Goes up and down (vertical)",
+          "Goes diagonally",
+          "Is a point",
+        ],
+        correctAnswer: "Goes left to right (horizontal)",
+      },
+      {
+        question: "What does the Y-axis do?",
+        options: [
+          "Goes up and down (vertical)",
+          "Goes left to right (horizontal)",
+          "Goes diagonally",
+          "Is a point",
+        ],
+        correctAnswer: "Goes up and down (vertical)",
+      },
+      {
+        question: "What point does this code represent?",
+        codeSnippet: {
+          language: "c",
+          code: ["int x = 60;", "int y = 40;"],
+        },
+        options: ["(60, 40)", "(40, 60)", "(0, 0)", "Error"],
+        correctAnswer: "(60, 40)",
+      },
+      {
+        question: "What points are represented here?",
+        codeSnippet: {
+          language: "c",
+          code: ["int x1 = 15, y1 = 25;", "int x2 = 45, y2 = 35;"],
+        },
+        options: [
+          "(15, 25) and (45, 35)",
+          "Only (15, 25)",
+          "Only (45, 35)",
+          "None",
+        ],
+        correctAnswer: "(15, 25) and (45, 35)",
+      },
+      {
+        question: "What line is described here?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int x_start = 0, y_start = 0;",
+            "int x_end = 30, y_end = 60;",
+          ],
+        },
+        options: [
+          "A line from (0,0) to (30,60)",
+          "A point at (0,0)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (0,0) to (30,60)",
+      },
+      {
+        question: "Where is the second point?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int x1 = 10, y1 = 10;",
+            "int x2 = x1 + 20;",
+            "int y2 = y1 + 15;",
+          ],
+        },
+        options: ["(30, 25)", "(10, 10)", "(20, 15)", "Error"],
+        correctAnswer: "(30, 25)",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int rect_x = 20, rect_y = 30;",
+            "int rect_width = 40, rect_height = 20;",
+          ],
+        },
+        options: [
+          "A rectangle starting at (20,30)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (20,30)",
+      },
+      {
+        question: "How many points are represented here?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "int xs[4], ys[4];",
+            "for(int i = 0; i < 4; i++) {",
+            "    xs[i] = (i+1)*5;",
+            "    ys[i] = (i+1)*10;",
+            "}",
+          ],
+        },
+        options: ["4 points", "1 point", "3 points", "None"],
+        correctAnswer: "4 points",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "c",
+          code: ["int circle_x = 70, circle_y = 50;", "int radius = 10;"],
+        },
+        options: ["A circle at (70,50)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (70,50)",
+      },
+      {
+        question: "Where is the point now?",
+        codeSnippet: {
+          language: "c",
+          code: ["int x = 0, y = 0;", "x += 25;", "y += 30;"],
+        },
+        options: ["(25, 30)", "(0, 0)", "(30, 25)", "Error"],
+        correctAnswer: "(25, 30)",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "variables",
+    questions: [
+      {
+        question: "What can a variable store in C?",
+        options: [
+          "A number or a word",
+          "Only pictures",
+          "Only sounds",
+          "Nothing",
+        ],
+        correctAnswer: "A number or a word",
+      },
+      {
+        question: "Which of these is a correct variable name in C?",
+        options: ["score", "1score", "my score", "@score"],
+        correctAnswer: "score",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 1;",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["1", "x", "0", "Error"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 5;",
+            "    x = x + 1;",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["5", "6", "51", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int a = 3;",
+            "    int b = 2;",
+            '    printf("%d\\n", a + b);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["5", "32", "a + b", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            '    char name[] = "Lily";',
+            '    printf("%s\\n", name);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Lily", "name", '"name"', "Error"],
+        correctAnswer: "Lily",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 8;",
+            "    x = x - 3;",
+            '    printf("%d\\n", x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["5", "11", "3", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int coins = 4;",
+            "    coins = coins + coins;",
+            '    printf("%d\\n", coins);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["8", "44", "4", "Error"],
+        correctAnswer: "8",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int x = 6;",
+            "    int y = x;",
+            "    x = 2;",
+            '    printf("%d\\n", y);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["6", "2", "x", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "int main() {",
+            "    int cats = 1;",
+            "    cats = cats + 1;",
+            "    cats = cats + 1;",
+            '    printf("%d\\n", cats);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["3", "2", "11", "Error"],
+        correctAnswer: "3",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a parameter in a C function?",
+        options: [
+          "A value we give to a function to use inside it",
+          "A type of shape",
+          "A number only",
+          "A variable that disappears",
+        ],
+        correctAnswer: "A value we give to a function to use inside it",
+      },
+      {
+        question: "Why do we use parameters in functions?",
+        options: [
+          "To make functions reusable with different values",
+          "To draw rectangles only",
+          "To play music",
+          "To stop the program",
+        ],
+        correctAnswer: "To make functions reusable with different values",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void greet(char name[]) {",
+            '    printf("Hello %s\\n", name);',
+            "}",
+            "int main() {",
+            '    greet("Anna");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Hello Anna", "Hello name", "name", "Error"],
+        correctAnswer: "Hello Anna",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void add(int x, int y) {",
+            '    printf("%d\\n", x + y);',
+            "}",
+            "int main() {",
+            "    add(3, 4);",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["7", "34", "x + y", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void multiply(int a, int b) {",
+            '    printf("%d\\n", a * b);',
+            "}",
+            "int main() {",
+            "    multiply(5, 2);",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["10", "7", "52", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void subtract(int a, int b) {",
+            '    printf("%d\\n", a - b);',
+            "}",
+            "int main() {",
+            "    subtract(10, 3);",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["7", "13", "103", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void addFive(int x) {",
+            '    printf("%d\\n", x + 5);',
+            "}",
+            "int main() {",
+            "    addFive(10);",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["15", "10", "55", "Error"],
+        correctAnswer: "15",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void repeatText(char text[], int times) {",
+            "    for(int i = 0; i < times; i++) {",
+            '        printf("%s\\n", text);',
+            "    }",
+            "}",
+            "int main() {",
+            '    repeatText("Hi", 3);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Hi\nHi\nHi", "Hi", "Error", "3"],
+        correctAnswer: "Hi\nHi\nHi",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void square(int num) {",
+            '    printf("%d\\n", num * num);',
+            "}",
+            "int main() {",
+            "    square(4);",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["16", "8", "44", "Error"],
+        correctAnswer: "16",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include <stdio.h>",
+            "void showMessage(char msg[]) {",
+            '    printf("Message: %s\\n", msg);',
+            "}",
+            "int main() {",
+            '    showMessage("Hello!");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: ["Message: Hello!", "Message: msg", "Hello!", "Error"],
+        correctAnswer: "Message: Hello!",
+      },
+    ],
+  },
+  {
+    level: "C2",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is a logic error in C?",
+        options: [
+          "When the program runs but gives the wrong answer",
+          "A spelling mistake",
+          "A syntax mistake",
+          "A drawing mistake",
+        ],
+        correctAnswer: "When the program runs but gives the wrong answer",
+      },
+      {
+        question: "What happens if a function is never called?",
+        options: [
+          "The code inside the function will not run",
+          "The function runs automatically",
+          "The program crashes",
+          "It prints random numbers",
+        ],
+        correctAnswer: "The code inside the function will not run",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "void sayHello() {",
+            '    printf("Hello\\n");',
+            "}",
+            "int main() {",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "The function sayHello is not called",
+          "printf cannot be used",
+          "main is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "main is wrong",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int add(int x,int y) {",
+            "    return x - y;",
+            "}",
+            "int main() {",
+            '    printf("%d\\n", add(5,3));',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "The function subtracts instead of adding (logic error)",
+          "printf cannot be used",
+          "Variables are wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "The function subtracts instead of adding (logic error)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    for(int i = 0; i <=5; i++);",
+            '        printf("%d\\n", i);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Semicolon after for-loop makes the loop body run incorrectly",
+          "i is wrong",
+          "printf cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer:
+          "Semicolon after for-loop makes the loop body run incorrectly",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int arr[3] = {1,2,3};",
+            "    for(int i = 0; i <=3; i++) {",
+            '        printf("%d\\n", arr[i]);',
+            "    }",
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "i <= 3 goes out of array bounds (should be i < 3)",
+          "arr cannot be printed",
+          "printf is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "i <= 3 goes out of array bounds (should be i < 3)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "void multiplyByTwo(int x) {",
+            "    x * 2;",
+            "}",
+            "int main() {",
+            '    printf("%d\\n", multiplyByTwo(5));',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "multiplyByTwo does not return a value",
+          "x is wrong",
+          "printf cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "multiplyByTwo does not return a value",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int x = 10;",
+            "    if x > 5",
+            '        printf("Yes\\n");',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Missing parentheses around condition",
+          "printf cannot be used",
+          "x cannot be compared",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses around condition",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int a = 5, b = 3;",
+            '    printf("Sum: %d\\n", a + b + c);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Variable c is not defined",
+          "a + b cannot be used",
+          "printf cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Variable c is not defined",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            "#include<stdio.h>",
+            "int main() {",
+            "    int x = 5;",
+            '    printf("Value: " x);',
+            "    return 0;",
+            "}",
+          ],
+        },
+        options: [
+          "Missing comma between string and variable in printf",
+          "x cannot be printed",
+          "printf cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing comma between string and variable in printf",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "input",
+    questions: [
+      {
+        question:
+          "True or false, a smart watch reading your heartrate is an example of input?",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "Why are input devices important?",
+        options: [
+          "The allow the computer to send messages",
+          "They allow the user to give information the computer",
+          "They make the computer faster",
+          "They fix errors",
+        ],
+        correctAnswer: "They allow the user to give information the computer",
+      },
+      {
+        question: "What does this line do?",
+        codeSnippet: {
+          language: "java",
+          code: ["Scanner sc = new Scanner(System.in);"],
+        },
+        options: [
+          "Prints input",
+          "Creates an input object",
+          "Reads a number",
+          "Causes an error",
+        ],
+        correctAnswer: "Creates an input object",
+      },
+      {
+        question: "Which device is used here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int age = sc.nextInt();"],
+        },
+        options: ["Mouse", "Keyboard", "Screen", "Speaker"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: "What will this read?",
+        codeSnippet: {
+          language: "java",
+          code: ["String name = sc.next();"],
+        },
+        options: ["A single word", "A full line", "A number", "A character"],
+        correctAnswer: "A single word",
+      },
+      {
+        question: "What happens if text is entered here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int x = sc.nextInt();"],
+        },
+        options: [
+          "Converts automatically",
+          "Program error",
+          "Reads text",
+          "Skips input",
+        ],
+        correctAnswer: "Program error",
+      },
+      {
+        question: "What is missing before this code can run?",
+        codeSnippet: {
+          language: "java",
+          code: ["Scanner sc = new Scanner(System.in);"],
+        },
+        options: ["Loop", "Import statement", "Print statement", "Class name"],
+        correctAnswer: "Import statement",
+      },
+      {
+        question: "What will be stored in num?",
+        codeSnippet: {
+          language: "java",
+          code: ["int num = sc.nextInt();"],
+        },
+        options: [
+          "Scanner object",
+          "User’s number",
+          "Always zero",
+          "Text input",
+        ],
+        correctAnswer: "User’s number",
+      },
+      {
+        question: "What does this read?",
+        codeSnippet: {
+          language: "java",
+          code: ["String line = sc.nextLine();"],
+        },
+        options: ["One character", "One word", "Full line", "Integer"],
+        correctAnswer: "Full line",
+      },
+      {
+        question: "Which variable stores input here?",
+        codeSnippet: {
+          language: "java",
+          code: ["String city = sc.nextLine();"],
+        },
+        options: ["String", "sc", "city", "nextLine"],
+        correctAnswer: "city",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "loops",
+    questions: [
+      {
+        question: "What does it mean to “break” or exit a loop?",
+        options: [
+          "Throw away the computer",
+          "Stop the loop early",
+          "Make the loop faster",
+          "Fix a character",
+        ],
+        correctAnswer: "Stop the loop early",
+      },
+      {
+        question: "Why should we use a loop?",
+        options: [
+          "Loops look cool",
+          "Loops take up more memory",
+          "They are shorter and simpler",
+          "Loops delete code",
+        ],
+        correctAnswer: "They are shorter and simpler",
+      },
+      {
+        question: "How many times does this loop run?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "for(int i = 0; i < 3; i++){",
+            '    System.out.println("Hi");',
+            "}",
+          ],
+        },
+        options: ["2", "3", "4", "Infinite"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "for(int i = 1; i <= 3; i++){",
+            "    System.out.println(i);",
+            "}",
+          ],
+        },
+        options: ["0 1 2", "1 2 3", "3 2 1", "Nothing"],
+        correctAnswer: "1 2 3",
+      },
+      {
+        question: "Why does this loop not execute?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "for(int i = 5; i < 2; i++){",
+            '    System.out.println("Test");',
+            "}",
+          ],
+        },
+        options: [
+          "Condition false",
+          "Syntax error",
+          "Infinite loop",
+          "Missing increment",
+        ],
+        correctAnswer: "Condition false",
+      },
+      {
+        question: "What does i++ do here?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "for(int i = 0; i < 4; i++){",
+            "    System.out.println(i);",
+            "}",
+          ],
+        },
+        options: ["Decreases i", "Increases i", "Resets i", "Stops loop"],
+        correctAnswer: "Increases i",
+      },
+      {
+        question: "What is wrong with this loop?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "for(int i = 0; i < 3; i)",
+            '    System.out.println("Hello");',
+          ],
+        },
+        options: [
+          "Missing ++",
+          "Missing condition",
+          "Missing braces",
+          "Nothing",
+        ],
+        correctAnswer: "Missing ++",
+      },
+      {
+        question: "What will this print?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "for(int i = 2; i <= 6; i += 2){",
+            "    System.out.println(i);",
+            "}",
+          ],
+        },
+        options: ["Odd numbers", "Even numbers", "Numbers 1–6", "Nothing"],
+        correctAnswer: "Even numbers",
+      },
+      {
+        question: "What does this loop do?",
+        codeSnippet: {
+          language: "java",
+          code: ["for(int i = 0; i < 5; i++){}"],
+        },
+        options: [
+          "Prints numbers",
+          "Runs with no output",
+          "Runs once",
+          "Causes error",
+        ],
+        correctAnswer: "Runs with no output",
+      },
+      {
+        question: "Which part controls when the loop stops?",
+        codeSnippet: {
+          language: "java",
+          code: ["for(int i = 0; i < 5; i++)"],
+        },
+        options: ["Initialization", "Condition", "Increment", "Output"],
+        correctAnswer: "Condition",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What is the main purpose of an if statement in Java?",
+        options: [
+          "To repeat a block of code",
+          "To make a decision based on a condition",
+          "To define a class",
+          "To import packages",
+        ],
+        correctAnswer: "To make a decision based on a condition",
+      },
+      {
+        question: "Which logical operator means “OR” in Java?",
+        options: ["&&", "||", "!", "=="],
+        correctAnswer: "||",
+      },
+      {
+        question: "What prints if x = 12?",
+        codeSnippet: {
+          language: "java",
+          code: ["if (x > 10) {", '    System.out.println("Large");', "}"],
+        },
+        options: ["Large", "Small", "Nothing", "Error"],
+        correctAnswer: "Large",
+      },
+      {
+        question: "What prints if x = 4?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "if (x > 5) {",
+            '    System.out.println("High");',
+            "}else {",
+            '    System.out.println("Low");',
+            "}",
+          ],
+        },
+        options: ["High", "Low", "Nothing", "Error"],
+        correctAnswer: "Low",
+      },
+      {
+        question: "What prints if isReady = true?",
+        codeSnippet: {
+          language: "java",
+          code: ["if (isReady) {", '    System.out.println("Start");', "}"],
+        },
+        options: ["Start", "Stop", "Nothing", "Error"],
+        correctAnswer: "Start",
+      },
+      {
+        question: "What prints if x = 10?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "if (x > 10) {",
+            '    System.out.println("Big");',
+            "}else if (x == 10) {",
+            '    System.out.println("Exact");',
+            "}else {",
+            '    System.out.println("Small");',
+            "}",
+          ],
+        },
+        options: ["Big", "Exact", "Small", "Nothing"],
+        correctAnswer: "Exact",
+      },
+      {
+        question: "What prints if x = -5?",
+        codeSnippet: {
+          language: "java",
+          code: ["if (x >= 0) {", '    System.out.println("Positive");', "}"],
+        },
+        options: ["Positive", "Negative", "Nothing", "Error"],
+        correctAnswer: "Nothing",
+      },
+      {
+        question: "What prints if x = 6?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "if (x > 0 && x % 3 == 0) {",
+            '    System.out.println("Divisible by 3");',
+            "}",
+          ],
+        },
+        options: ["Divisible by 3", "Not divisible by 3", "Nothing", "Error"],
+        correctAnswer: "Divisible by 3",
+      },
+      {
+        question: "What prints if score = 75?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "if (score >= 90) {",
+            '    System.out.println("A");',
+            "}else if (score >= 70) {",
+            '    System.out.println("B");',
+            "}else {",
+            '    System.out.println("C");',
+            "}",
+          ],
+        },
+        options: ["A", "B", "C", "Nothing"],
+        correctAnswer: "B",
+      },
+      {
+        question: "What prints if admin = false?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "if (admin) {",
+            '    System.out.println("Admin Mode");',
+            "}else {",
+            '    System.out.println("User Mode");',
+            "}",
+          ],
+        },
+        options: ["Admin Mode", "User Mode", "Nothing", "Error"],
+        correctAnswer: "User Mode",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "randomness",
+    questions: [
+      {
+        question: "Why do games use random numbers?",
+        options: [
+          "To make surprises happen",
+          "To always do the same thing",
+          "To stop the game",
+          "To print words",
+        ],
+        correctAnswer: "To make surprises happen",
+      },
+      {
+        question: "Which class helps us make random numbers in Java?",
+        options: ["Scanner", "Random", "System", "String"],
+        correctAnswer: "Random",
+      },
+      {
+        question: "What prints if the random number is 1?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(2) + 1;",
+            "        if (x == 1)",
+            '            System.out.println("One");',
+            "        else",
+            '            System.out.println("Two");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "One",
+      },
+      {
+        question: "What prints if the random number is less than 4?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(6) + 1;",
+            "        if (x < 4)",
+            '            System.out.println("Small");',
+            "        else",
+            '            System.out.println("Big");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Small", "Big", "Zero", "Error"],
+        correctAnswer: "Small",
+      },
+      {
+        question: "What prints if the random number is 5?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(10) + 1;",
+            "        if (x == 5)",
+            '            System.out.println("Five");',
+            "        else",
+            '            System.out.println("Not Five");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Five", "Not Five", "Zero", "Error"],
+        correctAnswer: "Not Five",
+      },
+      {
+        question: "What prints if the random number is bigger than 7?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(10) + 1;",
+            "        if (x > 7)",
+            '            System.out.println("Big");',
+            "        else",
+            '            System.out.println("Small");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Big", "Small", "Zero", "Error"],
+        correctAnswer: "Big",
+      },
+      {
+        question: "What prints if the random number is 3?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(2) + 3;",
+            "        if (x == 3)",
+            '            System.out.println("Three");',
+            "        else",
+            '            System.out.println("Four");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Three", "Four", "Five", "Zero"],
+        correctAnswer: "Three",
+      },
+      {
+        question: "What does this code act like?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(6) + 1;",
+            '        System.out.println("Number: " + x);',
+            "    }",
+            "}",
+          ],
+        },
+        options: [
+          "Rolling a dice",
+          "Flipping a coin",
+          "Writing words",
+          "Counting up",
+        ],
+        correctAnswer: "Rolling a dice",
+      },
+      {
+        question: "What prints if the random number is less than 3?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(5) + 1;",
+            "        if (x < 3)",
+            '            System.out.println("Small");',
+            "        else",
+            '            System.out.println("Big");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Small", "Big", "Zero", "Error"],
+        correctAnswer: "Small",
+      },
+      {
+        question: "What prints if the random number is 6?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.Random;",
+            "public class Game {",
+            "    public static void main(String[] args) {",
+            "        Random r = new Random();",
+            "        int x = r.nextInt(6) + 1;",
+            "        if (x == 6)",
+            '            System.out.println("Six");',
+            "        else",
+            '            System.out.println("Not Six");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Six", "Not Six", "Zero", "Error"],
+        correctAnswer: "Six",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "list",
+    questions: [
+      {
+        question: "What is a list in Java?",
+        options: [
+          "A single number",
+          "A group of items stored together",
+          "A program that runs by itself",
+          "A type of function",
+        ],
+        correctAnswer: "A group of items stored together",
+      },
+      {
+        question: "What can a Java ArrayList store?",
+        options: [
+          "Only numbers",
+          "Only words",
+          "Numbers, words, or both",
+          "Nothing",
+        ],
+        correctAnswer: "Numbers, words, or both",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<String> fruits = new ArrayList<String>();",
+            '        fruits.add("Apple");',
+            '        fruits.add("Banana");',
+            "        System.out.println(fruits.get(0));",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Apple", "Banana", "fruits.get(0)", "Error"],
+        correctAnswer: "Apple",
+      },
+      {
+        question: "What prints if we change an item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<String> colors = new ArrayList<String>();",
+            '        colors.add("Red");',
+            '        colors.set(0,"Blue");',
+            "        System.out.println(colors.get(0));",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Red", "Blue", "Error", "Nothing"],
+        correctAnswer: "Blue",
+      },
+      {
+        question: "What prints if we loop through a list?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<Integer> numbers = new ArrayList<Integer>();",
+            "        numbers.add(1);",
+            "        numbers.add(2);",
+            "        numbers.add(3);",
+            "        for(int i : numbers)",
+            '            System.out.print(i + " ");',
+            "    }",
+            "}",
+          ],
+        },
+        options: ["1 2 3", "3 2 1", "1 1 1", "Error"],
+        correctAnswer: "1 2 3",
+      },
+      {
+        question: "What prints if a list is empty?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<String> myList = new ArrayList<String>();",
+            "        System.out.println(myList.size());",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["0", "1", "Error", "Nothing"],
+        correctAnswer: "0",
+      },
+      {
+        question: "What prints after adding a new item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<String> pets = new ArrayList<String>();",
+            '        pets.add("Dog");',
+            '        pets.add("Cat");',
+            "        System.out.println(pets.get(1));",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Dog", "Cat", "pets.get(1)", "Error"],
+        correctAnswer: "Cat",
+      },
+      {
+        question: "What prints if we overwrite a list item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<String> letters = new ArrayList<String>();",
+            '        letters.add("A");',
+            '        letters.set(0, "B");',
+            "        System.out.println(letters.get(0));",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["A", "B", "Error", "Nothing"],
+        correctAnswer: "B",
+      },
+      {
+        question: "What prints if we count list items?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<String> colors = new ArrayList<String>();",
+            '        colors.add("Red");',
+            '        colors.add("Green");',
+            '        colors.add("Blue");',
+            "        System.out.println(colors.size());",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["3", "2", "1", "0"],
+        correctAnswer: "3",
+      },
+      {
+        question: "What prints if we remove a list item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "import java.util.ArrayList;",
+            "class Main {",
+            "    public static void main(String[] args) {",
+            "        ArrayList<String> animals = new ArrayList<String>();",
+            '        animals.add("Lion");',
+            '        animals.add("Tiger");',
+            "        animals.remove(0);",
+            "        System.out.println(animals.get(0));",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["Tiger", "Lion", "Error", "Nothing"],
+        correctAnswer: "Tiger",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "Which direction does the X value increase?",
+        options: [
+          "Left to right",
+          "Right to left",
+          "Up and down",
+          "Diagonally",
+        ],
+        correctAnswer: "Left to right",
+      },
+      {
+        question: "Which direction does the Y value increase?",
+        options: ["Up", "Down", "Left", "Right"],
+        correctAnswer: "Up",
+      },
+      {
+        question: "What point does this code represent?",
+        codeSnippet: {
+          language: "java",
+          code: ["int x = 25;", "int y = 75;"],
+        },
+        options: ["(25, 75)", "(75, 25)", "(0, 0)", "Error"],
+        correctAnswer: "(25, 75)",
+      },
+      {
+        question: "You have these points:",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int x1=5, y1 =10;",
+            "int x2=15, y2 =20;",
+            "int x3=25, y3 =5;",
+          ],
+        },
+        options: [
+          "(5,10), (15,20), (25,5)",
+          "Only (5,10) and (15,20)",
+          "Only (25,5)",
+          "None",
+        ],
+        correctAnswer: "(5,10), (15,20), (25,5)",
+      },
+      {
+        question: "What line is described here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int xStart=0, yStart =0;", "int xEnd=10, yEnd =30;"],
+        },
+        options: [
+          "A line from (0,0) to (10,30)",
+          "A point at (0,0)",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "A line from (0,0) to (10,30)",
+      },
+      {
+        question: "Where is the point after moving?",
+        codeSnippet: {
+          language: "java",
+          code: ["int x = 10, y = 5;", "x += 5;", "y -= 2;"],
+        },
+        options: ["(15, 3)", "(10, 5)", "(5, 7)", "Error"],
+        correctAnswer: "(15, 3)",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int rectX = 30, rectY = 10;",
+            "int rectWidth=20, rectHeight = 40;",
+          ],
+        },
+        options: [
+          "A rectangle starting at (30,10)",
+          "A circle",
+          "A line",
+          "Nothing",
+        ],
+        correctAnswer: "A rectangle starting at (30,10)",
+      },
+      {
+        question: "How many points are represented here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int[] xs = {5,10,15,20};", "int[] ys = {0,5,10,15};"],
+        },
+        options: ["4 points", "3 points", "2 points", "None"],
+        correctAnswer: "4 points",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int circleX=60, circleY =20;", "int radius=15;"],
+        },
+        options: ["A circle at (60,20)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (60,20)",
+      },
+      {
+        question: "Compare the points:",
+        codeSnippet: {
+          language: "java",
+          code: ["int x1=10, y1 =10;", "int x2=20, y2 =5;"],
+        },
+        options: [
+          "x2 is to the right of x1, y2 is below y1",
+          "x2 is left of x1, y2 is above y1",
+          "x2 is below x1, y2 is left of y1",
+          "x2 is above x1, y2 is right of y1",
+        ],
+        correctAnswer: "x2 is to the right of x1, y2 is below y1",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "variables",
+    questions: [
+      {
+        question: "What can you do with a variable besides store a number?",
+        options: [
+          "Store words or text",
+          "Store only colors",
+          "Make the computer dance",
+          "Draw shapes",
+        ],
+        correctAnswer: "Store words or text",
+      },
+      {
+        question: "What happens if you change a variable’s value in Java?",
+        options: [
+          "The old value is replaced by the new value",
+          "The old value stays forever",
+          "The program stops",
+          "Nothing happens",
+        ],
+        correctAnswer: "The old value is replaced by the new value",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "   public static void main(String[] args) {",
+            "        double x = 5.5;",
+            "        System.out.println(x);",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["5.5", "5", "x", "Error"],
+        correctAnswer: "5.5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void main(String[] args) {",
+            "        int x = 10;",
+            "       x = x * 3;",
+            "        System.out.println(x);",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["1", "30", "10", "Error"],
+        correctAnswer: "30",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void main(String[] args) {",
+            "        boolean isHappy = true;",
+            "        System.out.println(isHappy);",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["true", "false", "isHappy", "Error"],
+        correctAnswer: "true",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            'public class Test {","    public static void main(String[] args) {","        String first = "Hello";","        String second = "World";","        System.out.println(first + " " + second);","    }","}',
+          ],
+        },
+        options: ["Hello World", "Hello", "World", "Error"],
+        correctAnswer: "Hello World",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void main(String[] args) {",
+            "        int x = 2;",
+            "       int y = x * 3;",
+            "        System.out.println(y);",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["6", "5", "23", "Error"],
+        correctAnswer: "6",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void main(String[] args) {",
+            "        int x = 7;",
+            "        x++;",
+            "        System.out.println(x);",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["8", "7", "6", "Error"],
+        correctAnswer: "8",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void main(String[] args) {",
+            "        int a = 4;",
+            "        int b = a;",
+            "        a = 9;",
+            "        System.out.println(b);",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["4", "9", "a", "Error"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void main(String[] args) {",
+            "        double pi = 3.14;",
+            "        pi = pi + 0.01;",
+            "        System.out.println(pi);",
+            "    }",
+            "}",
+          ],
+        },
+        options: ["3.15", "3.14", "0.01", "Error"],
+        correctAnswer: "3.15",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a method in Java?",
+        options: [
+          "A group of commands you can run together",
+          "A type of variable",
+          "A number",
+          "A shape",
+        ],
+        correctAnswer: "A group of commands you can run together",
+      },
+      {
+        question: "Why do we use methods in Java?",
+        options: [
+          "To organize code and avoid repeating instructions",
+          "To print numbers only",
+          "To draw shapes only",
+          "To stop the program",
+        ],
+        correctAnswer: "To organize code and avoid repeating instructions",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            'public class Test {","    public static void cheer() {","        System.out.println("Hooray!");","    }","    public static void main(String[] args) {","        cheer();","    }","}',
+          ],
+        },
+        options: ["Hooray!", "cheer", "System.out", "Error"],
+        correctAnswer: "Hooray!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            'public class Test {","    public static void welcome() {","        System.out.println("Welcome to Java!");","    }","   public static void main(String[] args) {","        welcome();","    }","}',
+          ],
+        },
+        options: ["Welcome to Java!", "welcome", "System.out", "Error"],
+        correctAnswer: "Welcome to Java!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void sayBye() {",
+            `        System.out.println("Goodbye!");`,
+            "}",
+            "    public static void main(String[] args) {",
+            "        sayBye();",
+            "        sayBye();",
+            "    }",
+            "  }",
+          ],
+        },
+        options: ["Goodbye!\nGoodbye!", "Goodbye!", "Error"],
+        correctAnswer: "Goodbye!\nGoodbye!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void drawStar() {",
+            `        System.out.println("*");`,
+            `    }`,
+            `    public static void main(String[] args) {`,
+            `        drawStar();`,
+            `        drawStar();`,
+            `        drawStar();`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: ["*\n*\n*", "***", "*", "Error"],
+        correctAnswer: "*\n*\n*",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `public class Test {`,
+            `    public static void showScore() {`,
+            `        int score = 10;`,
+            `        System.out.println(score);`,
+            `    }`,
+            `    public static void main(String[] args) {`,
+            `        showScore();`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: ["10", "score", "0", "Error"],
+        correctAnswer: "10",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `public class Test {`,
+            `    public static void cheerTwice() {`,
+            `        System.out.println("Yay!");`,
+            `        System.out.println("Yay!");`,
+            `    }`,
+            `    public static void main(String[] args) {`,
+            `        cheerTwice();`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: ["Yay!\nYay!", "Yay!", "Error"],
+        correctAnswer: "Yay!\nYay!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `public class Test {`,
+            `    public static void funTime() {`,
+            `        System.out.println("Fun!");`,
+            `    }`,
+            `    public static void main(String[] args) {`,
+            `        funTime();`,
+            `        funTime();`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: ["Fun!\nFun!", "Fun!", "Error"],
+        correctAnswer: "Fun!\nFun!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `public class Test {`,
+            `    public static void showMessage() {`,
+            `        System.out.println("Hello World!");`,
+            `    }`,
+            `    public static void main(String[] args) {`,
+            `        showMessage();`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: ["Hello World!", "showMessage", "System.out", "Error"],
+        correctAnswer: "Hello World!",
+      },
+    ],
+  },
+  {
+    level: "J1",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is a logic error in programming?",
+        options: [
+          "When the program runs but gives the wrong answer",
+          "A spelling mistake",
+          "A syntax mistake",
+          "A drawing mistake",
+        ],
+        correctAnswer: "When the program runs but gives the wrong answer",
+      },
+      {
+        question: "What is debugging in programming?",
+        options: [
+          "Writing new features",
+          "Making the program slower",
+          "Deleting unused files",
+          "Finding and fixing errors",
+        ],
+        correctAnswer: "Finding and fixing errors",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        System.out.println("Hello);`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Missing ending quotation mark",
+          "println cannot be used",
+          "main is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing ending quotation mark",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        int x = 5;`,
+            `        System.out.println(y);`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Variable y is not defined",
+          "x is wrong",
+          "System.out cannot print numbers",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Variable y is not defined",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        for(int i = 0 i < 5; i++) {`,
+            `            System.out.println(i);`,
+            `        }`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Missing semicolon between 0 and i < 5",
+          "i is wrong",
+          "println cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing semicolon between 0 and i < 5",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        int x = 10`,
+            `        System.out.println(x);`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Missing semicolon after int x = 10",
+          "x cannot be printed",
+          "println cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing semicolon after int x = 10",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        if x > 5 {`,
+            `            System.out.println("Yes");`,
+            `        }`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Missing parentheses around condition",
+          "println cannot be used",
+          "x cannot be compared",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses around condition",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        int arr[] = {1, 2, 3};`,
+            `        System.out.println(arr[3]);`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Index 3 does not exist (undefined)",
+          "Array cannot be printed",
+          "Numbers are wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Index 3 does not exist (undefined)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        int a = 5, b = 0;`,
+            `        System.out.println(a / b);`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Division by zero",
+          "Variables a and b are wrong",
+          "println cannot divide",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Division by zero",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "c",
+          code: [
+            `public class Test {`,
+            `    public static void main(String[] args) {`,
+            `        int x = 5;`,
+            `        System.out.println("Value: " + x);`,
+            `    }`,
+            `}`,
+          ],
+        },
+        options: [
+          "Nothing is wrong",
+          "Missing +",
+          "x cannot be printed",
+          "println cannot be used",
+        ],
+        correctAnswer: "Nothing is wrong",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "input",
+    questions: [
+      {
+        question:
+          "When playing a quiz game, selecting an answer is an example of:",
+        options: ["Output", "Input", "Debugging", "Loops"],
+        correctAnswer: "Input",
+      },
+      {
+        question: "Which device is capable of both input and output?",
+        options: ["A mouse", "A touchscreen", "A keyboard", "A printer"],
+        correctAnswer: "A touchscreen",
+      },
+      {
+        question: "What does this line of code do?",
+        codeSnippet: {
+          language: "java",
+          code: ["Scanner sc = new Scanner(System.in);"],
+        },
+        options: [
+          "Prints input",
+          "Creates a Scanner object",
+          "Reads a number",
+          "Causes an error",
+        ],
+        correctAnswer: "Creates a Scanner object",
+      },
+      {
+        question: "Which device is used here?",
+        codeSnippet: {
+          language: "java",
+          code: ["double price = sc.nextDouble();"],
+        },
+        options: ["Mouse", "Keyboard", "Screen", "Speaker"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: "What will this read from the user?",
+        codeSnippet: {
+          language: "java",
+          code: ["String word = sc.next();"],
+        },
+        options: ["One word", "A full sentence", "A number", "A character"],
+        correctAnswer: "One word",
+      },
+      {
+        question: "What happens if text is entered here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int age = sc.nextInt();"],
+        },
+        options: [
+          "Converts automatically",
+          "Causes an error",
+          "Stores zero",
+          "Skips input",
+        ],
+        correctAnswer: "Causes an error",
+      },
+      {
+        question: "What is missing before this code will work?",
+        codeSnippet: {
+          language: "java",
+          code: ["Scanner sc = new Scanner(System.in);"],
+        },
+        options: ["Loop", "Import statement", "Print statement", "Variable"],
+        correctAnswer: "Import statement",
+      },
+      {
+        question: "What will be stored in `name`?",
+        codeSnippet: {
+          language: "java",
+          code: ["String name = sc.nextLine();"],
+        },
+        options: [
+          "One character",
+          "One word",
+          "A full line of text",
+          "A number",
+        ],
+        correctAnswer: "A full line of text",
+      },
+      {
+        question: "What does this line do?",
+        codeSnippet: {
+          language: "java",
+          code: ["sc.nextInt();"],
+        },
+        options: [
+          "Prints a number",
+          "Reads an integer",
+          "Ends input",
+          "Skips program",
+        ],
+        correctAnswer: "Reads an integer",
+      },
+      {
+        question: "Which variable stores the input?",
+        codeSnippet: {
+          language: "java",
+          code: ["String city = sc.next();"],
+        },
+        options: ["`String`", "`sc`", "`city`", "`next`"],
+        correctAnswer: "`city`",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "loops",
+    questions: [
+      {
+        question: "How do loops make programs easier to understand?",
+        options: [
+          "They hide the instructions",
+          "They repeat instructions neatly",
+          "They make random noises",
+          "They change languages",
+        ],
+        correctAnswer: "They repeat instructions neatly",
+      },
+      {
+        question:
+          "When would you use a loop that repeats a set number of times?",
+        options: [
+          "When you want something to happen only once",
+          "When you want something to happen a specific number of times",
+          "When you want something to happen forever",
+          "When you want something to happen randomly",
+        ],
+        correctAnswer:
+          "When you want something to happen a specific number of times",
+      },
+      {
+        question: "How many times does this loop run?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `for(int i = 0; i < 5; i++){`,
+            `    System.out.println("Hi");`,
+            `}`,
+          ],
+        },
+        options: ["4", "5", "6", "Infinite"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What will be printed?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `for(int i = 2; i <= 8; i += 2){`,
+            `    System.out.println(i);`,
+            `}`,
+          ],
+        },
+        options: ["Odd numbers", "Even numbers", "1–8", "Nothing"],
+        correctAnswer: "Even numbers",
+      },
+      {
+        question: "Why does this loop not run?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `for(int i = 7; i < 3; i++){`,
+            `    System.out.println("Test");`,
+            `}`,
+          ],
+        },
+        options: [
+          "Condition is false",
+          "Syntax error",
+          "Infinite loop",
+          "Missing increment",
+        ],
+        correctAnswer: "Condition is false",
+      },
+      {
+        question: "What does `i--` do here?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `for(int i = 4; i > 0; i--){`,
+            `    System.out.println(i);`,
+            `}`,
+          ],
+        },
+        options: [
+          "Increases `i`",
+          "Decreases `i`",
+          "Resets `i`",
+          "Stops immediately",
+        ],
+        correctAnswer: "Decreases `i`",
+      },
+      {
+        question: "What is wrong with this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `for(int i = 0; i < 3; i)`,
+            `    System.out.println("Hello");`,
+          ],
+        },
+        options: [
+          "Missing `++`",
+          "Missing condition",
+          "Missing braces",
+          "Nothing",
+        ],
+        correctAnswer: "Missing `++`",
+      },
+      {
+        question: "What will this loop print?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `for(int i = 1; i <= 7; i += 2){`,
+            `    System.out.println(i);`,
+            `}`,
+          ],
+        },
+        options: ["Even numbers", "Odd numbers", "1–7", "Nothing"],
+        correctAnswer: "Odd numbers",
+      },
+      {
+        question: "What does this loop do?",
+        codeSnippet: {
+          language: "java",
+          code: ["for(int i = 0; i < 6; i++){}"],
+        },
+        options: [
+          "Prints numbers",
+          "Runs with no output",
+          "Runs once",
+          "Causes an error",
+        ],
+        correctAnswer: "Runs with no output",
+      },
+      {
+        question: "Which part of the loop decides when it stops?",
+        codeSnippet: {
+          language: "java",
+          code: ["for(int i = 0; i < 6; i++)"],
+        },
+        options: ["Initialization", "Condition", "Increment", "Output"],
+        correctAnswer: "Condition",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "decisions",
+    questions: [
+      {
+        question:
+          "What happens if an `if` condition evaluates to `false` and there is no `else`?",
+        options: [
+          "The program stops",
+          "An error occurs",
+          "The code inside the `if` is skipped",
+          "The condition becomes true",
+        ],
+        correctAnswer: "The code inside the `if` is skipped",
+      },
+      {
+        question: "Which comparison operator checks for inequality in Java?",
+        options: ["=", "==", "!=", "!"],
+        correctAnswer: "!=",
+      },
+      {
+        question: "What prints if `x = 0`?",
+        codeSnippet: {
+          language: "java",
+          code: [`if (x) {`, `    System.out.println("True");`, `}`],
+        },
+        options: ["True", "False", "Nothing", "Compilation error"],
+        correctAnswer: "Compilation error",
+      },
+      {
+        question: "What prints if `x = 15`?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `if (x < 10) {`,
+            `    System.out.println("Small");`,
+            `}`,
+            `System.out.println("Done");`,
+          ],
+        },
+        options: ["Small", "Done", "Small then Done", "Nothing"],
+        correctAnswer: "Done",
+      },
+      {
+        question: "What prints if `x = 2`?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `if (x == 1 || x == 2) {`,
+            `    System.out.println("Match");`,
+            `}`,
+          ],
+        },
+        options: ["Match", "Two", "Nothing", "Error"],
+        correctAnswer: "Match",
+      },
+      {
+        question: "What prints if `x = 8`?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `if (x > 10) {`,
+            `    System.out.println("Large");`,
+            `}else if (x > 5) {`,
+            `    System.out.println("Medium");`,
+            `}`,
+          ],
+        },
+        options: ["Large", "Medium", "Small", "Nothing"],
+        correctAnswer: "Medium",
+      },
+      {
+        question: "What prints if `x = 0`?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `if (x > 0) {`,
+            `    System.out.println("Positive");`,
+            `}else if (x < 0) {`,
+            `    System.out.println("Negative");`,
+            `}else {`,
+            `    System.out.println("Zero");`,
+            `}`,
+          ],
+        },
+        options: ["Positive", "Negative", "Zero", "Nothing"],
+        correctAnswer: "Zero",
+      },
+      {
+        question: "What prints if `loggedIn = false` and `isAdmin = true`?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `if (loggedIn && isAdmin) {`,
+            `    System.out.println("Admin Panel");`,
+            `}else {`,
+            `    System.out.println("Access Denied");`,
+            `}`,
+          ],
+        },
+        options: ["Admin Panel", "Access Denied", "Nothing", "Error"],
+        correctAnswer: "Access Denied",
+      },
+      {
+        question: "What prints if `x = 3`?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `if (x % 2 ==0) {`,
+            `    System.out.println("Even");`,
+            `}else {`,
+            `    System.out.println("Odd");`,
+            `}`,
+          ],
+        },
+        options: ["Even", "Odd", "Nothing", "Error"],
+        correctAnswer: "Odd",
+      },
+      {
+        question: "What prints if `x = 5`?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `if (x >= 1 && x <= 5) {`,
+            `    System.out.println("In Range");`,
+            `}`,
+          ],
+        },
+        options: ["In Range", "Out of Range", "Nothing", "Error"],
+        correctAnswer: "In Range",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What does a random number do in a game?",
+        options: [
+          "Makes the game fun and different",
+          "Makes the game boring",
+          "Stops the game",
+          "Prints letters",
+        ],
+        correctAnswer: "Makes the game fun and different",
+      },
+      {
+        question: "What does this code make?",
+        codeSnippet: {
+          language: "java",
+          code: [`Random r = new Random();`, `int x = r.nextInt(2) + 1;`],
+        },
+        options: ["A number 1 or 2", "A number 1 to 10", "A word", "An error"],
+        correctAnswer: "A number 1 or 2",
+      },
+      {
+        question: "What prints if the random number is 2?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(2) +1;`,
+            `if (x == 1)`,
+            `  System.out.println("One");`,
+            `else`,
+            `  System.out.println("Two");`,
+          ],
+        },
+        options: ["One", "Two", "Three", "Nothing"],
+        correctAnswer: "Two",
+      },
+      {
+        question: "What prints if the random number is bigger than 4?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(6) +1;`,
+            `if (x > 4)`,
+            `  System.out.println("Big");`,
+            `else`,
+            `  System.out.println("Small");`,
+          ],
+        },
+        options: ["Big", "Small", "Zero", "Error"],
+        correctAnswer: "Big",
+      },
+      {
+        question: "What prints if the random number is 1?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(3) +1;`,
+            `if (x == 1)`,
+            `  System.out.println("Start");`,
+            `else`,
+            `  System.out.println("Go");`,
+          ],
+        },
+        options: ["Start", "Go", "Stop", "Error"],
+        correctAnswer: "Start",
+      },
+      {
+        question: "What prints if the random number is less than 5?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(6) +1;`,
+            `if (x < 5)`,
+            `  System.out.println("Low");`,
+            `else`,
+            `  System.out.println("High");`,
+          ],
+        },
+        options: ["Low", "High", "Zero", "Error"],
+        correctAnswer: "Low",
+      },
+      {
+        question: "What prints if the random number is 4?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(5) +1;`,
+            `if (x == 4)`,
+            `  System.out.println("Four");`,
+            `else`,
+            `  System.out.println("Not Four");`,
+          ],
+        },
+        options: ["Four", "Not Four", "Five", "Zero"],
+        correctAnswer: "Four",
+      },
+      {
+        question: "What does this code act like?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(2);`,
+            `System.out.println(x);`,
+          ],
+        },
+        options: [
+          "A coin flip",
+          "A dice roll",
+          "Counting to ten",
+          "Printing words",
+        ],
+        correctAnswer: "A coin flip",
+      },
+      {
+        question: "What prints if the random number is 6?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(6) +1;`,
+            `if (x == 6)`,
+            `  System.out.println("Win");`,
+            `else`,
+            `  System.out.println("Try Again");`,
+          ],
+        },
+        options: ["Win", "Try Again", "Zero", "Error"],
+        correctAnswer: "Win",
+      },
+      {
+        question: "What could this code make numbers for?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `Random r = new Random();`,
+            `int x = r.nextInt(10) +1;`,
+            `System.out.println(x);`,
+          ],
+        },
+        options: [
+          "A guessing game",
+          "Writing a story",
+          "Drawing a picture",
+          "Turning off the computer",
+        ],
+        correctAnswer: "A guessing game",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "list",
+    questions: [
+      {
+        question: "What can you do with a Java list (ArrayList)?",
+        options: [
+          "Store a group of items together",
+          "Store only one number",
+          "Make the computer talk",
+          "Draw pictures",
+        ],
+        correctAnswer: "Store a group of items together",
+      },
+      {
+        question: "How do you find out how many items are in a Java list?",
+        options: [
+          "Using `size()`",
+          "Using `length`",
+          "Using `count()`",
+          "Using `get()`",
+        ],
+        correctAnswer: "Using `size()`",
+      },
+      {
+        question: "What prints if we get the last item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> toys = new ArrayList<String>();`,
+            `toys.add("Car");`,
+            `toys.add("Doll");`,
+            `toys.add("Ball");`,
+            `System.out.println(toys.get(toys.size() - 1));`,
+          ],
+        },
+        options: ["Car", "Doll", "Ball", "Error"],
+        correctAnswer: "Ball",
+      },
+      {
+        question: "What prints if we add an item to the start?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> pets = new ArrayList<String>();`,
+            `pets.add("Dog");`,
+            `pets.add("Cat");`,
+            `pets.add(0, "Parrot");`,
+            `System.out.println(pets.get(0));`,
+          ],
+        },
+        options: ["Dog", "Cat", "Parrot", "Error"],
+        correctAnswer: "Parrot",
+      },
+      {
+        question: "What prints if we remove the first item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> animals = new ArrayList<String>();`,
+            `animals.add("Lion");`,
+            `animals.add("Tiger");`,
+            `animals.remove(0);`,
+            `System.out.println(animals.get(0));`,
+          ],
+        },
+        options: ["Lion", "Tiger", "Error", "Nothing"],
+        correctAnswer: "Tiger",
+      },
+      {
+        question: "What prints if we change the second item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> colors = new ArrayList<String>();`,
+            `colors.add("Red");`,
+            `colors.add("Blue");`,
+            `colors.set(1, "Green");`,
+            `System.out.println(colors.get(1));`,
+          ],
+        },
+        options: ["Blue", "Green", "Red", "Error"],
+        correctAnswer: "Green",
+      },
+      {
+        question: "What prints if we loop through a list in reverse?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> letters = new ArrayList<String>();`,
+            `letters.add("A");`,
+            `letters.add("B");`,
+            `letters.add("C");`,
+            `for(int i = letters.size() - 1; i >= 0; i--)`,
+            `    System.out.print(letters.get(i) + " ");`,
+          ],
+        },
+        options: ["A B C", "C B A", "B A C", "Error"],
+        correctAnswer: "C B A",
+      },
+      {
+        question: "What prints after adding a new item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> animals = new ArrayList<String>();`,
+            `animals.add("Elephant");`,
+            `animals.add("Giraffe");`,
+            `animals.add("Zebra");`,
+            `System.out.println(animals.get(2));`,
+          ],
+        },
+        options: ["Elephant", "Giraffe", "Zebra", "Error"],
+        correctAnswer: "Zebra",
+      },
+      {
+        question: "What prints if we overwrite the first item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> fruits = new ArrayList<String>();`,
+            `fruits.add("Apple");`,
+            `fruits.set(0, "Orange");`,
+            `System.out.println(fruits.get(0));`,
+          ],
+        },
+        options: ["Apple", "Orange", "Error", "Nothing"],
+        correctAnswer: "Orange",
+      },
+      {
+        question: "What prints if we remove the last item?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            `ArrayList<String> vehicles = new ArrayList<String>();`,
+            `vehicles.add("Car");`,
+            `vehicles.add("Bike");`,
+            `vehicles.add("Bus");`,
+            `vehicles.remove(vehicles.size() - 1);`,
+            `System.out.println(vehicles.get(vehicles.size() - 1));`,
+          ],
+        },
+        options: ["Bus", "Bike", "Car", "Error"],
+        correctAnswer: "Bike",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What is the distance along the X-axis called?",
+        options: [
+          "Horizontal distance",
+          "Vertical distance",
+          "Diagonal distance",
+          "Radius",
+        ],
+        correctAnswer: "Horizontal distance",
+      },
+      {
+        question: "What is the distance along the Y-axis called?",
+        options: [
+          "Vertical distance",
+          "Horizontal distance",
+          "Diagonal distance",
+          "Radius",
+        ],
+        correctAnswer: "Vertical distance",
+      },
+      {
+        question: "What point does this code represent?",
+        codeSnippet: {
+          language: "java",
+          code: ["int x = 35;", "int y = 45;"],
+        },
+        options: ["(35, 45)", "(45, 35)", "(0, 0)", "Error"],
+        correctAnswer: "(35, 45)",
+      },
+      {
+        question: "You have these points:",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int x1 = 5, y1 = 10;",
+            "int x2 = 15, y2 = 20;",
+            "int x3 = 25, y3 = 15;",
+          ],
+        },
+        options: [
+          "(5,10), (15,20), (25,15)",
+          "Only (5,10) and (15,20)",
+          "Only (25,15)",
+          "None",
+        ],
+        correctAnswer: "(5,10), (15,20), (25,15)",
+      },
+      {
+        question: "What line is described here?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int xStart1 = 0, yStart1 = 0;",
+            "int xEnd1 = 20, yEnd1 = 10;",
+            "int xStart2 = 10, yStart2 = 15;",
+            "int xEnd2 = 30, yEnd2 = 25;",
+          ],
+        },
+        options: [
+          "Two lines: (0,0)-(20,10) and (10,15)-(30,25)",
+          "Only one line",
+          "A rectangle",
+          "Nothing",
+        ],
+        correctAnswer: "Two lines: (0,0)-(20,10) and (10,15)-(30,25)",
+      },
+      {
+        question: "Where is the midpoint between two points?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int x1 = 10, y1 = 10;",
+            "int x2 = 20, y2 = 30;",
+            "int midX = (x1 + x2) / 2;",
+            "int midY = (y1 + y2) / 2;",
+          ],
+        },
+        options: ["(15, 20)", "(30, 40)", "(10, 10)", "Error"],
+        correctAnswer: "(15, 20)",
+      },
+      {
+        question: "Where is the point after moving?",
+        codeSnippet: {
+          language: "java",
+          code: ["int x = 12, y = 8;", "x -= 5;", "y += 10;"],
+        },
+        options: ["(7, 18)", "(12, 8)", "(17, -2)", "Error"],
+        correctAnswer: "(7, 18)",
+      },
+      {
+        question: "How many points are represented here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int[] xs = {2, 4, 6, 8, 10};", "int[] ys = {1, 3, 5, 7, 9};"],
+        },
+        options: ["5 points", "4 points", "3 points", "None"],
+        correctAnswer: "5 points",
+      },
+      {
+        question: "What shape is described here?",
+        codeSnippet: {
+          language: "java",
+          code: ["int circleX = 25, circleY = 35;", "int radius = 8;"],
+        },
+        options: ["A circle at (25,35)", "A rectangle", "A line", "Nothing"],
+        correctAnswer: "A circle at (25,35)",
+      },
+      {
+        question: "Which point is higher on the plane?",
+        codeSnippet: {
+          language: "java",
+          code: ["int x1 = 10, y1 = 5;", "int x2 = 15, y2 = 12;"],
+        },
+        options: [
+          "x2,y2 is higher",
+          "x1,y1 is higher",
+          "Both are the same",
+          "Error",
+        ],
+        correctAnswer: "x2,y2 is higher",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "variables",
+    questions: [
+      {
+        question:
+          "Why do programmers use different types of variables like `int`, `double`, and `String`?",
+        options: [
+          "To store different kinds of information",
+          "To confuse the computer",
+          "To make the program slower",
+          "To draw pictures",
+        ],
+        correctAnswer: "To store different kinds of information",
+      },
+      {
+        question:
+          "What happens if you try to put a word into an `int` variable?",
+        options: [
+          "It causes an error",
+          "It works fine",
+          "The variable becomes a string automatically",
+          "Nothing happens",
+        ],
+        correctAnswer: "It causes an error",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "double score = 4.5;",
+            "score = score + 1.5;",
+            "System.out.println(score);",
+          ],
+        },
+        options: ["6.0", "5.5", "4.5", "Error"],
+        correctAnswer: "6.0",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            'String first = "Red";',
+            'String second = "Blue";',
+            'String result = first + "-" + second;',
+            "System.out.println(result);",
+          ],
+        },
+        options: ["Red-Blue", "Red Blue", "Red+Blue", "Error"],
+        correctAnswer: "Red-Blue",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "boolean isOn = false;",
+            "isOn = !isOn;",
+            "System.out.println(isOn);",
+          ],
+        },
+        options: ["true", "false", "isOn", "Error"],
+        correctAnswer: "true",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int x = 3;",
+            "int y = 5;",
+            "int z = x + y * 2;",
+            "System.out.println(z);",
+          ],
+        },
+        options: ["13", "16", "11", "Error"],
+        correctAnswer: "13",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int a = 10;",
+            "int b = 3;",
+            "int c = a * b;",
+            "System.out.println(c);",
+          ],
+        },
+        options: ["1", "30", "0", "Error"],
+        correctAnswer: "30",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int x = 2;",
+            "int y = x;",
+            "x = 4;",
+            "y = y + 3;",
+            "System.out.println(y);",
+          ],
+        },
+        options: ["5", "2", "4", "Error"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            'String greeting = "Hi";',
+            'greeting = greeting + "!";',
+            "System.out.println(greeting);",
+          ],
+        },
+        options: ["Hi!", "Hi", "!", "Error"],
+        correctAnswer: "Hi!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "double pi = 3.14;",
+            "pi = pi * 2;",
+            "System.out.println(pi);",
+          ],
+        },
+        options: ["6.28", "3.14", "2", "Error"],
+        correctAnswer: "6.28",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a parameter in Java?",
+        options: [
+          "A value you give to a function to use inside it",
+          "A type of shape",
+          "A number only",
+          "A variable that disappears",
+        ],
+        correctAnswer: "A value you give to a function to use inside it",
+      },
+      {
+        question: "Why do we use parameters in functions?",
+        options: [
+          "To make the same function work with different values",
+          "To print numbers only",
+          "To draw shapes only",
+          "To stop the program",
+        ],
+        correctAnswer: "To make the same function work with different values",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void greet(String name) {",
+            '    System.out.println("Hello " + name);',
+            "}",
+            "public static void main(String[] args) {",
+            '    greet("Tom");',
+            "}",
+          ],
+        },
+        options: ["Hello Tom", "Hello name", "name", "Error"],
+        correctAnswer: "Hello Tom",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void add(int a, int b) {",
+            "    System.out.println(a + b);",
+            "}",
+            "public static void main(String[] args) {",
+            "    add(5, 6);",
+            "}",
+          ],
+        },
+        options: ["11", "56", "a + b", "Error"],
+        correctAnswer: "11",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void multiply(int x, int y) {",
+            "    System.out.println(x * y);",
+            "}",
+            "public static void main(String[] args) {",
+            "    multiply(3, 4);",
+            "}",
+          ],
+        },
+        options: ["12", "7", "34", "Error"],
+        correctAnswer: "12",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void shout(String msg) {",
+            '    System.out.println(msg + "!");',
+            "}",
+            "public static void main(String[] args) {",
+            '    shout("Yay");',
+            "}",
+          ],
+        },
+        options: ["Yay!", "msg!", "Yay", "Error"],
+        correctAnswer: "Yay!",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void square(int num) {",
+            "    System.out.println(num * num);",
+            "}",
+            "public static void main(String[] args) {",
+            "    square(5);",
+            "}",
+          ],
+        },
+        options: ["25", "10", "55", "Error"],
+        correctAnswer: "25",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void welcome(String name, int age) {",
+            '    System.out.println(name + " is " + age + " years old");',
+            "}",
+            "public static void main(String[] args) {",
+            '    welcome("Anna", 7);',
+            "}",
+          ],
+        },
+        options: [
+          "Anna is 7 years old",
+          "name is age years old",
+          "Anna age",
+          "Error",
+        ],
+        correctAnswer: "Anna is 7 years old",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void subtract(int x, int y) {",
+            "    System.out.println(x - y);",
+            "}",
+            "public static void main(String[] args) {",
+            "    subtract(10, 3);",
+            "}",
+          ],
+        },
+        options: ["7", "13", "103", "Error"],
+        correctAnswer: "7",
+      },
+      {
+        question: "What prints?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static void doubleIt(int n) {",
+            "    System.out.println(n * 2);",
+            "}",
+            "public static void main(String[] args) {",
+            "    doubleIt(8);",
+            "}",
+          ],
+        },
+        options: ["16", "8", "88", "Error"],
+        correctAnswer: "16",
+      },
+    ],
+  },
+  {
+    level: "J2",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is a compilation error in Java?",
+        options: [
+          "A mistake that stops the program from running because of wrong code",
+          "A mistake in drawing shapes",
+          "A mistake in music",
+          "A number mistake",
+        ],
+        correctAnswer:
+          "A mistake that stops the program from running because of wrong code",
+      },
+      {
+        question: "What is a semantic error?",
+        options: [
+          "When the program runs but does something different than intended",
+          "A spelling mistake",
+          "A syntax mistake",
+          "A color mistake",
+        ],
+        correctAnswer:
+          "When the program runs but does something different than intended",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public class Test {",
+            "    public static void sayHello() {",
+            '        System.out.println("Hello");',
+            "    }",
+            "    public static void main(String[] args) {",
+            "    }",
+            "}",
+          ],
+        },
+        options: [
+          "The method sayHello is not called",
+          "System.out cannot print text",
+          "main is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "The method sayHello is not called",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static int add(int x, int y) {",
+            "    return x - y;",
+            "}",
+            "public static void main(String[] args) {",
+            "    System.out.println(add(5, 3));",
+            "}",
+          ],
+        },
+        options: [
+          "The method subtracts instead of adding (logic error)",
+          "Variables are wrong",
+          "println cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "The method subtracts instead of adding (logic error)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int i = 0;",
+            "while(i < 3);",
+            "    System.out.println(i);",
+            "    i++;",
+          ],
+        },
+        options: [
+          "Semicolon after while makes loop behave incorrectly",
+          "i is wrong",
+          "println cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Semicolon after while makes loop behave incorrectly",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int[] arr = {1, 2, 3};",
+            "for(int i = 0; i <= 3; i++) {",
+            "    System.out.println(arr[i]);",
+            "}",
+          ],
+        },
+        options: [
+          "i <= 3 goes out of array bounds (should be i < 3)",
+          "Array cannot be printed",
+          "println is wrong",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "i <= 3 goes out of array bounds (should be i < 3)",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "public static int multiplyByTwo(int x) {",
+            "    x * 2;",
+            "}",
+            "public static void main(String[] args) {",
+            "    System.out.println(multiplyByTwo(5));",
+            "}",
+          ],
+        },
+        options: [
+          "multiplyByTwo does not return a value",
+          "x is wrong",
+          "println cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "multiplyByTwo does not return a value",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int x = 10;",
+            "if x > 5 {",
+            '    System.out.println("Yes");',
+            "}",
+          ],
+        },
+        options: [
+          "Missing parentheses around condition",
+          "println cannot be used",
+          "x cannot be compared",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing parentheses around condition",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: [
+            "int a = 5, b = 3;",
+            'System.out.println("Sum: " + a + b + c);',
+          ],
+        },
+        options: [
+          "Variable c is not defined",
+          "a + b cannot be used",
+          "println cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Variable c is not defined",
+      },
+      {
+        question: "What is wrong in this code?",
+        codeSnippet: {
+          language: "java",
+          code: ["int x = 5;", 'System.out.println("Value: " x);'],
+        },
+        options: [
+          "Missing + between string and variable in println",
+          "x cannot be printed",
+          "println cannot be used",
+          "Nothing is wrong",
+        ],
+        correctAnswer: "Missing + between string and variable in println",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "input",
+    questions: [
+      {
+        question: "What is input in programming?",
+        options: [
+          "Giving information to the program",
+          "The sounds the program makes",
+          "Information the computer gives you",
+          "What the program does",
+        ],
+        correctAnswer: "Giving information to the program",
+      },
+      {
+        question: "Which is an example of input?",
+        options: [
+          "Saving a file",
+          "Typing your name",
+          "A sound the computer makes",
+          "Your name printed on the screen",
+        ],
+        correctAnswer: "Typing your name",
+      },
+      {
+        question: "What will the sprite say?",
+        image: "/scratchCodeSnippets/SC1/input/q3.png",
+        options: ["Nothing", "answer", "Whatever the user typed", "Hello"],
+        correctAnswer: "Whatever the user typed",
+      },
+      {
+        question: "What does the sprite say?",
+        image: "/scratchCodeSnippets/SC1/input/q4.png",
+        options: ["Nothing", "answer", "age", "Whatever the user typed"],
+        correctAnswer: "Whatever the user typed",
+      },
+      {
+        question: "If you enter “yes” when asked, what will the sprite say?",
+        image: "/scratchCodeSnippets/SC1/input/q5.png",
+        options: ["No", "Yes", "Maybe", "Answer"],
+        correctAnswer: "Yes",
+      },
+      {
+        question:
+          "If the user types “blue” when asked, what will the sprite say?",
+        image: "/scratchCodeSnippets/SC1/input/q6.png",
+        options: ["Nothing", "Cool", "Blue", "Cool! I like blue"],
+        correctAnswer: "Cool! I like blue",
+      },
+      {
+        question: "Which input device does the program use?",
+        image: "/scratchCodeSnippets/SC1/input/q7.png",
+        options: ["Mouse", "Keyboard", "Touchscreen", "Microphone"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: "Which input device does the program use?",
+        image: "/scratchCodeSnippets/SC1/input/q8.png",
+        options: ["Mouse", "Keyboard", "Touchscreen", "Microphone"],
+        correctAnswer: "Mouse",
+      },
+      {
+        question: "True or false, this program uses input:",
+        image: "/scratchCodeSnippets/SC1/input/q9.png",
+        options: ["True", "False"],
+        correctAnswer: "False",
+      },
+      {
+        question: "True or false, this program uses input:",
+        image: "/scratchCodeSnippets/SC1/input/q10.png",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "loops",
+    questions: [
+      {
+        question: "Why do programmers use loops?",
+        options: [
+          "To easily repeat tasks",
+          "To draw pictures",
+          "To make music",
+          "To turn off the computer",
+        ],
+        correctAnswer: "To easily repeat tasks",
+      },
+      {
+        question: "What is a loop in programming?",
+        options: [
+          "A way to repeat actions",
+          "A computer error",
+          "A sound effect",
+          "A computer bug",
+        ],
+        correctAnswer: "A way to repeat actions",
+      },
+      {
+        question: "How many times will the sprite say “Hello”?",
+        image: "/scratchCodeSnippets/SC1/loops/q3.png",
+        options: ["None", "1", "10", "100"],
+        correctAnswer: "10",
+      },
+      {
+        question: "How many total steps will the sprite move?",
+        image: "/scratchCodeSnippets/SC1/loops/q4.png",
+        options: ["None", "5", "20", "100"],
+        correctAnswer: "20",
+      },
+      {
+        question: "What does this code do?",
+        image: "/scratchCodeSnippets/SC1/loops/q5.png",
+        options: [
+          "It changes the sprite costume 5 times",
+          "It changes the sprite costume forever",
+          "It changes the sprite colour 25 times",
+          "It changes the sprite colour forever",
+        ],
+        correctAnswer: "It changes the sprite colour forever",
+      },
+      {
+        question: "What will make the loop stop?",
+        image: "/scratchCodeSnippets/SC1/loops/q6.png",
+        options: [
+          "Pressing the space bar",
+          "The sprite touching the edge",
+          "Clicking the mouse",
+          "Moving 10 steps",
+        ],
+        correctAnswer: "Pressing the space bar",
+      },
+      {
+        question: "What will cause this loop to stop?",
+        image: "/scratchCodeSnippets/SC1/loops/q7.png",
+        options: [
+          "When the score is 10",
+          "When the score is 50",
+          "When the score is 100",
+          "When the score is 500",
+        ],
+        correctAnswer: "When the score is 50",
+      },
+      {
+        question: "When does the sprite meow?",
+        image: "/scratchCodeSnippets/SC1/loops/q8.png",
+        options: [
+          "Constantly",
+          "If the sprite is touching the edge",
+          "Never",
+          "Every 5 seconds",
+        ],
+        correctAnswer: "If the sprite is touching the edge",
+      },
+      {
+        question: "True or false, this code uses a loop:",
+        image: "/scratchCodeSnippets/SC1/loops/q9.png",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+      {
+        question: "True or false, this code uses a loop:",
+        image: "/scratchCodeSnippets/SC1/loops/q10.png",
+        options: ["True", "False"],
+        correctAnswer: "False",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What does a decision in Scratch help a program do?",
+        options: [
+          "Choose what to do based on a condition",
+          "Draw pictures",
+          "Play music only",
+          "Stop the program",
+        ],
+        correctAnswer: "Choose what to do based on a condition",
+      },
+      {
+        question: "Which Scratch block is used to make a decision?",
+        options: ["repeat", "move 10 steps", "if", "wait 1 second"],
+        correctAnswer: "if",
+      },
+      {
+        question: "What happens if the sprite is touching the mouse-pointer?",
+        image: "/scratchCodeSnippets/SC1/input/q3.png",
+        options: [
+          "The sprite says “Hello!”",
+          "Nothing happens",
+          "The sprite moves",
+          "The program stops",
+        ],
+        correctAnswer: "The sprite says “Hello!”",
+      },
+      {
+        question: "When will the sprite say “You win!”?",
+        image: "/scratchCodeSnippets/SC1/input/q4.png",
+        options: [
+          "When score is 10",
+          "When score is greater than 10",
+          "When score is less than 10",
+          "Always",
+        ],
+        correctAnswer: "When score is greater than 10",
+      },
+      {
+        question: "What must the player do to make the sprite meow?",
+        image: "/scratchCodeSnippets/SC1/decisions/q5.png",
+        options: [
+          "Click the sprite",
+          "Wait 5 seconds",
+          "Move the mouse",
+          "Press the space key",
+        ],
+        correctAnswer: "Press the space key",
+      },
+      {
+        question: "What happens when the sprite touches the edge?",
+        image: "/scratchCodeSnippets/SC1/decisions/q6.png",
+        options: [
+          "It stops",
+          "It disappears",
+          "It turns around",
+          "It grows bigger",
+        ],
+        correctAnswer: "It turns around",
+      },
+      {
+        question: "When will the sprite say “Correct!”?",
+        image: "/scratchCodeSnippets/SC1/decisions/q7.png",
+        options: [
+          "When the answer is 5",
+          "When the answer is 4",
+          "When the answer is bigger than 5",
+          "Every time",
+        ],
+        correctAnswer: "When the answer is 5",
+      },
+      {
+        question: "What will the sprite say if answer = 6?",
+        image: "/scratchCodeSnippets/SC1/decisions/q8.png",
+        options: ["6", "incorrect", "answer", "correct"],
+        correctAnswer: "incorrect",
+      },
+      {
+        question: "What does this block mean?",
+        image: "/scratchCodeSnippets/SC1/decisions/q9.png",
+        options: [
+          "The sprite changes color",
+          "The sprite paints red",
+          "The sprite moves faster",
+          "The sprite checks if it is touching red",
+        ],
+        correctAnswer: "The sprite checks if it is touching red",
+      },
+      {
+        question: "What will the sprite say if answer = 5?",
+        image: "/scratchCodeSnippets/SC1/decisions/q10.png",
+        options: ["answer", "5", "Incorrect", "Correct"],
+        correctAnswer: "Correct",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What does randomness mean in Scratch?",
+        options: [
+          "The computer chooses something by chance",
+          "The same thing happens every time",
+          "The program stops",
+          "The sprite always moves",
+        ],
+        correctAnswer: "The computer chooses something by chance",
+      },
+      {
+        question: "Which Scratch block is used to pick a random number?",
+        options: [
+          "repeat forever",
+          "pick random 1 to 10",
+          "set score to 0",
+          "wait 1 seconds",
+        ],
+        correctAnswer: "pick random 1 to 10",
+      },
+      {
+        question: "What could the value of score be?",
+        image: "/scratchCodeSnippets/SC1/randomness/q3.png",
+        options: [
+          "Only even numbers",
+          "Any number from 1 to 10",
+          "Only 1",
+          "Only 10",
+        ],
+        correctAnswer: "Any number from 1 to 10",
+      },
+      {
+        question: "What will happen when the code runs?",
+        image: "/scratchCodeSnippets/SC1/randomness/q4.png",
+        options: [
+          "The sprite does not move",
+          "The sprite always moves 10 steps",
+          "The sprite turns around",
+          "The sprite moves a different number of steps each time",
+        ],
+        correctAnswer: "The sprite moves a different number of steps each time",
+      },
+      {
+        question: "What will the sprite do?",
+        image: "/scratchCodeSnippets/SC1/randomness/q5.png",
+        options: [
+          "Go to the top of the screen",
+          "Disappear",
+          "Go to a random position left or right",
+          "Always go to the same place",
+        ],
+        correctAnswer: "Go to a random position left or right",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC1/randomness/q6.png",
+        options: [
+          "Stops the program",
+          "Waits a random amount of time",
+          "Always waits 5 seconds",
+          "Never waits",
+        ],
+        correctAnswer: "Waits a random amount of time",
+      },
+      {
+        question: "What does this code act like?",
+        image: "/scratchCodeSnippets/SC1/randomness/q7.png",
+        options: ["A loop", "A stopwatch", "A coin toss", "A dice roll"],
+        correctAnswer: "A coin toss",
+      },
+      {
+        question: "What will happen?",
+        image: "/scratchCodeSnippets/SC1/randomness/q8.png",
+        options: [
+          "The sprite shrinks to zero",
+          "The sprite stops moving",
+          "The sprite always grows the same size",
+          "The sprite changes size randomly",
+        ],
+        correctAnswer: "The sprite changes size randomly",
+      },
+      {
+        question: "Why is randomness useful in games?",
+        options: [
+          "It removes decisions",
+          "It stops the game",
+          "It makes games more fun and less predictable",
+          "It always makes games easier",
+        ],
+        correctAnswer: "It makes games more fun and less predictable",
+      },
+      {
+        question: "Which of these would use randomness?",
+        options: [
+          "A sprite that never moves",
+          "A game where enemies appear in different places",
+          "A sprite moving the same way every time",
+          "A quiz with the same questions in order",
+        ],
+        correctAnswer: "A game where enemies appear in different places",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "list",
+    questions: [
+      {
+        question: "What is a list in Scratch used for?",
+        options: [
+          "To move a sprite",
+          "To store many items in one place",
+          "To play sounds",
+          "To change costumes",
+        ],
+        correctAnswer: "To store many items in one place",
+      },
+      {
+        question: "Which of these is an example of a list?",
+        options: [
+          "A single score number",
+          "A shopping list",
+          "A sprite costume",
+          "A backdrop",
+        ],
+        correctAnswer: "A shopping list",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC1/list/q3.png",
+        options: [
+          '"apple" is removed from the list',
+          '"apple" is added to the list',
+          "The list is deleted",
+          'The sprite says "apple"',
+        ],
+        correctAnswer: 'The sprite says "apple"',
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC1/list/q4.png",
+        options: [
+          "Clears the whole list",
+          "Adds a new item",
+          "Removes one item",
+          "Hides the list",
+        ],
+        correctAnswer: "Removes one item",
+      },
+      {
+        question: "What will the sprite say?",
+        image: "/scratchCodeSnippets/SC1/list/q5.png",
+        options: [
+          "Nothing",
+          "The first name in the list",
+          "All the names",
+          "The last name in the list",
+        ],
+        correctAnswer: "The first name in the list",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC1/list/q6.png",
+        options: [
+          '"blue" is added to the end',
+          'Item 2 becomes "blue"',
+          "The list is deleted",
+          'Item 1 becomes "blue"',
+        ],
+        correctAnswer: '"blue" is added to the end',
+      },
+      {
+        question: "What is item 2 of the list?",
+        image: "/scratchCodeSnippets/SC1/list/q7.png",
+        options: ["3", "6", "9", "2"],
+        correctAnswer: "2",
+      },
+      {
+        question: "When will the sprite say “Lots of animals!”?",
+        image: "/scratchCodeSnippets/SC1/list/q8.png",
+        options: [
+          "When the list has more than 5 items",
+          "When the list is empty",
+          "Always",
+          "When the list has 5 items",
+        ],
+        correctAnswer: "When the list has more than 5 items",
+      },
+      {
+        question: "Why are lists useful in Scratch?",
+        options: [
+          "They only show text",
+          "They move sprites faster",
+          "They store many values together",
+          "They stop programs",
+        ],
+        correctAnswer: "They store many values together",
+      },
+      {
+        question: "Which situation would best use a list?",
+        options: [
+          "Storing many player names",
+          "Changing a background",
+          "Moving a sprite",
+          "Storing one score",
+        ],
+        correctAnswer: "Storing many player names",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What does the y position control?",
+        options: [
+          "Left and right movement",
+          "Up and down movement",
+          "Size of the sprite",
+          "Direction only",
+        ],
+        correctAnswer: "Up and down movement",
+      },
+      {
+        question: "Where is x = 0, y = 0 in Scratch?",
+        options: [
+          "Top of the screen",
+          "Bottom of the screen",
+          "Centre of the screen",
+          "Left side of the screen",
+        ],
+        correctAnswer: "Centre of the screen",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q3.png",
+        options: [
+          "The sprite moves right",
+          "The sprite moves left",
+          "The sprite moves up",
+          "The sprite moves down",
+        ],
+        correctAnswer: "The sprite moves left",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q4.png",
+        options: [
+          "The sprite moves down",
+          "The sprite moves left",
+          "The sprite moves up",
+          "The sprite moves right",
+        ],
+        correctAnswer: "The sprite moves up",
+      },
+      {
+        question: "Where will the sprite go?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q5.png",
+        options: ["Left and up", "Right and down", "Centre", "Off the stage"],
+        correctAnswer: "Left and up",
+      },
+      {
+        question: "When will the sprite say “Bottom”?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q6.png",
+        options: [
+          "When y is greater than 0",
+          "When x is greater than 0",
+          "When y is less than 0",
+          "Always",
+        ],
+        correctAnswer: "When y is less than 0",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q7.png",
+        options: [
+          "The sprite moves up",
+          "The sprite moves down",
+          "The sprite moves left",
+          "The sprite disappears",
+        ],
+        correctAnswer: "The sprite moves up",
+      },
+      {
+        question: "Where will the sprite go?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q8.png",
+        options: ["Bottom-left", "Bottom-right", "Top-left", "Top-right"],
+        correctAnswer: "Bottom-right",
+      },
+      {
+        question: "What will the sprite say?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q9.png",
+        options: [
+          "Its y position",
+          "Its x position",
+          "Its size",
+          "Its direction",
+        ],
+        correctAnswer: "Its x position",
+      },
+      {
+        question: "What will the sprite do?",
+        image: "/scratchCodeSnippets/SC1/cartesianPlane/q10.png",
+        options: [
+          "Move up forever",
+          "Move left forever",
+          "Move right forever",
+          "Stay still",
+        ],
+        correctAnswer: "Move right forever",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "variables",
+    questions: [
+      {
+        question: "What is a variable in Scratch used for?",
+        options: [
+          "To draw sprites",
+          "To store information that can change",
+          "To play sounds",
+          "To move the background",
+        ],
+        correctAnswer: "To store information that can change",
+      },
+      {
+        question: "Which of these is a good example of a variable?",
+        options: [
+          "A sprite costume",
+          "A sound effect",
+          "A score in a game",
+          "A backdrop",
+        ],
+        correctAnswer: "A score in a game",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC1/variables/q3.png",
+        options: [
+          "Adds 0 to score",
+          "Resets score to 0",
+          "Deletes the score",
+          "Shows the score",
+        ],
+        correctAnswer: "Resets score to 0",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC1/variables/q4.png",
+        options: [
+          "Score stays the same",
+          "Score goes down by 1",
+          "Score goes up by 1",
+          "Score becomes 1",
+        ],
+        correctAnswer: "Score goes up by 1",
+      },
+      {
+        question: "What happens when the green flag is clicked?",
+        image: "/scratchCodeSnippets/SC1/variables/q5.png",
+        options: [
+          "Lives increases by 3",
+          "Lives is set to 3",
+          "Lives is deleted",
+          "Lives keeps its old value",
+        ],
+        correctAnswer: "Lives is set to 3",
+      },
+      {
+        question: "When will the sprite say “You win!”?",
+        image: "/scratchCodeSnippets/SC1/variables/q6.png",
+        options: [
+          "When score is 10",
+          "When score is less than 10",
+          "When score is greater than 10",
+          "Always",
+        ],
+        correctAnswer: "When score is greater than 10",
+      },
+      {
+        question: "What happens to speed?",
+        image: "/scratchCodeSnippets/SC1/variables/q7.png",
+        options: [
+          "It increases",
+          "It decreases",
+          "It stays the same",
+          "It is deleted",
+        ],
+        correctAnswer: "It decreases",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC1/variables/q8.png",
+        options: [
+          "Resets time to 1",
+          "Deletes time",
+          "Increases time by 1",
+          "Keeps time the same",
+        ],
+        correctAnswer: "Increases time by 1",
+      },
+      {
+        question: "What will the sprite say?",
+        image: "/scratchCodeSnippets/SC1/variables/q9.png",
+        options: [
+          "The word “score”",
+          "The value of score",
+          "Nothing",
+          "The sprite’s name",
+        ],
+        correctAnswer: "The value of score",
+      },
+      {
+        question: "When will the sprite say “Game Over”?",
+        image: "/scratchCodeSnippets/SC1/variables/q10.png",
+        options: [
+          "When lives is more than 0",
+          "When lives is 1",
+          "When lives is 0",
+          "Always",
+        ],
+        correctAnswer: "When lives is 0",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "blocks",
+    questions: [
+      {
+        question: "What is a custom block in Scratch used for?",
+        options: [
+          "To save a group of instructions",
+          "To draw a sprite",
+          "To play music",
+          "To change backgrounds",
+        ],
+        correctAnswer: "To save a group of instructions",
+      },
+      {
+        question: "Why are custom blocks useful?",
+        options: [
+          "They stop programs",
+          "They let you reuse code easily",
+          "They make sprites colourful",
+          "They only work once",
+        ],
+        correctAnswer: "They let you reuse code easily",
+      },
+      {
+        question: "What does the jump block do?",
+        image: "/scratchCodeSnippets/SC1/blocks/q3.png",
+        options: [
+          "Stops the sprite",
+          "Moves the sprite up",
+          "Changes colour",
+          "Moves the sprite left",
+        ],
+        correctAnswer: "Moves the sprite up",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC1/blocks/q4.png",
+        options: [
+          "The sprite disappears",
+          "The sprite jumps once",
+          "The sprite stops",
+          "The sprite jumps twice",
+        ],
+        correctAnswer: "The sprite jumps twice",
+      },
+      {
+        question: "What will move right do?",
+        image: "/scratchCodeSnippets/SC1/blocks/q5.png",
+        options: [
+          "Move the sprite up",
+          "Move the sprite right",
+          "Move the sprite down",
+          "Move the sprite left",
+        ],
+        correctAnswer: "Move the sprite right",
+      },
+      {
+        question: "What happens when say hello is used?",
+        image: "/scratchCodeSnippets/SC1/blocks/q6.png",
+        options: [
+          "The sprite says “Hello!”",
+          "The program stops",
+          "The sprite moves",
+          "The sprite plays a sound",
+        ],
+        correctAnswer: "The sprite says “Hello!”",
+      },
+      {
+        question: "What will happen?",
+        image: "/scratchCodeSnippets/SC1/blocks/q7.png",
+        options: [
+          "The sprite turns",
+          "The sprite jumps three times",
+          "The sprite stops",
+          "The sprite jumps once",
+        ],
+        correctAnswer: "The sprite jumps three times",
+      },
+      {
+        question: "Why is this custom block useful?",
+        image: "/scratchCodeSnippets/SC1/blocks/q8.png",
+        options: [
+          "It plays sounds",
+          "It deletes the game",
+          "It groups setup code together",
+          "It moves the sprite",
+        ],
+        correctAnswer: "It groups setup code together",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC1/blocks/q9.png",
+        options: [
+          "Stops the program",
+          "Runs the reset code at the start",
+          "Deletes variables",
+          "Runs forever",
+        ],
+        correctAnswer: "Runs the reset code at the start",
+      },
+      {
+        question: "What will spin make the sprite do?",
+        image: "/scratchCodeSnippets/SC1/blocks/q10.png",
+        options: [
+          "Move forward",
+          "Spin all the way around",
+          "Turn a little",
+          "Turn once",
+        ],
+        correctAnswer: "Spin all the way around",
+      },
+    ],
+  },
+  {
+    level: "SC1",
+    topic: "debug",
+    questions: [
+      {
+        question: "What does debugging mean in Scratch?",
+        options: [
+          "Finding and fixing mistakes in your code",
+          "Drawing sprites",
+          "Playing music",
+          "Changing backgrounds",
+        ],
+        correctAnswer: "Finding and fixing mistakes in your code",
+      },
+      {
+        question: "Why is debugging important?",
+        options: [
+          "To make sure the code works correctly",
+          "To move sprites faster",
+          "To make the program colourful",
+          "To stop the program",
+        ],
+        correctAnswer: "To make sure the code works correctly",
+      },
+      {
+        question: "The sprite moves too far. What could you do to fix it?",
+        image: "/scratchCodeSnippets/SC1/debug/q3.png",
+        options: [
+          "Add more `move 10 steps` blocks",
+          "Delete one `move 10 steps` block",
+          "Change the sprite",
+          "Turn the sprite",
+        ],
+        correctAnswer: "Delete one `move 10 steps` block",
+      },
+      {
+        question:
+          "The sprite does not move when you press space. What is the problem?",
+        image: "/scratchCodeSnippets/SC1/debug/q4.png",
+        options: [
+          "The block should be under `when green flag clicked`",
+          "The sprite is hidden",
+          "The sprite needs a costume",
+          "The space key is wrong",
+        ],
+        correctAnswer: "The block should be under `when green flag clicked`",
+      },
+      {
+        question: "The sprite turns too far. How can you fix it?",
+        image: "/scratchCodeSnippets/SC1/debug/q5.png",
+        options: [
+          "Repeat fewer times",
+          "Move forward",
+          "Delete the code",
+          "Turn more degrees",
+        ],
+        correctAnswer: "Repeat fewer times",
+      },
+      {
+        question: "The program is not working as expected",
+        image: "/scratchCodeSnippets/SC1/debug/q6.png",
+        options: [
+          "The sprite is hidden",
+          "The block is wrong",
+          "The quotation mark is missing",
+          "The time was not specified",
+        ],
+        correctAnswer: "The time was not specified",
+      },
+      {
+        question: "The score goes down instead of up. How can you fix it?",
+        image: "/scratchCodeSnippets/SC1/debug/q7.png",
+        options: [
+          "Delete the block",
+          "Turn the sprite",
+          "Add a wait block",
+          "Change `-1` to `1`",
+        ],
+        correctAnswer: "Change `-1` to `1`",
+      },
+      {
+        question: "The sprite never says anything. What could be wrong?",
+        image: "/scratchCodeSnippets/SC1/debug/q8.png",
+        options: [
+          "The block is missing a green flag",
+          "The sprite is not actually touching the pointer",
+          "The sprite is too big",
+          "The program is too slow",
+        ],
+        correctAnswer: "The sprite is not actually touching the pointer",
+      },
+      {
+        question: "The sprite moves too far. What is a debugging solution?",
+        image: "/scratchCodeSnippets/SC1/debug/q9.png",
+        options: [
+          "Add another move block",
+          "Change the costume",
+          "Delete the sprite",
+          "Reduce the number in `repeat`",
+        ],
+        correctAnswer: "Reduce the number in `repeat`",
+      },
+      {
+        question:
+          "The sprite does not appear in the middle. What should you check?",
+        image: "/scratchCodeSnippets/SC1/debug/q10.png",
+        options: [
+          "The sprite is hidden",
+          "The stage is small",
+          "The costume is wrong",
+          "The coordinates are correct",
+        ],
+        correctAnswer: "The coordinates are correct",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "input",
+    questions: [
+      {
+        question: "Why do programs ask for input?",
+        options: [
+          "To speed up the program",
+          "To slow down the program",
+          "To let the user give information",
+          "To delete information",
+        ],
+        correctAnswer: "To let the user give information",
+      },
+      {
+        question: "Which device is commonly used to give input?",
+        options: ["Printer", "Keyboard", "Speaker", "Headphones"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: 'If the user types "Sam," what will the sprite say?',
+        image: "/scratchCodeSnippets/SC2/input/q3.png",
+        options: [
+          "“Sam is your best friend!”",
+          "Nothing",
+          "“Sam”",
+          "“is your best friend!”",
+        ],
+        correctAnswer: "“Sam is your best friend!”",
+      },
+      {
+        question: "What does the sprite say?",
+        image: "/scratchCodeSnippets/SC2/input/q4.png",
+        options: [
+          "“favourite animal”",
+          "“Elephant”",
+          "Nothing",
+          "Whatever the user typed",
+        ],
+        correctAnswer: "Whatever the user typed",
+      },
+      {
+        question: "What will the sprite say if the user enters “4” when asked?",
+        image: "/scratchCodeSnippets/SC2/input/q5.png",
+        options: [
+          "Nothing",
+          "“Thats correct”",
+          "“That’s incorrect”",
+          "“answer",
+        ],
+        correctAnswer: "“That’s incorrect”",
+      },
+      {
+        question: "When will the meow sound play?",
+        image: "/scratchCodeSnippets/SC2/input/q6.png",
+        options: [
+          "If the user enters “10”",
+          "If the user enters an incorrect answer",
+          "Never",
+          "It will play on repeat",
+        ],
+        correctAnswer: "If the user enters “10”",
+      },
+      {
+        question: "What will happen if the user enters “yes”?",
+        image: "/scratchCodeSnippets/SC2/input/q7.png",
+        options: [
+          "Nothing",
+          "The sprite will bark",
+          "The sprite will jump",
+          "The sprite will meow",
+        ],
+        correctAnswer: "The sprite will meow",
+      },
+      {
+        question: "Which device does the program receive input from?",
+        image: "/scratchCodeSnippets/SC2/input/q8.png",
+        options: ["Mouse", "Keyboard", "Touchscreen", "Microphone"],
+        correctAnswer: "Keyboard",
+      },
+      {
+        question: "Which device does the program receive input from?",
+        image: "/scratchCodeSnippets/SC2/input/q9.png",
+        options: ["Mouse", "Keyboard", "Touchscreen", "Microphone"],
+        correctAnswer: "Mouse",
+      },
+      {
+        question: "True or false, this program uses input:",
+        image: "/scratchCodeSnippets/SC2/input/q10.png",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "loops",
+    questions: [
+      {
+        question: "What happens when a loop repeats?",
+        options: [
+          "It completes the same steps again",
+          "It deletes the program",
+          "It slows the computer down",
+          "It speeds the computer up",
+        ],
+        correctAnswer: "It completes the same steps again",
+      },
+      {
+        question: "How can loops save time for programmers?",
+        options: [
+          "The make the computer faster",
+          "They allow you to write the code once and then repeat it",
+          "They fix bugs automatically",
+          "They draw art",
+        ],
+        correctAnswer:
+          "They allow you to write the code once and then repeat it",
+      },
+      {
+        question: "How many times will the sprite say “Hello”?",
+        image: "/scratchCodeSnippets/SC2/loops/q3.png",
+        options: ["1", "10", "100", "None"],
+        correctAnswer: "None",
+      },
+      {
+        question: "How long will the sprite turn for?",
+        image: "/scratchCodeSnippets/SC2/loops/q4.png",
+        options: ["15 times", "1 time", "infinite times", "No times"],
+        correctAnswer: "infinite times",
+      },
+      {
+        question: "How many times will the meow sound play?",
+        image: "/scratchCodeSnippets/SC2/loops/q5.png",
+        options: ["None", "1", "5", "10"],
+        correctAnswer: "1",
+      },
+      {
+        question: "What will make the loop stop?",
+        image: "/scratchCodeSnippets/SC2/loops/q6.png",
+        options: [
+          "Pressing the space bar",
+          "The sprite touching the edge",
+          "Clicking the mouse",
+          "Moving 10 steps",
+        ],
+        correctAnswer: "The sprite touching the edge",
+      },
+      {
+        question: "What is the error in this code?",
+        image: "/scratchCodeSnippets/SC2/loops/q7.png",
+        options: [
+          "We should use a different variable other than “score”",
+          "We didn’t tell the loop when to stop repeating",
+          "The loop is too long",
+          "The loop is too short",
+        ],
+        correctAnswer: "We didn’t tell the loop when to stop repeating",
+      },
+      {
+        question: "How often does the sprite say “Tick”?",
+        image: "/scratchCodeSnippets/SC2/loops/q8.png",
+        options: ["Every second", "Every 10 seconds", "Only once", "Never"],
+        correctAnswer: "Every second",
+      },
+      {
+        question: "True or false, this code uses a loop:",
+        image: "/scratchCodeSnippets/SC2/loops/q9.png",
+        options: ["True", "False"],
+        correctAnswer: "False",
+      },
+      {
+        question: "True or false, this code uses a loop:",
+        image: "/scratchCodeSnippets/SC2/loops/q10.png",
+        options: ["True", "False"],
+        correctAnswer: "True",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "decisions",
+    questions: [
+      {
+        question: "What does an if-else block do?",
+        options: [
+          "Repeats code forever",
+          "Chooses between two actions",
+          "Draws shapes",
+          "Plays music",
+        ],
+        correctAnswer: "Chooses between two actions",
+      },
+      {
+        question: "A decision in Scratch is based on a:",
+        options: ["Costume", "Sound", "Condition", "Colour only"],
+        correctAnswer: "Condition",
+      },
+      {
+        question: "What will the sprite say when score is 0?",
+        image: "/scratchCodeSnippets/SC2/decisions/q3.png",
+        options: ["Keep going!", "Nothing", "Start!", "Game over"],
+        correctAnswer: "Start!",
+      },
+      {
+        question:
+          "What will the sprite say when it is NOT touching the hedgehog?",
+        image: "/scratchCodeSnippets/SC2/decisions/q4.png",
+        options: ["Ouch!", "Safe", "Nothing", "Enemy!"],
+        correctAnswer: "Safe",
+      },
+      {
+        question: "When will it say “Game Over”?",
+        image: "/scratchCodeSnippets/SC2/decisions/q5.png",
+        options: [
+          "When lives are more than 0",
+          "When lives are 0",
+          "When lives are 10",
+          "Always",
+        ],
+        correctAnswer: "When lives are 0",
+      },
+      {
+        question: "What happens if the up arrow is NOT pressed?",
+        image: "/scratchCodeSnippets/SC2/decisions/q6.png",
+        options: [
+          "The sprite still moves",
+          "The sprite jumps",
+          "Nothing happens",
+          "The sprite stops forever",
+        ],
+        correctAnswer: "Nothing happens",
+      },
+      {
+        question: "What must the player type to hear “Great!”?",
+        image: "/scratchCodeSnippets/SC2/decisions/q7.png",
+        options: ["no", "maybe", "yes", "YES (only capitals)"],
+        correctAnswer: "yes",
+      },
+      {
+        question: "What happens when the sprite is small?",
+        image: "/scratchCodeSnippets/SC2/decisions/q8.png",
+        options: [
+          "It gets bigger",
+          "It gets smaller",
+          "It disappears",
+          "It changes colour",
+        ],
+        correctAnswer: "It gets bigger",
+      },
+      {
+        question: "Which condition would work best for stopping a game?",
+        options: [
+          "if touching mouse-pointer?",
+          "if score > 100",
+          "if backdrop = game over",
+          "if sprite says hello",
+        ],
+        correctAnswer: "if score > 100",
+      },
+      {
+        question: "Which sentence best describes decision blocks?",
+        options: [
+          "They repeat actions",
+          "They move sprites",
+          "They let the computer make choices",
+          "They draw backgrounds",
+        ],
+        correctAnswer: "They let the computer make choices",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "randomness",
+    questions: [
+      {
+        question: "What happens when a Scratch program uses randomness?",
+        options: [
+          "It crashes",
+          "It does the same thing every time",
+          "It can behave differently each time",
+          "It stops working",
+        ],
+        correctAnswer: "It can behave differently each time",
+      },
+      {
+        question: "Where can you find the pick random block in Scratch?",
+        options: ["Motion", "Looks", "Operators", "Sound"],
+        correctAnswer: "Operators",
+      },
+      {
+        question: "What might the sprite say?",
+        image: "/scratchCodeSnippets/SC2/randomness/q3.png",
+        options: ["1, 2, or 3", "Only 1", "Only 3", "Any number"],
+        correctAnswer: "1, 2, or 3",
+      },
+      {
+        question: "What will happen?",
+        image: "/scratchCodeSnippets/SC2/randomness/q4.png",
+        options: [
+          "The sprite always turns the same way",
+          "The sprite turns a random amount",
+          "The sprite moves forward",
+          "The sprite stops",
+        ],
+        correctAnswer: "The sprite turns a random amount",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC2/randomness/q5.png",
+        options: [
+          "Move the sprite up",
+          "Moves the sprite down",
+          "Moves the sprite left or right by 10",
+          "Moves the sprite left or right a random amount",
+        ],
+        correctAnswer: "Moves the sprite left or right a random amount",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC2/randomness/q6.png",
+        options: [
+          "The sprite stays the same colour",
+          "The sprite changes colour randomly",
+          "The sprite disappears",
+          "The sprite moves faster",
+        ],
+        correctAnswer: "The sprite changes colour randomly",
+      },
+      {
+        question: "What will the sprite do?",
+        image: "/scratchCodeSnippets/SC2/randomness/q7.png",
+        options: [
+          "Move to random places on the screen",
+          "Stay still",
+          "Only move up",
+          "Only move right",
+        ],
+        correctAnswer: "Move to random places on the screen",
+      },
+      {
+        question: "Why is this useful?",
+        image: "/scratchCodeSnippets/SC2/randomness/q8.png",
+        options: [
+          "To stop the sprite",
+          "To make the sprite always move slowly",
+          "To make movement different each time",
+          "To remove movement",
+        ],
+        correctAnswer: "To make movement different each time",
+      },
+      {
+        question: "Which game feature often uses randomness?",
+        options: [
+          "A fixed background",
+          "Random enemy spawning",
+          "A title screen",
+          "A stop button",
+        ],
+        correctAnswer: "Random enemy spawning",
+      },
+      {
+        question: "Which sentence best describes randomness?",
+        options: [
+          "Choosing the same answer every time",
+          "Repeating instructions",
+          "Following a strict order",
+          "Letting the computer choose by chance",
+        ],
+        correctAnswer: "Letting the computer choose by chance",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "list",
+    questions: [
+      {
+        question: "What can a Scratch list store?",
+        options: [
+          "Only numbers",
+          "Only words",
+          "Numbers and words",
+          "Only sprites",
+        ],
+        correctAnswer: "Numbers and words",
+      },
+      {
+        question: "Where do you create list in Scratch?",
+        options: ["Variables", "Motion", "Control", "Looks"],
+        correctAnswer: "Variables",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC2/list/q3.png",
+        options: [
+          "Deletes the list",
+          "Adds the value of score to the list",
+          "Shows the list",
+          "Changes the sprite",
+        ],
+        correctAnswer: "Adds the value of score to the list",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC2/list/q4.png",
+        options: [
+          "The last item is removed",
+          "All items are removed",
+          "The list is hidden",
+          "The first item is removed",
+        ],
+        correctAnswer: "The first item is removed",
+      },
+      {
+        question: "What will the sprite say?",
+        image: "/scratchCodeSnippets/SC2/list/q5.png",
+        options: [
+          "The first word",
+          "All the words",
+          "The number of items in the list",
+          "Nothing",
+        ],
+        correctAnswer: "The number of items in the list",
+      },
+      {
+        question: "What is item 3?",
+        image: "/scratchCodeSnippets/SC2/list/q6.png",
+        options: ["dog", "cat", "fish", "pet"],
+        correctAnswer: "fish",
+      },
+      {
+        question: "When will the sprite say 'No scores yet'?",
+        image: "/scratchCodeSnippets/SC2/list/q7.png",
+        options: [
+          "When the list has items",
+          "When the list is empty",
+          "When the list has one item",
+          "Always",
+        ],
+        correctAnswer: "When the list is empty",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC2/list/q8.png",
+        options: [
+          'Replaces a random name with "Alex"',
+          'Adds "Alex" to the end',
+          "Deletes a random name",
+          "Clears the list",
+        ],
+        correctAnswer: 'Replaces a random name with "Alex"',
+      },
+      {
+        question: "",
+        image: "/scratchCodeSnippets/SC2/list/q9.png",
+        options: [
+          "Adds an item",
+          "Shows the last item",
+          "Gets the first item",
+          "Deletes the list",
+        ],
+        correctAnswer: "Gets the first item",
+      },
+      {
+        question: "Why might a game use a list?",
+        options: [
+          "To store one message",
+          "To move sprites",
+          "To play sounds",
+          "To store many high scores",
+        ],
+        correctAnswer: "To store many high scores",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "cartesianPlane",
+    questions: [
+      {
+        question: "What do x and y positions control in Scratch?",
+        options: [
+          "The sprite’s colour",
+          "The sprite’s sound",
+          "Where the sprite is on the screen",
+          "The sprite’s size",
+        ],
+        correctAnswer: "Where the sprite is on the screen",
+      },
+      {
+        question: "Which number changes when a sprite moves left or right?",
+        options: ["y", "size", "direction", "x"],
+        correctAnswer: "x",
+      },
+      {
+        question: "Where will the sprite go?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q3.png",
+        options: [
+          "Top-right corner",
+          "Bottom-left corner",
+          "The centre of the screen",
+          "Off the stage",
+        ],
+        correctAnswer: "The centre of the screen",
+      },
+      {
+        question: "What will the sprite do?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q4.png",
+        options: ["Move up", "Move down", "Move right", "Move left"],
+        correctAnswer: "Move right",
+      },
+      {
+        question: "What will the sprite do?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q5.png",
+        options: ["Move up", "Move down", "Move left", "Move right"],
+        correctAnswer: "Move down",
+      },
+      {
+        question: "Where will the sprite move?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q6.png",
+        options: [
+          "To the right side",
+          "To the left side",
+          "To the top",
+          "To the centre",
+        ],
+        correctAnswer: "To the left side",
+      },
+      {
+        question: "When will the sprite say 'Right side'?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q7.png",
+        options: [
+          "When x is less then 0",
+          "When y is less than 0",
+          "when x is greater than 0",
+          "When y is greater than 0",
+        ],
+        correctAnswer: "when x is greater than 0",
+      },
+      {
+        question: "Where will the sprite appear?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q8.png",
+        options: [
+          "Right and down",
+          "Left and up",
+          "Centre of the screen",
+          "Off the stage",
+        ],
+        correctAnswer: "Right and down",
+      },
+      {
+        question: "When will the sprite say 'Middle'?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q9.png",
+        options: [
+          "when y equals 0",
+          "When x equals 0",
+          "When y is greater than 0",
+          "Always",
+        ],
+        correctAnswer: "When x equals 0",
+      },
+      {
+        question: "What will the sprite do?",
+        image: "/scratchCodeSnippets/SC2/cartesianPlane/q10.png",
+        options: [
+          "Move up and down",
+          "Go to a random left-right position",
+          "Stay still",
+          "Go to the top",
+        ],
+        correctAnswer: "Go to a random left-right position",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "variables",
+    questions: [
+      {
+        question: "Why do games use variables?",
+        options: [
+          "To make sprites colourful",
+          "To store changing information",
+          "To play music",
+          "To draw shapes",
+        ],
+        correctAnswer: "To store changing information",
+      },
+      {
+        question: "Which variable would best track time in a game?",
+        options: ["timer", "score", "costume", "backdrop"],
+        correctAnswer: "timer",
+      },
+      {
+        question: "What is the value of score after this runs?",
+        image: "/scratchCodeSnippets/SC2/variables/q3.png",
+        options: ["5", "0", "10", "1"],
+        correctAnswer: "5",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC2/variables/q4.png",
+        options: [
+          "Score becomes 2",
+          "Score decreases by 2",
+          "Score resets",
+          "Score increases by 2",
+        ],
+        correctAnswer: "Score decreases by 2",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC2/variables/q5.png",
+        options: [
+          "Deletes health",
+          "Sets health to 100",
+          "Adds 100 to health",
+          "Shows health",
+        ],
+        correctAnswer: "Sets health to 100",
+      },
+      {
+        question: "When will the sprite say 'Low health!'?",
+        image: "/scratchCodeSnippets/SC2/variables/q6.png",
+        options: [
+          "Always",
+          "When health is greater than 20",
+          "When health is less than 20",
+          "When health is 20",
+        ],
+        correctAnswer: "When health is less than 20",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC2/variables/q7.png",
+        options: [
+          "Coins increase by 5",
+          "Coins stay the same",
+          "Coins go down",
+          "Coins become 5",
+        ],
+        correctAnswer: "Coins increase by 5",
+      },
+      {
+        question: "What does this do?",
+        image: "/scratchCodeSnippets/SC2/variables/q8.png",
+        options: [
+          "Resets lives",
+          "Increases lives",
+          "Decreases lives",
+          "Deletes lives",
+        ],
+        correctAnswer: "Increases lives",
+      },
+      {
+        question: "What will the sprite say?",
+        image: "/scratchCodeSnippets/SC2/variables/q9.png",
+        options: [
+          "The sprite’s direction",
+          "The number stored in lives",
+          "The word “lives”",
+          "Nothing",
+        ],
+        correctAnswer: "The number stored in lives",
+      },
+      {
+        question: "Why is this useful?",
+        image: "/scratchCodeSnippets/SC2/variables/q10.png",
+        options: [
+          "It removes the score",
+          "It starts the score fresh each game",
+          "It makes the score random",
+          "It shows the score",
+        ],
+        correctAnswer: "It starts the score fresh each game",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "blocks",
+    questions: [
+      {
+        question:
+          "Custom blocks are most like which idea in other coding languages?",
+        options: ["Sprites", "Sounds", "Functions", "Costumes"],
+        correctAnswer: "Functions",
+      },
+      {
+        question: "When should you use a custom block?",
+        options: [
+          "When code is used many times",
+          "When you want to delete code",
+          "When you want to stop a program",
+          "When you want one block only",
+        ],
+        correctAnswer: "When code is used many times",
+      },
+      {
+        question: "What does move up do?",
+        image: "/scratchCodeSnippets/SC2/blocks/q3.png",
+        options: ["Moves left", "Moves right", "Moves up", "Moves down"],
+        correctAnswer: "Moves up",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC2/blocks/q4.png",
+        options: [
+          "The sprite moves up once",
+          "The sprite moves up twice",
+          "The sprite stops",
+          "The sprite turns",
+        ],
+        correctAnswer: "The sprite moves up twice",
+      },
+      {
+        question: "What does grow do?",
+        image: "/scratchCodeSnippets/SC2/blocks/q5.png",
+        options: [
+          "Makes the sprite smaller",
+          "Makes the sprite bigger",
+          "Deletes the sprite",
+          "Stops the program",
+        ],
+        correctAnswer: "Makes the sprite bigger",
+      },
+      {
+        question: "What will the sprite say?",
+        image: "/scratchCodeSnippets/SC2/blocks/q6.png",
+        options: [
+          "The word “score”",
+          "The value of score",
+          "Nothing",
+          "Its name",
+        ],
+        correctAnswer: "The value of score",
+      },
+      {
+        question: "What happens?",
+        image: "/scratchCodeSnippets/SC2/blocks/q7.png",
+        options: [
+          "The sprite grows by 5",
+          "The sprite grows by 10",
+          "The sprite grows by 15",
+          "The sprite grows by 20",
+        ],
+        correctAnswer: "The sprite grows by 20",
+      },
+      {
+        question: "What does reset position do?",
+        image: "/scratchCodeSnippets/SC2/blocks/q8.png",
+        options: [
+          "Moves the sprite randomly",
+          "Moves the sprite to the centre",
+          "Moves the sprite to the edge",
+          "Hides the sprite",
+        ],
+        correctAnswer: "Moves the sprite to the centre",
+      },
+      {
+        question: "Why is this useful?",
+        image: "/scratchCodeSnippets/SC2/blocks/q9.png",
+        options: [
+          "It stops the game",
+          "It sets a starting place",
+          "It deletes the sprite",
+          "It plays a sound",
+        ],
+        correctAnswer: "It sets a starting place",
+      },
+      {
+        question: "What will flash do?",
+        image: "/scratchCodeSnippets/SC2/blocks/q10.png",
+        options: [
+          "Change brightness once",
+          "Change brightness five times",
+          "Move the sprite",
+          "Stop the program",
+        ],
+        correctAnswer: "Change brightness five times",
+      },
+    ],
+  },
+  {
+    level: "SC2",
+    topic: "debug",
+    questions: [
+      {
+        question: "What is the first step when debugging a Scratch program?",
+        options: [
+          "Guess what is wrong",
+          "Look for where the program behaves differently than expected",
+          "Add more blocks",
+          "Change the sprite",
+        ],
+        correctAnswer:
+          "Look for where the program behaves differently than expected",
+      },
+      {
+        question: "Which of these helps with debugging?",
+        options: [
+          "Changing all costumes",
+          "Testing the program step by step",
+          "Hiding the sprite",
+          "Turning the stage",
+        ],
+        correctAnswer: "Testing the program step by step",
+      },
+      {
+        question: "The score increases too quickly. How can you fix it?",
+        image: "/scratchCodeSnippets/SC2/debug/q3.png",
+        options: [
+          "Delete one `change score by 1` block",
+          "Add more blocks",
+          "Move the sprite",
+          "Turn the sprite",
+        ],
+        correctAnswer: "Delete one `change score by 1` block",
+      },
+      {
+        question: "The sprite does not move. Why?",
+        image: "/scratchCodeSnippets/SC2/debug/q4.png",
+        options: [
+          "`repeat 0` means the loop does not run",
+          "The move block is broken",
+          "The sprite is hidden",
+          "The green flag is not clicked",
+        ],
+        correctAnswer: "`repeat 0` means the loop does not run",
+      },
+      {
+        question: "The sprite should say hello before goodbye",
+        image: "/scratchCodeSnippets/SC2/debug/q5.png",
+        options: [
+          "The wait block is missing",
+          "The code is correct, maybe another block stops it",
+          "The blocks are in the wrong order",
+          "The green flag is not clicked",
+        ],
+        correctAnswer: "The blocks are in the wrong order",
+      },
+      {
+        question:
+          "The lives go down too quickly. What is a debugging solution?",
+        image: "/scratchCodeSnippets/SC2/debug/q6.png",
+        options: [
+          "Remove one `change lives by -1` block",
+          "Add another `change lives by -1` block",
+          "Change the sprite",
+          "Turn the sprite",
+        ],
+        correctAnswer: "Remove one `change lives by -1` block",
+      },
+      {
+        question:
+          "The sprite does not appear in the middle. What could you check?",
+        image: "/scratchCodeSnippets/SC2/debug/q7.png",
+        options: [
+          "The sprite is hidden",
+          "The green flag is not clicked",
+          "The x and y values are correct",
+          "All of the above",
+        ],
+        correctAnswer: "The x and y values are correct",
+      },
+      {
+        question: "The sprite jumps too high. What can you do?",
+        image: "/scratchCodeSnippets/SC2/debug/q8.png",
+        options: [
+          "Change `10` to a smaller number",
+          "Add more blocks",
+          "Delete the sprite",
+          "Change the stage",
+        ],
+        correctAnswer: "Change `10` to a smaller number",
+      },
+      {
+        question: "The sprite turns too far. How can you fix it?",
+        image: "/scratchCodeSnippets/SC2/debug/q9.png",
+        options: [
+          "Reduce the repeat number or turn smaller degrees",
+          "Delete the sprite",
+          "Move the sprite forward",
+          "Add another turn block",
+        ],
+        correctAnswer: "Reduce the repeat number or turn smaller degrees",
+      },
+      {
+        question: "The sprite goes off the stage. What could be wrong?",
+        image: "/scratchCodeSnippets/SC2/debug/q10.png",
+        options: [
+          "We used the wrong backdrop",
+          "The screen is too small",
+          "There is no `forever` loop",
+          "The sprite doesn’t listen",
+        ],
+        correctAnswer: "There is no `forever` loop",
+      },
+    ],
+  },
+];
