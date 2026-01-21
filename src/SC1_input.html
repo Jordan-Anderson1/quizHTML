@@ -83,11 +83,14 @@
     }
 
     function renderQuestion(question, index) {
+
         return `
           <div class="space-y-6 bg-white rounded-xl p-6 mb-4">
             <p class="font-bold text-xl">
               ${index + 1}. ${question.question}
             </p>
+            ${question.image ? `<img class="max-w-full" src="${question.image}" alt=""> `: ""}
+
 
             <div class="grid grid-cols-2 gap-4">
               ${shuffledOptions[index]
