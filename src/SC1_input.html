@@ -2,26 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Quiz</title>
-
+    <title>SC1 Quiz</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="data.js"></script>
 </head>
 
 <body class="bg-[#0A2240] flex justify-center py-10">
 <div id="app" class="rounded-2xl w-1/2 p-6"></div>
 
-<!-- Your quiz data -->
-<script src="./data.ts"></script>
-
 <script>
+    /* =========================
+       SC1 QUIZ INPUT
+    ========================== */
 
-    function getParams() {
-        const params = new URLSearchParams(window.location.search);
-        return {
-            topic: params.get("topic"),
-            level: params.get("level"),
-        };
-    }
+    const quiz = updatedQuizQuestions.find(set => set.level === "SC1" && set.topic === "input")
+
+
+    /* =========================
+       STATE
+    ========================== */
+
+    const app = document.getElementById("app");
+
+    let answers = quiz.questions.map(() => "");
+    let shuffledOptions = quiz.questions.map(q =>
+        shuffleArray(q.options)
+    );
+    let submitted = false;
+    let score = 0;
+
+    /* =========================
+       HELPERS
+    ========================== */
 
     function shuffleArray(array) {
         const arr = [...array];
@@ -32,67 +44,17 @@
         return arr;
     }
 
-    function getLanguage(level) {
-        switch (level) {
-            case "SC1":
-            case "SC2":
-                return "Scratch";
-            case "SB1":
-            case "SB2":
-                return "Small Basic";
-            case "PY1":
-            case "PY2":
-                return "Python";
-            case "JS1":
-            case "JS2":
-                return "JavaScript";
-            case "C1":
-            case "C2":
-                return "C++";
-            case "J1":
-            case "J2":
-                return "Java";
-            default:
-                return "";
-        }
-    }
-
-    /* -------------------------
-       State
-    --------------------------*/
-
-    const app = document.getElementById("app");
-    const { topic, level } = getParams();
-
-    const data = updatedQuizQuestions.find(
-        (set) => set.level === level && set.topic === topic
-    );
-
-    let submitted = false;
-    let score = 0;
-    let answers = [];
-    let shuffledOptions = [];
-    let language = getLanguage(level);
-
+    /* =========================
+       RENDER
+    ========================== */
 
     function render() {
-        if (!data) {
-            app.innerHTML = `
-            <h1 class="text-4xl text-white font-bold">
-              No quiz available, check search parameters
-            </h1>
-          `;
-            return;
-        }
-
         app.innerHTML = `
           <h1 class="mb-8 text-center text-white text-3xl font-bold">
-            Test yourself on ${topic} in ${language}!
+            Test yourself on ${quiz.topic} in ${quiz.level}!
           </h1>
 
-          ${data.questions
-            .map((q, index) => renderQuestion(q, index))
-            .join("")}
+          ${quiz.questions.map(renderQuestion).join("")}
 
           ${
             submitted
@@ -112,43 +74,24 @@
 
           ${
             submitted
-                ? `<div id="score" class="mt-8">
-                  <p class="text-4xl text-center text-white my-4">
-                    You scored ${score} out of ${data.questions.length}!
-                  </p>
-                  <p class="text-2xl text-center text-white">
-                    Click reset to try again.
-                  </p>
-                </div>`
+                ? `<p class="text-3xl text-center text-white my-8">
+                  You scored ${score} out of ${quiz.questions.length}!
+                </p>`
                 : ""
         }
         `;
     }
 
-    function renderQuestion(q, index) {
-        const options = shuffledOptions[index];
-
+    function renderQuestion(question, index) {
         return `
-          <div class="space-y-8 bg-white rounded-xl p-6 mb-4">
+          <div class="space-y-6 bg-white rounded-xl p-6 mb-4">
             <p class="font-bold text-xl">
-              ${index + 1}. ${q.question}
+              ${index + 1}. ${question.question}
             </p>
 
-            ${
-            q.codeSnippet
-                ? `<pre class="bg-[#282c34] text-white rounded-lg p-4 overflow-x-auto">
-<code>${q.codeSnippet.code.join("\n")}</code>
-</pre>`
-                : ""
-        }
-
-            ${q.image ? `<img src="${q.image}" />` : ""}
-
-            <div class="gap-4 grid grid-cols-2">
-              ${options
-            .map((option) =>
-                renderOption(option, q.correctAnswer, index)
-            )
+            <div class="grid grid-cols-2 gap-4">
+              ${shuffledOptions[index]
+            .map(option => renderOption(option, question.correctAnswer, index))
             .join("")}
             </div>
           </div>
@@ -157,10 +100,10 @@
 
     function renderOption(option, correctAnswer, index) {
         let classes =
-            "border-[1px] border-[#939598] rounded-lg p-4";
+            "border border-[#939598] rounded-lg p-4";
 
         if (!submitted) {
-            classes += " hover:bg-[#0A2240]/20 cursor-pointer";
+            classes += " cursor-pointer hover:bg-[#0A2240]/20";
         }
 
         if (answers[index] === option) {
@@ -168,11 +111,10 @@
         }
 
         if (submitted && answers[index] === option) {
-            if (option === correctAnswer) {
-                classes += " bg-green-500";
-            } else {
-                classes += " bg-red-500";
-            }
+            classes +=
+                option === correctAnswer
+                    ? " bg-green-500"
+                    : " bg-red-500";
         }
 
         return `
@@ -180,10 +122,14 @@
             class="${classes}"
             onclick="selectAnswer(${index}, '${option.replace(/'/g, "\\'")}')"
           >
-            <p>${option}</p>
+            ${option}
           </div>
         `;
     }
+
+    /* =========================
+       ACTIONS
+    ========================== */
 
     function selectAnswer(index, option) {
         if (submitted) return;
@@ -195,33 +141,21 @@
         submitted = true;
         score = 0;
 
-        data.questions.forEach((q, i) => {
+        quiz.questions.forEach((q, i) => {
             if (answers[i] === q.correctAnswer) score++;
         });
 
         render();
-
-        document
-            .getElementById("score")
-            ?.scrollIntoView({ behavior: "smooth" });
     }
 
     function resetQuiz() {
         submitted = false;
         score = 0;
-        answers = data.questions.map(() => "");
-        render();
-    }
-
-    /* -------------------------
-       Init
-    --------------------------*/
-
-    if (data) {
-        shuffledOptions = data.questions.map((q) =>
+        answers = quiz.questions.map(() => "");
+        shuffledOptions = quiz.questions.map(q =>
             shuffleArray(q.options)
         );
-        answers = data.questions.map(() => "");
+        render();
     }
 
     render();

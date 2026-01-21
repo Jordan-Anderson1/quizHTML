@@ -1,6 +1,6 @@
-import type { quiz } from "./types.ts";
 
-export const updatedQuizQuestions: quiz[] = [
+
+const updatedQuizQuestions = [
   {
     level: "SB1",
     topic: "input",
