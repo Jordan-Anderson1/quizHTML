@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>SC1 Quiz</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="data.js"></script>
+    <script src="../data.js"></script>
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
 
 <body class="bg-[#0A2240] flex justify-center py-10">
@@ -14,7 +22,7 @@
 
     //Quiz input
 
-    const quiz = updatedQuizQuestions.find(set => set.level === "SC1" && set.topic === "input")
+    const quiz = updatedQuizQuestions.find(set => set.level === "SB1" && set.topic === "debug")
 
 
     //state management
@@ -34,20 +42,33 @@
         const arr = [...array];
         for (let i = arr.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [arr[i], arr[j]] = [arr[j], arr[i]];
+            [arr[i],
+                arr[j]] = [arr[j],
+                arr[i]];
         }
         return arr;
+    }
+
+    function renderCodeSnippet(codeSnippet) {
+        if (!codeSnippet) return "";
+
+        return `
+      <pre class="rounded-lg text-sm overflow-x-auto"><code class="language-python">${codeSnippet.code.join("\n")}</code>
+      </pre>
+
+    `;
     }
 
     //rendering
 
     function render() {
         app.innerHTML = `
-          <h1 class="mb-8 text-center text-white text-3xl font-bold">
+          <img src="../DMLogo_White.png" class="w-72 mx-auto  my-8" /><h1 class="mb-8 text-center text-white text-3xl font-bold">
             Test yourself on ${quiz.topic} in ${quiz.level}!
           </h1>
 
           ${quiz.questions.map(renderQuestion).join("")}
+
 
           ${
             submitted
@@ -73,6 +94,9 @@
                 : ""
         }
         `;
+
+        window.Prism.highlightAll()
+
     }
 
     function renderQuestion(question, index) {
@@ -82,7 +106,8 @@
             <p class="font-bold text-xl">
               ${index + 1}. ${question.question}
             </p>
-            ${question.image ? `<img class="max-w-full" src="${question.image}" alt=""> `: ""}
+            ${question.image ? `<img class="max-w-full" src="${question.image}" alt=""> ` : ""}
+            ${question.codeSnippet ? renderCodeSnippet(question.codeSnippet) : ""}
 
 
             <div class="grid grid-cols-2 gap-4">
@@ -121,6 +146,8 @@
             ${option}
           </div>
         `;
+
+
     }
 
     //actions
