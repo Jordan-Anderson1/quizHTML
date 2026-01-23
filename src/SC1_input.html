@@ -11,16 +11,13 @@
 <div id="app" class="rounded-2xl w-1/2 p-6"></div>
 
 <script>
-    /* =========================
-       SC1 QUIZ INPUT
-    ========================== */
+
+    //Quiz input
 
     const quiz = updatedQuizQuestions.find(set => set.level === "SC1" && set.topic === "input")
 
 
-    /* =========================
-       STATE
-    ========================== */
+    //state management
 
     const app = document.getElementById("app");
 
@@ -31,9 +28,7 @@
     let submitted = false;
     let score = 0;
 
-    /* =========================
-       HELPERS
-    ========================== */
+    //functions
 
     function shuffleArray(array) {
         const arr = [...array];
@@ -44,9 +39,7 @@
         return arr;
     }
 
-    /* =========================
-       RENDER
-    ========================== */
+    //rendering
 
     function render() {
         app.innerHTML = `
@@ -130,9 +123,7 @@
         `;
     }
 
-    /* =========================
-       ACTIONS
-    ========================== */
+    //actions
 
     function selectAnswer(index, option) {
         if (submitted) return;
