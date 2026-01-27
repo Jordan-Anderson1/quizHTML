@@ -14464,7 +14464,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say?",
-                image: "/scratchCodeSnippets/SC1/input/q3.png",
+                image: "../../scratchCodeSnippets/SC1/input/q3.png",
                 options: ["Nothing",
                     "answer",
                     "Whatever the user typed",
@@ -14473,7 +14473,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does the sprite say?",
-                image: "/scratchCodeSnippets/SC1/input/q4.png",
+                image: "../../scratchCodeSnippets/SC1/input/q4.png",
                 options: ["Nothing",
                     "answer",
                     "age",
@@ -14482,7 +14482,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "If you enter “yes” when asked, what will the sprite say?",
-                image: "/scratchCodeSnippets/SC1/input/q5.png",
+                image: "../../scratchCodeSnippets/SC1/input/q5.png",
                 options: ["No",
                     "Yes",
                     "Maybe",
@@ -14492,7 +14492,7 @@ const updatedQuizQuestions = [
             {
                 question:
                     "If the user types “blue” when asked, what will the sprite say?",
-                image: "/scratchCodeSnippets/SC1/input/q6.png",
+                image: "../../scratchCodeSnippets/SC1/input/q6.png",
                 options: ["Nothing",
                     "Cool",
                     "Blue",
@@ -14501,7 +14501,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Which input device does the program use?",
-                image: "/scratchCodeSnippets/SC1/input/q7.png",
+                image: "../../scratchCodeSnippets/SC1/input/q7.png",
                 options: ["Mouse",
                     "Keyboard",
                     "Touchscreen",
@@ -14510,7 +14510,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Which input device does the program use?",
-                image: "/scratchCodeSnippets/SC1/input/q8.png",
+                image: "../../scratchCodeSnippets/SC1/input/q8.png",
                 options: ["Mouse",
                     "Keyboard",
                     "Touchscreen",
@@ -14519,14 +14519,14 @@ const updatedQuizQuestions = [
             },
             {
                 question: "True or false, this program uses input:",
-                image: "/scratchCodeSnippets/SC1/input/q9.png",
+                image: "../../scratchCodeSnippets/SC1/input/q9.png",
                 options: ["True",
                     "False"],
                 correctAnswer: "False",
             },
             {
                 question: "True or false, this program uses input:",
-                image: "/scratchCodeSnippets/SC1/input/q10.png",
+                image: "../../scratchCodeSnippets/SC1/input/q10.png",
                 options: ["True",
                     "False"],
                 correctAnswer: "True",
@@ -14559,7 +14559,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "How many times will the sprite say “Hello”?",
-                image: "/scratchCodeSnippets/SC1/loops/q3.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q3.png",
                 options: ["None",
                     "1",
                     "10",
@@ -14568,7 +14568,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "How many total steps will the sprite move?",
-                image: "/scratchCodeSnippets/SC1/loops/q4.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q4.png",
                 options: ["None",
                     "5",
                     "20",
@@ -14577,7 +14577,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this code do?",
-                image: "/scratchCodeSnippets/SC1/loops/q5.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q5.png",
                 options: [
                     "It changes the sprite costume 5 times",
                     "It changes the sprite costume forever",
@@ -14588,7 +14588,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will make the loop stop?",
-                image: "/scratchCodeSnippets/SC1/loops/q6.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q6.png",
                 options: [
                     "Pressing the space bar",
                     "The sprite touching the edge",
@@ -14599,7 +14599,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will cause this loop to stop?",
-                image: "/scratchCodeSnippets/SC1/loops/q7.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q7.png",
                 options: [
                     "When the score is 10",
                     "When the score is 50",
@@ -14610,7 +14610,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When does the sprite meow?",
-                image: "/scratchCodeSnippets/SC1/loops/q8.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q8.png",
                 options: [
                     "Constantly",
                     "If the sprite is touching the edge",
@@ -14621,14 +14621,14 @@ const updatedQuizQuestions = [
             },
             {
                 question: "True or false, this code uses a loop:",
-                image: "/scratchCodeSnippets/SC1/loops/q9.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q9.png",
                 options: ["True",
                     "False"],
                 correctAnswer: "True",
             },
             {
                 question: "True or false, this code uses a loop:",
-                image: "/scratchCodeSnippets/SC1/loops/q10.png",
+                image: "../../scratchCodeSnippets/SC1/loops/q10.png",
                 options: ["True",
                     "False"],
                 correctAnswer: "False",
@@ -14659,7 +14659,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens if the sprite is touching the mouse-pointer?",
-                image: "/scratchCodeSnippets/SC1/input/q3.png",
+                image: "../../scratchCodeSnippets/SC1/input/q3.png",
                 options: [
                     "The sprite says “Hello!”",
                     "Nothing happens",
@@ -14670,7 +14670,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say “You win!”?",
-                image: "/scratchCodeSnippets/SC1/input/q4.png",
+                image: "../../scratchCodeSnippets/SC1/input/q4.png",
                 options: [
                     "When score is 10",
                     "When score is greater than 10",
@@ -14681,7 +14681,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What must the player do to make the sprite meow?",
-                image: "/scratchCodeSnippets/SC1/decisions/q5.png",
+                image: "../../scratchCodeSnippets/SC1/decisions/q5.png",
                 options: [
                     "Click the sprite",
                     "Wait 5 seconds",
@@ -14692,7 +14692,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens when the sprite touches the edge?",
-                image: "/scratchCodeSnippets/SC1/decisions/q6.png",
+                image: "../../scratchCodeSnippets/SC1/decisions/q6.png",
                 options: [
                     "It stops",
                     "It disappears",
@@ -14703,7 +14703,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say “Correct!”?",
-                image: "/scratchCodeSnippets/SC1/decisions/q7.png",
+                image: "../../scratchCodeSnippets/SC1/decisions/q7.png",
                 options: [
                     "When the answer is 5",
                     "When the answer is 4",
@@ -14714,7 +14714,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say if answer = 6?",
-                image: "/scratchCodeSnippets/SC1/decisions/q8.png",
+                image: "../../scratchCodeSnippets/SC1/decisions/q8.png",
                 options: ["6",
                     "incorrect",
                     "answer",
@@ -14723,7 +14723,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this block mean?",
-                image: "/scratchCodeSnippets/SC1/decisions/q9.png",
+                image: "../../scratchCodeSnippets/SC1/decisions/q9.png",
                 options: [
                     "The sprite changes color",
                     "The sprite paints red",
@@ -14734,7 +14734,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say if answer = 5?",
-                image: "/scratchCodeSnippets/SC1/decisions/q10.png",
+                image: "../../scratchCodeSnippets/SC1/decisions/q10.png",
                 options: ["answer",
                     "5",
                     "Incorrect",
@@ -14769,7 +14769,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What could the value of score be?",
-                image: "/scratchCodeSnippets/SC1/randomness/q3.png",
+                image: "../../scratchCodeSnippets/SC1/randomness/q3.png",
                 options: [
                     "Only even numbers",
                     "Any number from 1 to 10",
@@ -14780,7 +14780,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will happen when the code runs?",
-                image: "/scratchCodeSnippets/SC1/randomness/q4.png",
+                image: "../../scratchCodeSnippets/SC1/randomness/q4.png",
                 options: [
                     "The sprite does not move",
                     "The sprite always moves 10 steps",
@@ -14791,7 +14791,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite do?",
-                image: "/scratchCodeSnippets/SC1/randomness/q5.png",
+                image: "../../scratchCodeSnippets/SC1/randomness/q5.png",
                 options: [
                     "Go to the top of the screen",
                     "Disappear",
@@ -14802,7 +14802,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC1/randomness/q6.png",
+                image: "../../scratchCodeSnippets/SC1/randomness/q6.png",
                 options: [
                     "Stops the program",
                     "Waits a random amount of time",
@@ -14813,7 +14813,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this code act like?",
-                image: "/scratchCodeSnippets/SC1/randomness/q7.png",
+                image: "../../scratchCodeSnippets/SC1/randomness/q7.png",
                 options: ["A loop",
                     "A stopwatch",
                     "A coin toss",
@@ -14822,7 +14822,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will happen?",
-                image: "/scratchCodeSnippets/SC1/randomness/q8.png",
+                image: "../../scratchCodeSnippets/SC1/randomness/q8.png",
                 options: [
                     "The sprite shrinks to zero",
                     "The sprite stops moving",
@@ -14879,7 +14879,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC1/list/q3.png",
+                image: "../../scratchCodeSnippets/SC1/list/q3.png",
                 options: [
                     '"apple" is removed from the list',
                     '"apple" is added to the list',
@@ -14890,7 +14890,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC1/list/q4.png",
+                image: "../../scratchCodeSnippets/SC1/list/q4.png",
                 options: [
                     "Clears the whole list",
                     "Adds a new item",
@@ -14901,7 +14901,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say?",
-                image: "/scratchCodeSnippets/SC1/list/q5.png",
+                image: "../../scratchCodeSnippets/SC1/list/q5.png",
                 options: [
                     "Nothing",
                     "The first name in the list",
@@ -14912,7 +14912,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC1/list/q6.png",
+                image: "../../scratchCodeSnippets/SC1/list/q6.png",
                 options: [
                     '"blue" is added to the end',
                     'Item 2 becomes "blue"',
@@ -14923,7 +14923,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What is item 2 of the list?",
-                image: "/scratchCodeSnippets/SC1/list/q7.png",
+                image: "../../scratchCodeSnippets/SC1/list/q7.png",
                 options: ["3",
                     "6",
                     "9",
@@ -14932,7 +14932,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say “Lots of animals!”?",
-                image: "/scratchCodeSnippets/SC1/list/q8.png",
+                image: "../../scratchCodeSnippets/SC1/list/q8.png",
                 options: [
                     "When the list has more than 5 items",
                     "When the list is empty",
@@ -14989,7 +14989,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q3.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q3.png",
                 options: [
                     "The sprite moves right",
                     "The sprite moves left",
@@ -15000,7 +15000,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q4.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q4.png",
                 options: [
                     "The sprite moves down",
                     "The sprite moves left",
@@ -15011,7 +15011,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Where will the sprite go?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q5.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q5.png",
                 options: ["Left and up",
                     "Right and down",
                     "Centre",
@@ -15020,7 +15020,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say “Bottom”?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q6.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q6.png",
                 options: [
                     "When y is greater than 0",
                     "When x is greater than 0",
@@ -15031,7 +15031,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q7.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q7.png",
                 options: [
                     "The sprite moves up",
                     "The sprite moves down",
@@ -15042,7 +15042,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Where will the sprite go?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q8.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q8.png",
                 options: ["Bottom-left",
                     "Bottom-right",
                     "Top-left",
@@ -15051,7 +15051,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q9.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q9.png",
                 options: [
                     "Its y position",
                     "Its x position",
@@ -15062,7 +15062,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite do?",
-                image: "/scratchCodeSnippets/SC1/cartesianPlane/q10.png",
+                image: "../../scratchCodeSnippets/SC1/cartesianPlane/q10.png",
                 options: [
                     "Move up forever",
                     "Move left forever",
@@ -15099,7 +15099,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC1/variables/q3.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q3.png",
                 options: [
                     "Adds 0 to score",
                     "Resets score to 0",
@@ -15110,7 +15110,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC1/variables/q4.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q4.png",
                 options: [
                     "Score stays the same",
                     "Score goes down by 1",
@@ -15121,7 +15121,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens when the green flag is clicked?",
-                image: "/scratchCodeSnippets/SC1/variables/q5.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q5.png",
                 options: [
                     "Lives increases by 3",
                     "Lives is set to 3",
@@ -15132,7 +15132,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say “You win!”?",
-                image: "/scratchCodeSnippets/SC1/variables/q6.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q6.png",
                 options: [
                     "When score is 10",
                     "When score is less than 10",
@@ -15143,7 +15143,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens to speed?",
-                image: "/scratchCodeSnippets/SC1/variables/q7.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q7.png",
                 options: [
                     "It increases",
                     "It decreases",
@@ -15154,7 +15154,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC1/variables/q8.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q8.png",
                 options: [
                     "Resets time to 1",
                     "Deletes time",
@@ -15165,7 +15165,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say?",
-                image: "/scratchCodeSnippets/SC1/variables/q9.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q9.png",
                 options: [
                     "The word “score”",
                     "The value of score",
@@ -15176,7 +15176,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say “Game Over”?",
-                image: "/scratchCodeSnippets/SC1/variables/q10.png",
+                image: "../../scratchCodeSnippets/SC1/variables/q10.png",
                 options: [
                     "When lives is more than 0",
                     "When lives is 1",
@@ -15213,7 +15213,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does the jump block do?",
-                image: "/scratchCodeSnippets/SC1/blocks/q3.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q3.png",
                 options: [
                     "Stops the sprite",
                     "Moves the sprite up",
@@ -15224,7 +15224,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC1/blocks/q4.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q4.png",
                 options: [
                     "The sprite disappears",
                     "The sprite jumps once",
@@ -15235,7 +15235,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will move right do?",
-                image: "/scratchCodeSnippets/SC1/blocks/q5.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q5.png",
                 options: [
                     "Move the sprite up",
                     "Move the sprite right",
@@ -15246,7 +15246,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens when say hello is used?",
-                image: "/scratchCodeSnippets/SC1/blocks/q6.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q6.png",
                 options: [
                     "The sprite says “Hello!”",
                     "The program stops",
@@ -15257,7 +15257,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will happen?",
-                image: "/scratchCodeSnippets/SC1/blocks/q7.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q7.png",
                 options: [
                     "The sprite turns",
                     "The sprite jumps three times",
@@ -15268,7 +15268,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Why is this custom block useful?",
-                image: "/scratchCodeSnippets/SC1/blocks/q8.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q8.png",
                 options: [
                     "It plays sounds",
                     "It deletes the game",
@@ -15279,7 +15279,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC1/blocks/q9.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q9.png",
                 options: [
                     "Stops the program",
                     "Runs the reset code at the start",
@@ -15290,7 +15290,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will spin make the sprite do?",
-                image: "/scratchCodeSnippets/SC1/blocks/q10.png",
+                image: "../../scratchCodeSnippets/SC1/blocks/q10.png",
                 options: [
                     "Move forward",
                     "Spin all the way around",
@@ -15327,7 +15327,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite moves too far. What could you do to fix it?",
-                image: "/scratchCodeSnippets/SC1/debug/q3.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q3.png",
                 options: [
                     "Add more `move 10 steps` blocks",
                     "Delete one `move 10 steps` block",
@@ -15339,7 +15339,7 @@ const updatedQuizQuestions = [
             {
                 question:
                     "The sprite does not move when you press space. What is the problem?",
-                image: "/scratchCodeSnippets/SC1/debug/q4.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q4.png",
                 options: [
                     "The block should be under `when green flag clicked`",
                     "The sprite is hidden",
@@ -15350,7 +15350,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite turns too far. How can you fix it?",
-                image: "/scratchCodeSnippets/SC1/debug/q5.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q5.png",
                 options: [
                     "Repeat fewer times",
                     "Move forward",
@@ -15361,7 +15361,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The program is not working as expected",
-                image: "/scratchCodeSnippets/SC1/debug/q6.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q6.png",
                 options: [
                     "The sprite is hidden",
                     "The block is wrong",
@@ -15372,7 +15372,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The score goes down instead of up. How can you fix it?",
-                image: "/scratchCodeSnippets/SC1/debug/q7.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q7.png",
                 options: [
                     "Delete the block",
                     "Turn the sprite",
@@ -15383,7 +15383,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite never says anything. What could be wrong?",
-                image: "/scratchCodeSnippets/SC1/debug/q8.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q8.png",
                 options: [
                     "The block is missing a green flag",
                     "The sprite is not actually touching the pointer",
@@ -15394,7 +15394,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite moves too far. What is a debugging solution?",
-                image: "/scratchCodeSnippets/SC1/debug/q9.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q9.png",
                 options: [
                     "Add another move block",
                     "Change the costume",
@@ -15406,7 +15406,7 @@ const updatedQuizQuestions = [
             {
                 question:
                     "The sprite does not appear in the middle. What should you check?",
-                image: "/scratchCodeSnippets/SC1/debug/q10.png",
+                image: "../../scratchCodeSnippets/SC1/debug/q10.png",
                 options: [
                     "The sprite is hidden",
                     "The stage is small",
@@ -15441,7 +15441,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: 'If the user types "Sam," what will the sprite say?',
-                image: "/scratchCodeSnippets/SC2/input/q3.png",
+                image: "../../scratchCodeSnippets/SC2/input/q3.png",
                 options: [
                     "“Sam is your best friend!”",
                     "Nothing",
@@ -15452,7 +15452,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does the sprite say?",
-                image: "/scratchCodeSnippets/SC2/input/q4.png",
+                image: "../../scratchCodeSnippets/SC2/input/q4.png",
                 options: [
                     "“favourite animal”",
                     "“Elephant”",
@@ -15463,7 +15463,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say if the user enters “4” when asked?",
-                image: "/scratchCodeSnippets/SC2/input/q5.png",
+                image: "../../scratchCodeSnippets/SC2/input/q5.png",
                 options: [
                     "Nothing",
                     "“Thats correct”",
@@ -15474,7 +15474,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the meow sound play?",
-                image: "/scratchCodeSnippets/SC2/input/q6.png",
+                image: "../../scratchCodeSnippets/SC2/input/q6.png",
                 options: [
                     "If the user enters “10”",
                     "If the user enters an incorrect answer",
@@ -15485,7 +15485,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will happen if the user enters “yes”?",
-                image: "/scratchCodeSnippets/SC2/input/q7.png",
+                image: "../../scratchCodeSnippets/SC2/input/q7.png",
                 options: [
                     "Nothing",
                     "The sprite will bark",
@@ -15496,7 +15496,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Which device does the program receive input from?",
-                image: "/scratchCodeSnippets/SC2/input/q8.png",
+                image: "../../scratchCodeSnippets/SC2/input/q8.png",
                 options: ["Mouse",
                     "Keyboard",
                     "Touchscreen",
@@ -15505,7 +15505,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Which device does the program receive input from?",
-                image: "/scratchCodeSnippets/SC2/input/q9.png",
+                image: "../../scratchCodeSnippets/SC2/input/q9.png",
                 options: ["Mouse",
                     "Keyboard",
                     "Touchscreen",
@@ -15514,7 +15514,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "True or false, this program uses input:",
-                image: "/scratchCodeSnippets/SC2/input/q10.png",
+                image: "../../scratchCodeSnippets/SC2/input/q10.png",
                 options: ["True",
                     "False"],
                 correctAnswer: "True",
@@ -15548,7 +15548,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "How many times will the sprite say “Hello”?",
-                image: "/scratchCodeSnippets/SC2/loops/q3.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q3.png",
                 options: ["1",
                     "10",
                     "100",
@@ -15557,7 +15557,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "How long will the sprite turn for?",
-                image: "/scratchCodeSnippets/SC2/loops/q4.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q4.png",
                 options: ["15 times",
                     "1 time",
                     "infinite times",
@@ -15566,7 +15566,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "How many times will the meow sound play?",
-                image: "/scratchCodeSnippets/SC2/loops/q5.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q5.png",
                 options: ["None",
                     "1",
                     "5",
@@ -15575,7 +15575,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will make the loop stop?",
-                image: "/scratchCodeSnippets/SC2/loops/q6.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q6.png",
                 options: [
                     "Pressing the space bar",
                     "The sprite touching the edge",
@@ -15586,7 +15586,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What is the error in this code?",
-                image: "/scratchCodeSnippets/SC2/loops/q7.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q7.png",
                 options: [
                     "We should use a different variable other than “score”",
                     "We didn’t tell the loop when to stop repeating",
@@ -15597,7 +15597,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "How often does the sprite say “Tick”?",
-                image: "/scratchCodeSnippets/SC2/loops/q8.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q8.png",
                 options: ["Every second",
                     "Every 10 seconds",
                     "Only once",
@@ -15606,14 +15606,14 @@ const updatedQuizQuestions = [
             },
             {
                 question: "True or false, this code uses a loop:",
-                image: "/scratchCodeSnippets/SC2/loops/q9.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q9.png",
                 options: ["True",
                     "False"],
                 correctAnswer: "False",
             },
             {
                 question: "True or false, this code uses a loop:",
-                image: "/scratchCodeSnippets/SC2/loops/q10.png",
+                image: "../../scratchCodeSnippets/SC2/loops/q10.png",
                 options: ["True",
                     "False"],
                 correctAnswer: "True",
@@ -15644,7 +15644,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say when score is 0?",
-                image: "/scratchCodeSnippets/SC2/decisions/q3.png",
+                image: "../../scratchCodeSnippets/SC2/decisions/q3.png",
                 options: ["Keep going!",
                     "Nothing",
                     "Start!",
@@ -15654,7 +15654,7 @@ const updatedQuizQuestions = [
             {
                 question:
                     "What will the sprite say when it is NOT touching the hedgehog?",
-                image: "/scratchCodeSnippets/SC2/decisions/q4.png",
+                image: "../../scratchCodeSnippets/SC2/decisions/q4.png",
                 options: ["Ouch!",
                     "Safe",
                     "Nothing",
@@ -15663,7 +15663,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will it say “Game Over”?",
-                image: "/scratchCodeSnippets/SC2/decisions/q5.png",
+                image: "../../scratchCodeSnippets/SC2/decisions/q5.png",
                 options: [
                     "When lives are more than 0",
                     "When lives are 0",
@@ -15674,7 +15674,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens if the up arrow is NOT pressed?",
-                image: "/scratchCodeSnippets/SC2/decisions/q6.png",
+                image: "../../scratchCodeSnippets/SC2/decisions/q6.png",
                 options: [
                     "The sprite still moves",
                     "The sprite jumps",
@@ -15685,7 +15685,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What must the player type to hear “Great!”?",
-                image: "/scratchCodeSnippets/SC2/decisions/q7.png",
+                image: "../../scratchCodeSnippets/SC2/decisions/q7.png",
                 options: ["no",
                     "maybe",
                     "yes",
@@ -15694,7 +15694,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens when the sprite is small?",
-                image: "/scratchCodeSnippets/SC2/decisions/q8.png",
+                image: "../../scratchCodeSnippets/SC2/decisions/q8.png",
                 options: [
                     "It gets bigger",
                     "It gets smaller",
@@ -15749,7 +15749,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What might the sprite say?",
-                image: "/scratchCodeSnippets/SC2/randomness/q3.png",
+                image: "../../scratchCodeSnippets/SC2/randomness/q3.png",
                 options: ["1, 2, or 3",
                     "Only 1",
                     "Only 3",
@@ -15758,7 +15758,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will happen?",
-                image: "/scratchCodeSnippets/SC2/randomness/q4.png",
+                image: "../../scratchCodeSnippets/SC2/randomness/q4.png",
                 options: [
                     "The sprite always turns the same way",
                     "The sprite turns a random amount",
@@ -15769,7 +15769,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC2/randomness/q5.png",
+                image: "../../scratchCodeSnippets/SC2/randomness/q5.png",
                 options: [
                     "Move the sprite up",
                     "Moves the sprite down",
@@ -15780,7 +15780,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC2/randomness/q6.png",
+                image: "../../scratchCodeSnippets/SC2/randomness/q6.png",
                 options: [
                     "The sprite stays the same colour",
                     "The sprite changes colour randomly",
@@ -15791,7 +15791,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite do?",
-                image: "/scratchCodeSnippets/SC2/randomness/q7.png",
+                image: "../../scratchCodeSnippets/SC2/randomness/q7.png",
                 options: [
                     "Move to random places on the screen",
                     "Stay still",
@@ -15802,7 +15802,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Why is this useful?",
-                image: "/scratchCodeSnippets/SC2/randomness/q8.png",
+                image: "../../scratchCodeSnippets/SC2/randomness/q8.png",
                 options: [
                     "To stop the sprite",
                     "To make the sprite always move slowly",
@@ -15857,7 +15857,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC2/list/q3.png",
+                image: "../../scratchCodeSnippets/SC2/list/q3.png",
                 options: [
                     "Deletes the list",
                     "Adds the value of score to the list",
@@ -15868,7 +15868,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC2/list/q4.png",
+                image: "../../scratchCodeSnippets/SC2/list/q4.png",
                 options: [
                     "The last item is removed",
                     "All items are removed",
@@ -15879,7 +15879,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say?",
-                image: "/scratchCodeSnippets/SC2/list/q5.png",
+                image: "../../scratchCodeSnippets/SC2/list/q5.png",
                 options: [
                     "The first word",
                     "All the words",
@@ -15890,7 +15890,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What is item 3?",
-                image: "/scratchCodeSnippets/SC2/list/q6.png",
+                image: "../../scratchCodeSnippets/SC2/list/q6.png",
                 options: ["dog",
                     "cat",
                     "fish",
@@ -15899,7 +15899,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say 'No scores yet'?",
-                image: "/scratchCodeSnippets/SC2/list/q7.png",
+                image: "../../scratchCodeSnippets/SC2/list/q7.png",
                 options: [
                     "When the list has items",
                     "When the list is empty",
@@ -15910,7 +15910,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC2/list/q8.png",
+                image: "../../scratchCodeSnippets/SC2/list/q8.png",
                 options: [
                     'Replaces a random name with "Alex"',
                     'Adds "Alex" to the end',
@@ -15921,7 +15921,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "",
-                image: "/scratchCodeSnippets/SC2/list/q9.png",
+                image: "../../scratchCodeSnippets/SC2/list/q9.png",
                 options: [
                     "Adds an item",
                     "Shows the last item",
@@ -15966,7 +15966,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Where will the sprite go?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q3.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q3.png",
                 options: [
                     "Top-right corner",
                     "Bottom-left corner",
@@ -15977,7 +15977,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite do?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q4.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q4.png",
                 options: ["Move up",
                     "Move down",
                     "Move right",
@@ -15986,7 +15986,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite do?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q5.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q5.png",
                 options: ["Move up",
                     "Move down",
                     "Move left",
@@ -15995,7 +15995,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Where will the sprite move?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q6.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q6.png",
                 options: [
                     "To the right side",
                     "To the left side",
@@ -16006,7 +16006,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say 'Right side'?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q7.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q7.png",
                 options: [
                     "When x is less then 0",
                     "When y is less than 0",
@@ -16017,7 +16017,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Where will the sprite appear?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q8.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q8.png",
                 options: [
                     "Right and down",
                     "Left and up",
@@ -16028,7 +16028,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say 'Middle'?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q9.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q9.png",
                 options: [
                     "when y equals 0",
                     "When x equals 0",
@@ -16039,7 +16039,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite do?",
-                image: "/scratchCodeSnippets/SC2/cartesianPlane/q10.png",
+                image: "../../scratchCodeSnippets/SC2/cartesianPlane/q10.png",
                 options: [
                     "Move up and down",
                     "Go to a random left-right position",
@@ -16074,7 +16074,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What is the value of score after this runs?",
-                image: "/scratchCodeSnippets/SC2/variables/q3.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q3.png",
                 options: ["5",
                     "0",
                     "10",
@@ -16083,7 +16083,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC2/variables/q4.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q4.png",
                 options: [
                     "Score becomes 2",
                     "Score decreases by 2",
@@ -16094,7 +16094,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC2/variables/q5.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q5.png",
                 options: [
                     "Deletes health",
                     "Sets health to 100",
@@ -16105,7 +16105,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "When will the sprite say 'Low health!'?",
-                image: "/scratchCodeSnippets/SC2/variables/q6.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q6.png",
                 options: [
                     "Always",
                     "When health is greater than 20",
@@ -16116,7 +16116,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC2/variables/q7.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q7.png",
                 options: [
                     "Coins increase by 5",
                     "Coins stay the same",
@@ -16127,7 +16127,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does this do?",
-                image: "/scratchCodeSnippets/SC2/variables/q8.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q8.png",
                 options: [
                     "Resets lives",
                     "Increases lives",
@@ -16138,7 +16138,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say?",
-                image: "/scratchCodeSnippets/SC2/variables/q9.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q9.png",
                 options: [
                     "The sprite’s direction",
                     "The number stored in lives",
@@ -16149,7 +16149,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Why is this useful?",
-                image: "/scratchCodeSnippets/SC2/variables/q10.png",
+                image: "../../scratchCodeSnippets/SC2/variables/q10.png",
                 options: [
                     "It removes the score",
                     "It starts the score fresh each game",
@@ -16185,7 +16185,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does move up do?",
-                image: "/scratchCodeSnippets/SC2/blocks/q3.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q3.png",
                 options: ["Moves left",
                     "Moves right",
                     "Moves up",
@@ -16194,7 +16194,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC2/blocks/q4.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q4.png",
                 options: [
                     "The sprite moves up once",
                     "The sprite moves up twice",
@@ -16205,7 +16205,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does grow do?",
-                image: "/scratchCodeSnippets/SC2/blocks/q5.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q5.png",
                 options: [
                     "Makes the sprite smaller",
                     "Makes the sprite bigger",
@@ -16216,7 +16216,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will the sprite say?",
-                image: "/scratchCodeSnippets/SC2/blocks/q6.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q6.png",
                 options: [
                     "The word “score”",
                     "The value of score",
@@ -16227,7 +16227,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What happens?",
-                image: "/scratchCodeSnippets/SC2/blocks/q7.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q7.png",
                 options: [
                     "The sprite grows by 5",
                     "The sprite grows by 10",
@@ -16238,7 +16238,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What does reset position do?",
-                image: "/scratchCodeSnippets/SC2/blocks/q8.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q8.png",
                 options: [
                     "Moves the sprite randomly",
                     "Moves the sprite to the centre",
@@ -16249,7 +16249,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "Why is this useful?",
-                image: "/scratchCodeSnippets/SC2/blocks/q9.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q9.png",
                 options: [
                     "It stops the game",
                     "It sets a starting place",
@@ -16260,7 +16260,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "What will flash do?",
-                image: "/scratchCodeSnippets/SC2/blocks/q10.png",
+                image: "../../scratchCodeSnippets/SC2/blocks/q10.png",
                 options: [
                     "Change brightness once",
                     "Change brightness five times",
@@ -16298,7 +16298,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The score increases too quickly. How can you fix it?",
-                image: "/scratchCodeSnippets/SC2/debug/q3.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q3.png",
                 options: [
                     "Delete one `change score by 1` block",
                     "Add more blocks",
@@ -16309,7 +16309,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite does not move. Why?",
-                image: "/scratchCodeSnippets/SC2/debug/q4.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q4.png",
                 options: [
                     "`repeat 0` means the loop does not run",
                     "The move block is broken",
@@ -16320,7 +16320,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite should say hello before goodbye",
-                image: "/scratchCodeSnippets/SC2/debug/q5.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q5.png",
                 options: [
                     "The wait block is missing",
                     "The code is correct, maybe another block stops it",
@@ -16332,7 +16332,7 @@ const updatedQuizQuestions = [
             {
                 question:
                     "The lives go down too quickly. What is a debugging solution?",
-                image: "/scratchCodeSnippets/SC2/debug/q6.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q6.png",
                 options: [
                     "Remove one `change lives by -1` block",
                     "Add another `change lives by -1` block",
@@ -16344,7 +16344,7 @@ const updatedQuizQuestions = [
             {
                 question:
                     "The sprite does not appear in the middle. What could you check?",
-                image: "/scratchCodeSnippets/SC2/debug/q7.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q7.png",
                 options: [
                     "The sprite is hidden",
                     "The green flag is not clicked",
@@ -16355,7 +16355,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite jumps too high. What can you do?",
-                image: "/scratchCodeSnippets/SC2/debug/q8.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q8.png",
                 options: [
                     "Change `10` to a smaller number",
                     "Add more blocks",
@@ -16366,7 +16366,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite turns too far. How can you fix it?",
-                image: "/scratchCodeSnippets/SC2/debug/q9.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q9.png",
                 options: [
                     "Reduce the repeat number or turn smaller degrees",
                     "Delete the sprite",
@@ -16377,7 +16377,7 @@ const updatedQuizQuestions = [
             },
             {
                 question: "The sprite goes off the stage. What could be wrong?",
-                image: "/scratchCodeSnippets/SC2/debug/q10.png",
+                image: "../../scratchCodeSnippets/SC2/debug/q10.png",
                 options: [
                     "We used the wrong backdrop",
                     "The screen is too small",
