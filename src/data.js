@@ -9988,7 +9988,7 @@ const updatedQuizQuestions = [
         topic: "loops",
         questions: [
             {
-                question: "Why might a game use Decisions?",
+                question: "Why might a game use loops?",
                 options: [
                     "To check things over and over (like score)",
                     "To play music louder",
