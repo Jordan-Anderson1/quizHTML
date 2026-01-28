@@ -15920,7 +15920,7 @@ const updatedQuizQuestions = [
                 correctAnswer: 'Replaces a random name with "Alex"',
             },
             {
-                question: "",
+                question: "What does this code do?",
                 image: "../../scratchCodeSnippets/SC2/list/q9.png",
                 options: [
                     "Adds an item",
